@@ -203,9 +203,7 @@
     const d = WEDDING_DATA[lang];
 
     // Document Title
-    document.title = lang === 'te' 
-      ? `కళ్యాణ మహోత్సవం | ${d.bride} & ${d.groom} — సాంప్రదాయ వివాహ ఆహ్వాన పత్రిక`
-      : `Wedding Invitation | ${d.bride} & ${d.groom} — Kalyana Mahotsavam`;
+    document.title = "Chaithu & Poorns Wedding Invitation";
 
     // Temple Gate
     setTxt("sealTopShloka", d.sealTopShloka);
