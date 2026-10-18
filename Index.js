@@ -41,7 +41,7 @@
       "https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-gallery1-1790861320364.webp",
       "https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-gallery2-1790862182952.webp",
       "https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-gallery3-1790862336803.webp",
-      "https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-couple-1790861011173.webp"
+      "image_pic.jpeg"
     ],
     te: {
       bride: "POORNA LATHA",
