@@ -586,23 +586,7 @@
 
   $$(".rv").forEach(el => io.observe(el));
 
-  // --- AMBIENT FALLING ROSE PETALS IN STORY SECTION ---
-  (function initAmbientPetals() {
-    const container = $("#ambientPetals");
-    if (!container) return;
-    const colors = ["#a81124", "#e62b4c", "#ff476f", "#ff9eb5", "#ffffff"];
 
-    for (let i = 0; i < 18; i++) {
-      const p = document.createElement("span");
-      p.className = "petal";
-      p.style.left = (Math.random() * 100) + "%";
-      p.style.background = colors[i % colors.length];
-      p.style.animationDuration = (5 + Math.random() * 6) + "s";
-      p.style.animationDelay = (-Math.random() * 10) + "s";
-      p.style.transform = `scale(${0.6 + Math.random() * 0.6})`;
-      container.appendChild(p);
-    }
-  })();
 
   // --- REAL-TIME LIVE COUNTDOWN TO SUMUHURTHAM ---
   function updateCountdown() {
@@ -965,8 +949,6 @@
     kick();
     startMangalaMusic();
     playBellChime();
-    // Glorious cascading shower of realistic rose and jasmine petals
-    triggerRealisticRoseShower(window.innerWidth / 2, window.innerHeight * 0.45, 80);
   }
 
   if (openInviteBtn && templeGate) {
@@ -1170,11 +1152,7 @@
     });
   }
 
-  // Click on screen drops natural rose petals
-  document.addEventListener("click", (e) => {
-    if (e.target.closest("button, a, input, select, textarea, .pc")) return;
-    triggerRealisticRoseShower(e.clientX, e.clientY, 15);
-  });
+
 
   // --- RSVP FORM WITH DIRECT WHATSAPP INTEGRATION ---
   (function initRsvpForm() {
