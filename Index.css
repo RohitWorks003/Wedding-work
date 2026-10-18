@@ -1,0 +1,2034 @@
+/* =========================================================
+   TELUGU CULTURAL TRADITIONAL WEDDING INVITATION — STYLESHEET
+   Bespoke Temple Sanctum, Authentic Pelli Patrika, 
+   7 Sacred Rituals, Banana Leaf Feast, and Rose Petals Physics
+   ========================================================= */
+
+:root {
+  --cream: #fff9ed;
+  --parchment: #fdf3e1;
+  --wall: #faebd2;
+  --ink: #3c1a10;
+  --ink-soft: #6e3d28;
+  --gold: #d4af37;
+  --gold-light: #fdedad;
+  --gold-dark: #8c6418;
+  --gold-glow: rgba(240, 200, 101, 0.45);
+  --maroon: #5a0b18;
+  --maroon-2: #7a1527;
+  --maroon-3: #3b060f;
+  --turmeric: #f7c531;
+  --kumkum: #c82a2a;
+  --rose-crimson: #a81124;
+  --rose-pink: #ff476f;
+  --jasmine-white: #fffff2;
+  --temple-green: #1b5e20;
+  --leaf-green: #2e7d32;
+  --leaf-light: #4caf50;
+  --f-names: 'Cinzel', 'Marcellus', 'Cormorant Garamond', Georgia, serif;
+  --f-script: 'Pinyon Script', 'Rozha One', cursive;
+  --f-body: 'Cormorant Garamond', Georgia, serif;
+  --f-te: 'Noto Serif Telugu', 'Gautami', 'Nirmala UI', serif;
+  --col: 480px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  background: var(--maroon-3);
+  scroll-behavior: auto;
+}
+
+body {
+  background: radial-gradient(120% 60% at 50% 0%, var(--maroon-2) 0%, var(--maroon-3) 75%) fixed, var(--maroon-3);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 17px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+body.locked {
+  overflow: hidden;
+  height: 100vh;
+}
+
+input, textarea, select {
+  user-select: text;
+}
+
+#app {
+  position: relative;
+  max-width: var(--col);
+  margin: 0 auto;
+  background: var(--cream);
+  overflow: clip;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.75), 0 0 30px rgba(212, 175, 55, 0.25);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Typography Utilities */
+.script {
+  font-family: var(--f-script), var(--f-body);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.caps {
+  font-family: var(--f-names);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.te {
+  font-family: var(--f-te), var(--f-body);
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+/* Scroll Revealer classes */
+.rv {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.85s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.85s cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: opacity, transform;
+}
+.rv.in {
+  opacity: 1;
+  transform: none;
+}
+.rv.d1 { transition-delay: 0.15s; }
+.rv.d2 { transition-delay: 0.3s; }
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--f-names);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 22px;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 11px;
+}
+
+.btn-temple-gold {
+  background: linear-gradient(180deg, #fff3ba 0%, #d4af37 50%, #996515 100%);
+  color: #2b040a;
+  font-weight: 700;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 240, 180, 0.7);
+}
+
+.btn-temple-gold:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 8px 26px rgba(212, 175, 55, 0.5);
+}
+
+.btn-maroon {
+  background: linear-gradient(180deg, var(--maroon-2), var(--maroon-3));
+  color: var(--gold-light);
+  font-weight: 600;
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  box-shadow: 0 5px 16px rgba(40, 5, 10, 0.4);
+}
+
+.btn-maroon:hover {
+  background: linear-gradient(180deg, #911b33, var(--maroon));
+  color: #fff;
+}
+
+.btn-translucent {
+  background: rgba(255, 249, 237, 0.12);
+  border: 1px solid rgba(240, 200, 101, 0.6);
+  color: var(--gold-light);
+  backdrop-filter: blur(6px);
+}
+
+.btn-whatsapp-direct {
+  background: linear-gradient(180deg, #2ecc71, #27ae60);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(46, 204, 113, 0.4);
+}
+
+/* ================= FLOATING TOP NAVIGATION ================= */
+.top-nav {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(calc(100% - 24px), var(--col));
+  z-index: 85;
+  pointer-events: none;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lang-capsule {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(45, 6, 12, 0.88);
+  border: 1px solid rgba(212, 175, 55, 0.55);
+  border-radius: 999px;
+  padding: 4px 10px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(8px);
+}
+
+.lang-pill {
+  background: none;
+  border: 0;
+  color: #f7e6ca;
+  font-family: var(--f-names);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 9px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lang-pill.active {
+  background: var(--gold);
+  color: var(--maroon-3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.lang-separator {
+  color: var(--gold);
+  font-size: 8px;
+  opacity: 0.6;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  pointer-events: auto;
+}
+
+/* Realistic Rose Petals Shower Button */
+.rose-shower-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(180deg, #ff5e7e, #c81d3d);
+  border: 1.5px solid #ffe6eb;
+  border-radius: 999px;
+  color: #fff;
+  font-family: var(--f-te), var(--f-names);
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 6px 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(200, 29, 61, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rose-shower-btn:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 20px rgba(200, 29, 61, 0.6);
+}
+
+.rose-shower-btn:active {
+  transform: scale(0.95);
+}
+
+.rose-emoji {
+  font-size: 15px;
+  animation: pulseRose 2s infinite ease-in-out;
+}
+
+@keyframes pulseRose {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* Nadaswaram Music Button */
+.nadaswaram-btn {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold);
+  background: radial-gradient(circle, var(--maroon-2), var(--maroon-3));
+  color: var(--gold-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+}
+
+.flute-svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.nadaswaram-btn.playing .flute-svg {
+  animation: spinVinyl 6s linear infinite;
+  color: #fff;
+}
+
+@keyframes spinVinyl {
+  to { transform: rotate(360deg); }
+}
+
+.music-glow-ring {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nadaswaram-btn.playing .music-glow-ring {
+  animation: musicPulse 2s cubic-bezier(0.2, 0.8, 0.2, 1) infinite;
+}
+
+@keyframes musicPulse {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+/* ================= AUTHENTIC TEMPLE SANCTUM ENTRANCE ================= */
+#templeGate {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  background: var(--maroon-3);
+  transition: opacity 0.85s ease 1s;
+}
+
+.sanctum-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: var(--col);
+  height: 100%;
+  perspective: 1400px;
+  overflow: hidden;
+  background: #140305;
+}
+
+/* Temple Arch Top with Gajalakshmi & Toranam */
+.temple-arch-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 15;
+  text-align: center;
+  padding-top: 14px;
+  pointer-events: none;
+}
+
+.gajalakshmi-crest {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(circle, rgba(122, 21, 39, 0.95), rgba(45, 6, 12, 0.95));
+  border: 1.5px solid rgba(212, 175, 55, 0.7);
+  border-radius: 999px;
+  padding: 4px 16px 6px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.crest-symbol {
+  font-size: 22px;
+  color: var(--gold-light);
+  line-height: 1;
+}
+
+.crest-text {
+  font-size: 12px;
+  color: #fff3c9;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+}
+
+.mango-marigold-toranam {
+  width: 100%;
+  height: 24px;
+  margin-top: 6px;
+  background: repeating-linear-gradient(90deg, #2e7d32 0 16px, #f39a1d 16px 28px, #ffffff 28px 34px, #f7c531 34px 46px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  border-bottom: 2px solid #8c6418;
+}
+
+/* Flickering Brass Deepam Lamps on Pillars */
+.temple-diya {
+  position: absolute;
+  top: 48%;
+  z-index: 14;
+  width: 38px;
+  height: 60px;
+  pointer-events: none;
+}
+
+.diya-left { left: 8px; }
+.diya-right { right: 8px; }
+
+.diya-stand {
+  position: absolute;
+  bottom: 0;
+  left: 14px;
+  width: 10px;
+  height: 36px;
+  background: linear-gradient(90deg, #a67c1e, #ffd54f 50%, #8c6418);
+  border-radius: 2px;
+}
+
+.diya-bowl {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  width: 38px;
+  height: 16px;
+  background: radial-gradient(ellipse at 50% 60%, #ffe082, #b78103 70%, #5d4000);
+  border-radius: 0 0 20px 20px;
+  border: 1px solid #ffecb3;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.diya-flame {
+  position: absolute;
+  top: -18px;
+  left: 13px;
+  width: 12px;
+  height: 20px;
+  background: radial-gradient(ellipse at 50% 80%, #fff, #ffca28 40%, #ff5722 80%, transparent 100%);
+  border-radius: 50% 50% 20% 20% / 60% 60% 40% 40%;
+  filter: drop-shadow(0 0 8px #ff9800);
+  animation: flickerFlame 0.15s infinite alternate ease-in-out;
+}
+
+.flame-glow {
+  position: absolute;
+  top: -24px;
+  left: 3px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 179, 0, 0.45) 0%, transparent 70%);
+  animation: pulseGlow 1.2s infinite alternate ease-in-out;
+}
+
+@keyframes flickerFlame {
+  0% { transform: scale(1) rotate(-1.5deg); opacity: 0.95; }
+  100% { transform: scale(1.08, 0.95) rotate(1.5deg); opacity: 1; }
+}
+
+@keyframes pulseGlow {
+  0% { transform: scale(0.9); opacity: 0.6; }
+  100% { transform: scale(1.2); opacity: 0.95; }
+}
+
+/* 3D Carved Temple Doors */
+.temple-doors {
+  position: absolute;
+  inset: 0;
+}
+
+.t-door {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  overflow: hidden;
+  background: #3e1208;
+  transition: transform 1.6s cubic-bezier(0.65, 0, 0.35, 1) 0.35s;
+  backface-visibility: hidden;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.85);
+}
+
+.door-panel-carving {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-door-1790834799486.webp');
+  background-position: right center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.t-door-right .door-panel-carving {
+  transform: scaleX(-1);
+  background-position: right center;
+}
+
+.t-door-left {
+  left: 0;
+  transform-origin: 0 50%;
+}
+
+.t-door-right {
+  right: 0;
+  transform-origin: 100% 50%;
+}
+
+.t-door-left::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 14px;
+  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.9));
+}
+
+.brass-lion-handle {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 48px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.t-door-left .brass-lion-handle { right: 12px; }
+.t-door-right .brass-lion-handle { left: 12px; }
+
+.lion-head {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #fff3ba, #d4af37 60%, #6d4c14);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.65), inset 0 0 5px rgba(0,0,0,0.5);
+  border: 1.5px solid #fce798;
+}
+
+.hanging-brass-ring {
+  position: absolute;
+  top: 26px;
+  width: 24px;
+  height: 30px;
+  border-radius: 50%;
+  border: 4px solid #d4af37;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+  animation: swayBrassRing 4s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+@keyframes swayBrassRing {
+  0%, 100% { transform: rotate(3deg); }
+  50% { transform: rotate(-3deg); }
+}
+
+/* Sacred Royal Invitation Seal Card in Center */
+.royal-seal-card {
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(88%, 350px);
+  text-align: center;
+  color: var(--cream);
+  padding: 30px 20px 24px;
+  background: radial-gradient(120% 100% at 50% 0%, rgba(98, 14, 28, 0.97), rgba(42, 5, 11, 0.97));
+  border: 1.5px solid rgba(212, 175, 55, 0.7);
+  border-radius: 190px 190px 18px 18px;
+  box-shadow: 0 25px 65px rgba(0, 0, 0, 0.8), inset 0 0 0 5px rgba(90, 11, 24, 0.95), inset 0 0 0 7px rgba(212, 175, 55, 0.45);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.kalasham-emblem {
+  margin: 0 auto 8px;
+  width: 72px;
+  height: 72px;
+  filter: drop-shadow(0 2px 10px rgba(212, 175, 55, 0.55));
+}
+
+.kalasham-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.seal-header {
+  font-size: 13.5px;
+  color: var(--gold-light);
+  margin-bottom: 4px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+}
+
+.seal-script {
+  font-size: 34px;
+  color: var(--gold-light);
+  margin: 2px 0 6px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.seal-couple-names {
+  margin: 6px 0 10px;
+}
+
+.bride-hero, .groom-hero {
+  font-size: 23px;
+  line-height: 1.2;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.sacred-knot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 2px 0;
+}
+
+.knot-text {
+  font-size: 26px;
+  color: var(--gold-light);
+}
+
+.seal-panchangam {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  padding: 5px 14px;
+  background: rgba(212, 175, 55, 0.14);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: 999px;
+  font-size: 13.5px;
+  color: #f7e6ca;
+}
+
+.btn-temple-gold {
+  margin-top: 18px;
+  width: 100%;
+  padding: 13px 20px;
+  font-size: 13px;
+}
+
+.seal-footer {
+  font-size: 12px;
+  color: rgba(247, 230, 202, 0.7);
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Door Open Animation Trigger */
+#templeGate.open .t-door-left {
+  transform: rotateY(-112deg);
+}
+
+#templeGate.open .t-door-right {
+  transform: rotateY(112deg);
+}
+
+#templeGate.open .royal-seal-card {
+  opacity: 0;
+  transform: translate(-50%, -64%) scale(0.92);
+}
+
+#templeGate.open {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#templeGate.gone {
+  display: none !important;
+}
+
+/* ================= SCENE CORE SETUP ================= */
+.scene {
+  position: relative;
+}
+
+.stage {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.layer {
+  position: absolute;
+  will-change: transform;
+}
+
+.layer img {
+  width: 100%;
+  height: auto;
+}
+
+.flip img, img.flip {
+  transform: scaleX(-1);
+}
+
+/* ================= SECTION 1: HERO GOPURAM ================= */
+#hero {
+  height: 330vh;
+}
+
+#hero .sky-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #185ec2 0%, #4697e6 50%, #a2d6f8 100%);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+#hero .sky-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 52% 0;
+  background: linear-gradient(180deg, rgba(14, 55, 130, 0.4), transparent);
+}
+
+.hero-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 8.5%;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 16px rgba(8, 30, 80, 0.55);
+  padding-inline: 16px;
+  z-index: 5;
+}
+
+.sacred-shloka {
+  font-size: 13.5px;
+  color: #fff3c9;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+
+.hero-names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: clamp(28px, 9vw, 42px);
+  line-height: 1.15;
+}
+
+.hero-weds-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 6px 0;
+  font-size: 28px;
+  color: #ffe694;
+  text-transform: none;
+}
+
+.hero-weds-badge::before,
+.hero-weds-badge::after {
+  content: "";
+  width: 44px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.hero-sub {
+  font-size: 14px;
+  color: #fcecd2;
+  margin-top: 6px;
+  opacity: 0.95;
+}
+
+.hero-gopuram {
+  left: 50%;
+  bottom: 0;
+  width: 92%;
+  transform-origin: 50% 90%;
+  transform: translate(-50%, 60%);
+  filter: drop-shadow(0 -8px 30px rgba(255, 240, 180, 0.45));
+}
+
+.hero-tree {
+  bottom: -3%;
+  width: 66%;
+  z-index: 4;
+}
+.hero-tree.left { left: -12%; }
+.hero-tree.right { right: -12%; }
+
+.scroll-indicator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 22px;
+  text-align: center;
+  color: #fff;
+  font-family: var(--f-names);
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  z-index: 8;
+}
+
+.arrow-down {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 8px auto 0;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+  animation: nudgeDown 1.6s ease-in-out infinite;
+}
+
+@keyframes nudgeDown {
+  50% { transform: translateY(7px) rotate(45deg); }
+}
+
+.hero-flash {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 55%, #fffaf0, #f7e6c6);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 7;
+}
+
+/* ================= SECTION 2: ROYAL KANCHI PATTU PELLI PATRIKA ================= */
+#patrikaSection .patrika-backdrop {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 30%, #fbefd6, var(--wall) 75%);
+}
+
+.temple-pillar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 18%;
+  background-image: url('https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-pillar-1790834804398.webp');
+  background-position: center top;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  filter: drop-shadow(0 6px 14px rgba(90, 40, 10, 0.35));
+  z-index: 2;
+}
+.pillar-left { left: 0; }
+.pillar-right { right: 0; }
+
+.royal-toranam {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+}
+
+.patrika-arch-wrapper {
+  position: absolute;
+  left: 17%;
+  right: 17%;
+  top: 10%;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(0 12px 28px rgba(120, 70, 20, 0.24));
+  z-index: 3;
+}
+
+.patrika-arch-top-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: -1px;
+}
+
+.patrika-scroll-body {
+  flex: 1;
+  background: var(--cream);
+  box-shadow: inset 2.5px 0 0 var(--gold), inset -2.5px 0 0 var(--gold);
+  padding: 10px 14px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  text-align: center;
+}
+
+.gold-seal-crest {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #fff3ba, #d4af37 60%, #8c6418);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--maroon-3);
+  font-size: 22px;
+  border: 1.5px solid #fff;
+  box-shadow: 0 4px 12px rgba(90, 40, 10, 0.25);
+}
+
+.patrika-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--maroon);
+}
+
+.patrika-blessing-line {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  line-height: 1.35;
+}
+
+.ancestors-block {
+  font-size: 12.5px;
+  font-style: italic;
+  color: #6b3d22;
+}
+
+.parents-block {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--maroon);
+}
+
+.invite-text {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  line-height: 1.4;
+  max-width: 94%;
+}
+
+.bride-groom-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  margin: 4px 0;
+}
+
+.person-name {
+  font-family: var(--f-names);
+  font-size: clamp(20px, 5.8vw, 26px);
+  color: #b8822c;
+  font-weight: 700;
+}
+
+.telugu-prefix {
+  font-size: 13px;
+  color: var(--maroon);
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.person-qualification {
+  display: block;
+  font-size: 11.5px;
+  color: var(--ink-soft);
+}
+
+.mangalyam-symbol {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  color: var(--kumkum);
+  margin: 2px 0;
+}
+
+.zari-divider {
+  width: 76%;
+  height: 12px;
+  background: radial-gradient(circle, var(--gold) 0 3px, transparent 3.5px) center/14px 10px no-repeat, linear-gradient(var(--gold), var(--gold)) center/100% 1px no-repeat;
+}
+
+.muhurtham-ornate-box {
+  background: rgba(212, 175, 55, 0.16);
+  border: 1px dashed var(--gold);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: var(--maroon);
+  line-height: 1.4;
+  width: 95%;
+}
+
+.muh-header {
+  font-weight: 700;
+  color: var(--maroon);
+  margin-bottom: 2px;
+}
+
+.muh-main-datetime {
+  font-weight: 700;
+  color: var(--maroon);
+  margin-top: 4px;
+}
+
+.location-summary {
+  font-size: 12px;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+/* ================= SECTION 3: THE 7 SACRED TELUGU RITUALS ================= */
+.rituals-section {
+  padding: 44px 20px 36px;
+  background: #fffdf8;
+  border-top: 1px solid rgba(212, 175, 55, 0.35);
+  text-align: center;
+}
+
+.section-badge {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--gold-dark);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+
+.rituals-heading {
+  font-size: 42px;
+  color: var(--maroon);
+  margin-bottom: 4px;
+}
+
+.rituals-subheading {
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin-bottom: 24px;
+}
+
+.rituals-grid {
+  display: grid;
+  gap: 16px;
+  text-align: left;
+}
+
+.ritual-card {
+  background: #fff;
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  border-left: 4px solid var(--gold);
+  border-radius: 12px;
+  padding: 16px 18px;
+  box-shadow: 0 6px 18px rgba(120, 70, 20, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ritual-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(120, 70, 20, 0.14);
+}
+
+.r-icon {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.r-name {
+  font-size: 16.5px;
+  font-weight: 700;
+  color: var(--maroon);
+  margin-bottom: 4px;
+}
+
+.r-desc {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+/* ================= SECTION 4: EVENTS TIMELINE ================= */
+.events-section {
+  position: relative;
+  background: var(--cream);
+}
+
+.lotus-divider img {
+  width: 100%;
+  height: auto;
+  padding: 16px 0 4px;
+}
+
+.events-header {
+  text-align: center;
+  padding: 10px 20px 14px;
+}
+
+.sacred-kalasham-icon {
+  font-size: 22px;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+
+.events-title {
+  font-size: 44px;
+  color: var(--temple-green);
+}
+
+.events-subtitle {
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+
+.events-cards-list {
+  display: grid;
+  gap: 20px;
+  padding: 16px 20px 36px;
+}
+
+.ev {
+  background: #fffdf8;
+  border: 1px solid rgba(195, 146, 54, 0.55);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(120, 70, 20, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ev:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(120, 70, 20, 0.18);
+}
+
+.ev-art {
+  position: relative;
+  aspect-ratio: 16/8.2;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ev-art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 35%, rgba(40, 8, 4, 0.8));
+}
+
+.ev-art .ev-badge {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  z-index: 2;
+  background: rgba(90, 11, 24, 0.85);
+  color: var(--gold-light);
+  font-family: var(--f-names);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(240, 200, 101, 0.4);
+}
+
+.ev-art .n {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 10px;
+  z-index: 2;
+  font-family: var(--f-names);
+  font-size: 21px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.ev-body {
+  padding: 15px 18px 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.ev-desc {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.45;
+  border-left: 2.5px solid var(--gold);
+  padding-left: 8px;
+  margin-bottom: 4px;
+}
+
+.ev-meta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 10px;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.ev-meta b {
+  font-family: var(--f-names);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  padding-top: 3px;
+}
+
+.ev-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.ev-actions .btn {
+  flex: 1;
+  padding: 9px 12px;
+  font-size: 11.5px;
+}
+
+.cloud-divider-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: -2px;
+}
+
+/* ================= SECTION 5: TRADITIONAL BANANA LEAF FEAST ================= */
+.feast-section {
+  padding: 44px 20px 48px;
+  background: radial-gradient(circle at 50% 20%, #f7fceb, #edf7de);
+  border-top: 1px solid rgba(76, 175, 80, 0.3);
+  text-align: center;
+}
+
+.feast-header .leaf-icon {
+  font-size: 26px;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+
+.feast-title {
+  font-size: 42px;
+  color: #1b5e20;
+}
+
+.feast-subtitle {
+  font-size: 15px;
+  color: #33691e;
+  margin-top: 2px;
+  margin-bottom: 24px;
+}
+
+/* Banana Leaf Platter */
+.banana-leaf-plate {
+  position: relative;
+  background: linear-gradient(135deg, #2e7d32 0%, #388e3c 40%, #1b5e20 100%);
+  border-radius: 40px 18px 40px 18px;
+  padding: 24px 20px;
+  box-shadow: 0 14px 34px rgba(27, 94, 32, 0.28), inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-align: left;
+}
+
+.banana-leaf-plate::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.plate-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffeb3b;
+  text-align: center;
+  margin-bottom: 18px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+.menu-categories {
+  display: grid;
+  gap: 16px;
+}
+
+.menu-group {
+  background: rgba(0, 0, 0, 0.22);
+  border-radius: 12px;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.group-title {
+  font-size: 15px;
+  color: #fff59d;
+  margin-bottom: 8px;
+}
+
+.item-list {
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #f1f8e9;
+}
+
+.feast-note {
+  font-size: 13px;
+  color: #c8e6c9;
+  text-align: center;
+  margin-top: 16px;
+  font-style: italic;
+}
+
+/* ================= SECTION 6: MANDAPAM STORY & SACRED VOWS ================= */
+#storyScene {
+  height: 420vh;
+  background: #bfe6fb;
+}
+
+.world-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 200%;
+  will-change: transform;
+}
+
+.story-sky {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 47%;
+  background: linear-gradient(180deg, #7cc4f2 0%, #b7e2fb 60%, #e3f4fd 100%);
+}
+
+.story-floor {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 44%;
+  bottom: 0;
+  background: #e8c68d center top/cover no-repeat;
+}
+
+.story-floor::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 60px;
+  background: linear-gradient(180deg, #e3f4fd, rgba(227, 244, 253, 0));
+}
+
+.story-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 12%;
+  z-index: 8;
+  text-align: center;
+  padding-inline: 20px;
+  color: var(--maroon);
+  pointer-events: none;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.caption-panel {
+  display: inline-block;
+  max-width: 100%;
+  padding: 14px 26px 16px;
+  border-radius: 120px 120px 18px 18px;
+  background: rgba(255, 249, 237, 0.94);
+  border: 1px solid rgba(212, 175, 55, 0.65);
+  box-shadow: 0 10px 30px rgba(90, 40, 10, 0.22);
+}
+
+.caption-panel .script {
+  font-size: 38px;
+}
+
+.caption-panel p {
+  margin-top: 4px;
+  font-family: var(--f-names);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--maroon);
+}
+
+.story-caption.cap-bottom {
+  top: auto;
+  bottom: 8%;
+}
+
+/* ================= SECTION 7: MEET THE COUPLE ================= */
+.maroon-theme {
+  position: relative;
+  color: var(--cream);
+  background:
+    radial-gradient(circle at 25% 20%, rgba(212, 175, 55, 0.08) 0 30px, transparent 31px) 0 0/90px 90px,
+    radial-gradient(circle at 75% 70%, rgba(212, 175, 55, 0.06) 0 18px, transparent 19px) 0 0/90px 90px,
+    linear-gradient(180deg, var(--maroon-2), var(--maroon-3));
+}
+
+.couple-section {
+  padding: 44px 0 0;
+  overflow: hidden;
+}
+
+.couple-heading {
+  text-align: center;
+  color: var(--gold-light);
+  position: relative;
+  z-index: 2;
+  padding-inline: 50px;
+  font-size: 42px;
+  text-wrap: balance;
+}
+
+.hanging-lantern {
+  position: absolute;
+  top: 0;
+  width: 56px;
+  transform-origin: 50% 0;
+  animation: swingLantern 4.5s ease-in-out infinite;
+  z-index: 2;
+}
+
+.hanging-lantern img {
+  width: 100%;
+  height: auto;
+}
+
+.lantern-left { left: 14px; }
+.lantern-right { right: 14px; animation-delay: -2.2s; }
+
+@keyframes swingLantern {
+  0%, 100% { transform: rotate(4deg); }
+  50% { transform: rotate(-4deg); }
+}
+
+.couple-ornate-arch {
+  position: relative;
+  margin: 28px 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.arch-top-ornament {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: -1px;
+}
+
+.arch-content-body {
+  flex: 1;
+  background: var(--cream);
+  box-shadow: inset 2.5px 0 0 var(--gold), inset -2.5px 0 0 var(--gold);
+  padding: 12px 22px 34px;
+  color: var(--ink);
+  text-align: center;
+}
+
+.couple-tale {
+  max-width: 38ch;
+  margin: 0 auto;
+  font-size: 15.5px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+.royal-portrait-frame {
+  position: relative;
+  width: 78%;
+  margin: 22px auto 0;
+  padding: 12px;
+  background: linear-gradient(135deg, #fff3ba, #d4af37 40%, #f7d57a 60%, #8c6418);
+  border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(60, 20, 0, 0.4);
+}
+
+.portrait-img {
+  border: 3px solid #7a5216;
+  aspect-ratio: 4/5;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+}
+
+.couple-duo-names {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.duo-item {
+  font-size: 18px;
+  color: var(--maroon);
+  font-weight: 700;
+}
+
+.couple-family-roots {
+  margin-top: 10px;
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+/* ================= SECTION 8: VENUE ================= */
+.venue-section {
+  padding: 40px 0 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.venue-title {
+  font-size: 46px;
+  color: var(--gold-light);
+}
+
+.venue-place-name {
+  font-family: var(--f-names);
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+  padding-inline: 24px;
+  margin-top: 8px;
+  font-weight: 700;
+}
+
+.venue-place-address {
+  color: #f2dec7;
+  font-size: 15.5px;
+  margin-top: 6px;
+  padding-inline: 24px;
+  line-height: 1.4;
+}
+
+.venue-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding-inline: 24px;
+}
+
+.venue-buttons .btn {
+  width: min(100%, 320px);
+}
+
+.venue-gold-art {
+  width: 100%;
+  height: auto;
+  margin-top: 28px;
+  mix-blend-mode: screen;
+}
+
+/* ================= SECTION 9: RSVP BEHIND CURTAINS ================= */
+#rsvpScene {
+  height: 250vh;
+}
+
+#rsvpScene .stage {
+  background: linear-gradient(180deg, var(--maroon), var(--maroon-3));
+}
+
+.rsvp-arch {
+  top: 12%;
+  left: 7%;
+  right: 7%;
+  bottom: 5%;
+}
+
+.hanging-bells-bar {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  z-index: 4;
+  padding-inline: 8%;
+}
+
+.hanging-bells-bar svg {
+  width: 22px;
+  transform-origin: 50% 0;
+  animation: swingTempleBell 3.2s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.hanging-bells-bar svg:nth-child(even) {
+  animation-delay: -1.6s;
+}
+
+@keyframes swingTempleBell {
+  0%, 100% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+}
+
+.rsvp-content-container {
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  top: 12%;
+  bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  padding: 50px 20px 20px;
+  color: var(--ink);
+  overflow: auto;
+  z-index: 3;
+}
+
+.rsvp-main-title {
+  font-size: clamp(38px, 11vw, 50px);
+  color: var(--maroon);
+}
+
+.rsvp-lead {
+  max-width: 32ch;
+  font-size: 15px;
+  color: var(--ink-soft);
+}
+
+.rsvp-card-box {
+  width: 100%;
+}
+
+#weddingRsvpForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+  text-align: left;
+}
+
+#weddingRsvpForm input,
+#weddingRsvpForm textarea,
+#weddingRsvpForm select {
+  width: 100%;
+  font: 15px var(--f-body);
+  color: var(--ink);
+  padding: 10px 14px;
+  border: 1px solid rgba(212, 175, 55, 0.65);
+  border-radius: 8px;
+  background: #fffdf8;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#weddingRsvpForm input:focus,
+#weddingRsvpForm textarea:focus,
+#weddingRsvpForm select:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3);
+}
+
+#weddingRsvpForm textarea {
+  resize: vertical;
+}
+
+.attendance-toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.attend-btn {
+  font: 600 13px var(--f-body);
+  padding: 10px 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(212, 175, 55, 0.6);
+  background: #fffdf8;
+  color: var(--ink);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: all 0.2s ease;
+}
+
+.attend-btn.on {
+  background: var(--maroon);
+  color: #f7e2b6;
+  border-color: var(--maroon);
+  box-shadow: 0 4px 10px rgba(90, 11, 24, 0.35);
+}
+
+.guests-counter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 14.5px;
+  color: var(--ink-soft);
+}
+
+.guests-counter-row select {
+  width: 120px !important;
+}
+
+.honeypot-input {
+  position: absolute !important;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.rsvp-action-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.rsvp-action-btns .btn {
+  width: 100%;
+}
+
+.form-feedback-msg {
+  min-height: 18px;
+  font-size: 13.5px;
+  text-align: center;
+  color: #a0281e;
+  font-weight: 600;
+}
+
+.rsvp-success-state {
+  padding: 24px 12px;
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.success-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--maroon);
+  margin-bottom: 6px;
+}
+
+.success-desc {
+  font-size: 15px;
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+
+/* Parting Royal Velvet Curtains */
+.parting-curtain {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 51%;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(0 0 18px rgba(0, 0, 0, 0.65));
+  will-change: transform;
+}
+
+.parting-curtain .curtain-body {
+  flex: 1;
+  background-repeat: no-repeat;
+  background-size: 245.45% 149.33%;
+  background-color: #6a0f1d;
+}
+
+.parting-curtain .curtain-fringe {
+  aspect-ratio: 440/114;
+  background-repeat: no-repeat;
+  background-size: 245.45% 586.8%;
+}
+
+.parting-curtain.left { left: 0; }
+.parting-curtain.right { right: 0; }
+
+.parting-curtain.left .curtain-body { background-position: 15.6% 50.7%; }
+.parting-curtain.right .curtain-body { background-position: 84.4% 50.7%; }
+.parting-curtain.left .curtain-fringe { background-position: 15.6% 100%; }
+.parting-curtain.right .curtain-fringe { background-position: 84.4% 100%; }
+
+.curtain-valance {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 6;
+  aspect-ratio: 1080/112;
+  background-repeat: no-repeat;
+  background-size: 100% 597.3%;
+  background-position: 0 0;
+}
+
+/* ================= SECTION 10: COUNTDOWN ================= */
+.parchment-theme {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 40%, #fdf3e1, #f3e2c4 90%);
+}
+
+.mandala-emboss {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.85;
+  filter: drop-shadow(1.5px 1.5px 0 rgba(255, 255, 255, 0.9)) drop-shadow(-1px -1px 0 rgba(150, 105, 50, 0.18));
+}
+
+.emboss-top-left {
+  width: 420px;
+  left: -150px;
+  top: -120px;
+}
+
+.emboss-bottom-right {
+  width: 460px;
+  right: -190px;
+  bottom: -140px;
+}
+
+.countdown-section {
+  padding: 56px 20px 40px;
+  text-align: center;
+}
+
+.countdown-title {
+  position: relative;
+  font-size: 42px;
+  color: var(--maroon);
+}
+
+.countdown-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 350px;
+  margin: 22px auto 0;
+}
+
+.cd-box {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(212, 175, 55, 0.55);
+  border-radius: 12px;
+  padding: 12px 4px 8px;
+  box-shadow: 0 6px 16px rgba(120, 70, 20, 0.12);
+}
+
+.cd-box b {
+  display: block;
+  font-family: var(--f-names);
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--maroon);
+  font-variant-numeric: tabular-nums;
+}
+
+.cd-box span {
+  font-size: 11px;
+  font-family: var(--f-names);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  font-weight: 600;
+}
+
+.countdown-exact-date {
+  position: relative;
+  margin-top: 18px;
+  color: var(--ink-soft);
+  font-size: 15.5px;
+}
+
+.calendar-sync-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* ================= SECTION 11: PHOTO MOMENTS ================= */
+.gallery-section {
+  height: 76vh;
+  height: 76svh;
+  min-height: 520px;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.gallery-hint-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 7%;
+  text-align: center;
+  z-index: 3;
+  pointer-events: none;
+  padding-inline: 20px;
+  transition: opacity 0.4s;
+}
+
+.gallery-hint-header .script {
+  font-size: 42px;
+  color: var(--maroon);
+}
+
+.gallery-hint-header small {
+  display: block;
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin-top: 4px;
+}
+
+.tap-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-family: var(--f-names);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  font-weight: 700;
+}
+
+.tap-pill svg {
+  animation: nudgeTap 1.4s ease-in-out infinite;
+}
+
+@keyframes nudgeTap {
+  50% { transform: scale(0.85); }
+}
+
+.pc {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  padding: 6px 6px 18px;
+  background: #fffdf8;
+  box-shadow: 0 10px 24px rgba(60, 30, 10, 0.32);
+  border-radius: 3px;
+  will-change: transform;
+  pointer-events: none;
+}
+
+.pc .ph {
+  aspect-ratio: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ================= FOOTER ================= */
+.wedding-footer {
+  background: var(--maroon-3);
+  color: #f1dfbd;
+  text-align: center;
+  padding: 38px 20px 36px;
+  font-size: 15px;
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.footer-vedic-shlokam {
+  font-size: 13.5px;
+  color: var(--gold-light);
+  line-height: 1.6;
+  margin-bottom: 14px;
+  opacity: 0.92;
+}
+
+.footer-gratitude {
+  font-size: 36px;
+  color: var(--gold-light);
+  margin-bottom: 6px;
+}
+
+.footer-families {
+  font-size: 15px;
+  color: #eed6b6;
+}
+
+.footer-kalyanam-note {
+  font-size: 12px;
+  color: rgba(212, 175, 55, 0.6);
+  margin-top: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ================= DEDICATED REALISTIC ROSE & JASMINE PETALS CANVAS ================= */
+#rosePetalsCanvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 95;
+  pointer-events: none;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .diya-flame, .flame-glow, .hanging-lantern, .hanging-bells-bar svg, .hanging-brass-ring, .flute-svg, .arrow-down {
+    animation: none !important;
+  }
+}

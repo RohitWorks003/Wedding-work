@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>కళ్యాణ మహోత్సవం | Lakshmi Priya &amp; Sri Krishna — Traditional Telugu Wedding</title>
+  
+  <meta name="description" content="శ్రీరస్తు శుభమస్తు అవిఘ్నమస్తు. సాంప్రదాయ తెలుగు వివాహ ఆహ్వాన పత్రిక. Divine Telugu Wedding of Lakshmi Priya &amp; Sri Krishna with authentic rituals, Sumuhurtham, Talambralu &amp; Kalyana Vindhu.">
+  <meta name="keywords" content="Telugu Wedding, Pelli Patrika, Jeelakarra Bellam, Talambralu, Kanyadanam, Saptapadi, Subhalekha, Andhra Wedding, Telangana Kalyanam">
+  <meta name="theme-color" content="#4a0d17">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="కళ్యాణ మహోత్సవ ఆహ్వాన పత్రిక | Lakshmi Priya &amp; Sri Krishna">
+  <meta property="og:description" content="మా ఇంట జరిగే పవిత్ర వివాహ మహోత్సవమునకు సకుటుంబ సపరివార సమేతంగా సాదర ఆహ్వానం.">
+  <meta property="og:image" content="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-gopuram-1790834801642.webp">
+  <meta property="og:type" content="website">
+
+  <!-- Heritage Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Marcellus&family=Noto+Serif+Telugu:wght@400;500;600;700;800&family=Pinyon+Script&family=Rozha+One&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="Index.css">
+</head>
+<body class="locked">
+
+  <!-- ================= TOP CONTROLS FLOATING BAR ================= -->
+  <header class="top-nav" id="topNav" aria-label="Wedding Controls">
+    <div class="nav-container">
+      <div class="lang-capsule" role="group" aria-label="Language Switch">
+        <button class="lang-pill active" id="btnLangTe" type="button" aria-pressed="true">తెలుగు</button>
+        <span class="lang-separator">✦</span>
+        <button class="lang-pill" id="btnLangEn" type="button" aria-pressed="false">English</button>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Realistic Rose Petals Shower Trigger -->
+        <button class="rose-shower-btn" id="roseShowerBtn" type="button" title="గులాబీ & మల్లెపూల వర్షం (Rose Petals Shower)">
+          <span class="rose-emoji">🌹</span>
+          <span class="btn-label" id="roseShowerTxt">పూల వర్షం</span>
+        </button>
+
+        <!-- Auspicious Music Button with Spinning Nadaswaram Vinyl -->
+        <button class="nadaswaram-btn" id="musicToggle" type="button" aria-label="Play Auspicious Nadaswaram" title="మంగళ వాయిద్యాలు">
+          <svg class="flute-svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 3v10.55A4 4 0 1014 17V7h4V3h-6z"/>
+          </svg>
+          <span class="music-glow-ring"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= AUTHENTIC TEMPLE SANCTUM ENTRANCE (కళ్యాణ తోరణ ద్వారం) ================= -->
+  <div id="templeGate" role="dialog" aria-modal="true" aria-label="Temple Sanctum Wedding Gate">
+    <div class="sanctum-wrapper">
+      
+      <!-- Top Carved Temple Gopuram Toranam with Hanging Mango Leaves & Marigolds -->
+      <div class="temple-arch-top">
+        <div class="gajalakshmi-crest">
+          <span class="crest-symbol">ॐ</span>
+          <div class="crest-text te">॥ శ్రీరస్తు · శుభమస్తు · అవిఘ్నమస్తు ॥</div>
+        </div>
+        <div class="mango-marigold-toranam">
+          <div class="garland-band"></div>
+        </div>
+      </div>
+
+      <!-- Flickering Brass Deepam Lamps on Both Temple Pillars -->
+      <div class="temple-diya diya-left">
+        <div class="diya-stand"></div>
+        <div class="diya-bowl">
+          <div class="flame-glow"></div>
+          <div class="diya-flame"></div>
+        </div>
+      </div>
+
+      <div class="temple-diya diya-right">
+        <div class="diya-stand"></div>
+        <div class="diya-bowl">
+          <div class="flame-glow"></div>
+          <div class="diya-flame"></div>
+        </div>
+      </div>
+
+      <!-- 3D Carved Temple Doors -->
+      <div class="temple-doors">
+        <div class="t-door t-door-left" id="doorL">
+          <div class="door-panel-carving">
+            <div class="brass-lion-handle">
+              <div class="lion-head"></div>
+              <div class="hanging-brass-ring"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-door t-door-right" id="doorR">
+          <div class="door-panel-carving">
+            <div class="brass-lion-handle">
+              <div class="lion-head"></div>
+              <div class="hanging-brass-ring"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sacred Royal Invitation Seal Card (పట్టు పీతాంబర శుభ పత్రిక) -->
+      <div class="royal-seal-card" id="sealCard">
+        <!-- Auspicious Kalasham with Mango Leaves & Coconut -->
+        <div class="kalasham-emblem">
+          <svg class="kalasham-svg" viewBox="0 0 100 110" aria-hidden="true">
+            <!-- Coconut Top -->
+            <path d="M50,15 C42,25 45,35 50,42 C55,35 58,25 50,15 Z" fill="#8d5b2d" stroke="#f0c865" stroke-width="1.5"/>
+            <!-- Mango leaves behind -->
+            <path d="M30,32 Q42,20 48,38" fill="none" stroke="#2e7d32" stroke-width="5" stroke-linecap="round"/>
+            <path d="M70,32 Q58,20 52,38" fill="none" stroke="#2e7d32" stroke-width="5" stroke-linecap="round"/>
+            <!-- Sacred Pot (Kumbham) -->
+            <ellipse cx="50" cy="45" rx="14" ry="4" fill="#d4af37" stroke="#996515" stroke-width="1"/>
+            <path d="M36,45 C28,55 24,72 32,85 C38,95 62,95 68,85 C76,72 72,55 64,45 Z" fill="url(#goldPotGrad)" stroke="#f0c865" stroke-width="2"/>
+            <!-- Swastik & Kumkum Tilak -->
+            <circle cx="50" cy="65" r="5" fill="#c82a2a"/>
+            <!-- Lotus Base -->
+            <path d="M22,88 Q50,105 78,88 Q50,96 22,88 Z" fill="#f0c865"/>
+            <defs>
+              <linearGradient id="goldPotGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ffe58f"/>
+                <stop offset="50%" stop-color="#d4af37"/>
+                <stop offset="100%" stop-color="#8c6418"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <div class="seal-header te" id="sealTopShloka">॥ శ్రీ లక్ష్మీ వేంకటేశ్వర స్వామి దివ్య ప్రసన్నః ॥</div>
+        <div class="seal-script script" id="sealGreeting">కళ్యాణ మహోత్సవ ఆహ్వానము</div>
+        
+        <div class="seal-couple-names">
+          <div class="bride-hero caps" id="sealBride">లక్ష్మి ప్రియ</div>
+          <div class="sacred-knot">
+            <span class="knot-garland">🌺</span>
+            <span class="knot-text script">పరిణయం</span>
+            <span class="knot-garland">🌺</span>
+          </div>
+          <div class="groom-hero caps" id="sealGroom">శ్రీ కృష్ణ</div>
+        </div>
+
+        <div class="seal-panchangam te" id="sealDateBadge">
+          <span class="badge-icon">🗓</span>
+          <span id="sealDateText">ఆదివారం, 14 ఫిబ్రవరి 2027 · సుముహూర్తం: ఉ॥ 10:32</span>
+        </div>
+
+        <button class="btn btn-temple-gold" id="openInviteBtn" type="button">
+          <span class="btn-sparkle">✨</span>
+          <span class="btn-text" id="openBtnText">శుభలేఖ తెరవండి (Open Invitation)</span>
+          <span class="btn-sparkle">✨</span>
+        </button>
+        <div class="seal-footer te" id="sealFooterNote">సకుటుంబ సపరివార సమేతంగా విచ్చేయండి</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAIN SCROLL CONTENT ================= -->
+  <main id="app">
+
+    <!-- ================= SECTION 1: SACRED GOPURAM PARALLAX ================= -->
+    <section class="scene" id="hero" aria-label="Sacred Temple Gopuram Entrance">
+      <div class="stage">
+        <div class="sky-bg" id="skyBg"></div>
+        
+        <!-- Animated Drifting Vedic Clouds -->
+        <div class="layer cloud" data-speed="-50" style="left:-10%; top:22%; width:50%;">
+          <img src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-cloud-1790859547900.webp" alt="" loading="eager">
+        </div>
+        <div class="layer cloud flip" data-speed="60" style="right:-10%; top:32%; width:46%;">
+          <img src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-cloud-1790859547900.webp" alt="" loading="eager">
+        </div>
+
+        <!-- Royal Couple Heading -->
+        <div class="hero-content layer" id="heroContent">
+          <div class="sacred-shloka te" id="heroShloka">॥ వక్రతుండ మహాకాయ సూర్యకోటి సమప్రభ నిర్విఘ్నం కురు మే దేవ సర్వకార్యేషు సర్వదా ॥</div>
+          <h1 class="hero-names">
+            <span class="hero-person caps" id="heroBride">లక్ష్మి ప్రియ</span>
+            <span class="hero-weds-badge script" id="heroWeds">సహధర్మచారిణిగా</span>
+            <span class="hero-person caps" id="heroGroom">శ్రీ కృష్ణ</span>
+          </h1>
+          <p class="hero-sub te" id="heroSubline">శ్రీమద్ దైవ సన్నిధానంలో, పెద్దల ఆశీస్సులతో మా నూతన దాంపత్య ప్రయాణం</p>
+        </div>
+
+        <!-- Majestic Temple Gopuram Layer (Parallax scale) -->
+        <div class="layer hero-gopuram" id="heroGopuram">
+          <img src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-gopuram-1790834801642.webp" alt="Sacred Gopuram" fetchpriority="high">
+        </div>
+
+        <!-- Sacred Palm & Banana Trees framing entrance -->
+        <div class="layer hero-tree left" id="heroTreeL">
+          <img src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-tree-1790834803496.webp" alt="">
+        </div>
+        <div class="layer hero-tree right flip" id="heroTreeR">
+          <img src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-tree-1790834803496.webp" alt="">
+        </div>
+
+        <!-- Scroll Nudge -->
+        <div class="scroll-indicator" id="scrollIndicator">
+          <span id="scrollHintText">శుభలేఖను తిలకించండి (Scroll Down)</span>
+          <div class="arrow-down"></div>
+        </div>
+        <div class="hero-flash" id="heroFlash"></div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 2: ROYAL KANCHI PATTU PELLI PATRIKA ================= -->
+    <section class="scene" id="patrikaSection" aria-label="Royal Telugu Pelli Patrika">
+      <div class="stage">
+        <div class="patrika-backdrop"></div>
+        
+        <!-- Intricate Carved Temple Pillars -->
+        <div class="temple-pillar pillar-left"></div>
+        <div class="temple-pillar pillar-right"></div>
+        
+        <!-- Sacred Mango Leaf & Marigold Toranam Layer -->
+        <div class="layer royal-toranam" id="royalToranam">
+          <img src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-toran-1790834806375.webp" alt="Mango Leaf Toranam">
+        </div>
+
+        <!-- Pelli Patrika Arched Scroll Box -->
+        <div class="patrika-arch-wrapper" id="patrikaArch">
+          <svg class="patrika-arch-top-svg" viewBox="0 0 300 110" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0,110 L0,72 C0,56 12,48 28,48 C34,30 50,24 66,26 C76,12 96,8 110,14 C122,6 136,4 150,4 C164,4 178,6 190,14 C204,8 224,12 234,26 C250,24 266,30 272,48 C288,48 300,56 300,72 L300,110 Z" fill="#fff9ed"/>
+            <path d="M0,110 L0,72 C0,56 12,48 28,48 C34,30 50,24 66,26 C76,12 96,8 110,14 C122,6 136,4 150,4 C164,4 178,6 190,14 C204,8 224,12 234,26 C250,24 266,30 272,48 C288,48 300,56 300,72 L300,110" fill="none" stroke="#d4af37" stroke-width="4" vector-effect="non-scaling-stroke"/>
+          </svg>
+
+          <div class="patrika-scroll-body">
+            <!-- Auspicious Embossed Balaji Namam Crest -->
+            <div class="pat-item gold-seal-crest">
+              <span class="seal-icon">卐</span>
+            </div>
+
+            <div class="pat-item patrika-title te" id="patTitle">॥ వివాహ ఆహ్వాన శుభ పత్రిక ॥</div>
+            <div class="pat-item patrika-blessing-line te" id="patBlessing">మా ఇలవేలుపుల, పెద్దల మరియు గురుజనుల దివ్య ఆశీస్సులతో</div>
+            
+            <div class="pat-item ancestors-block te" id="patAncestors">
+              స్వర్గీయ శ్రీమతి &amp; శ్రీ నారాయణ రావు మరియు రామారావు గార్ల ఆశీస్సులతో
+            </div>
+
+            <div class="pat-item parents-block te" id="patParents">
+              శ్రీమతి శారద &amp; శ్రీ వెంకటేశ్వర రావు దంపతులు
+            </div>
+
+            <p class="pat-item invite-text te" id="patInviteText">
+              తమ ద్వితీయ కుమార్తె చి॥సౌ॥ లక్ష్మి ప్రియ వివాహ మహోత్సవమునకు మిమ్ములను సకుటుంబ సపరివార సమేతంగా సాదరంగా ఆహ్వానిస్తున్నారు.
+            </p>
+
+            <!-- Couple Presentation Card -->
+            <div class="pat-item bride-groom-card">
+              <div class="person-side bride">
+                <span class="telugu-prefix te">చి॥సౌ॥</span>
+                <span class="person-name caps" id="patBrideName">లక్ష్మి ప్రియ</span>
+                <span class="person-qualification te">M.Tech (Software Architect)</span>
+              </div>
+
+              <div class="mangalyam-symbol">
+                <span class="mangala-knot">💍</span>
+                <span class="mangala-text te">సహధర్మచారిణిగా</span>
+              </div>
+
+              <div class="person-side groom">
+                <span class="telugu-prefix te">చి॥</span>
+                <span class="person-name caps" id="patGroomName">శ్రీ కృష్ణ</span>
+                <span class="person-qualification te">M.S (Product Lead)</span>
+              </div>
+            </div>
+
+            <div class="pat-item zari-divider"></div>
+
+            <!-- Traditional Telugu Panchangam Muhurtham Highlight -->
+            <div class="pat-item muhurtham-ornate-box te">
+              <div class="muh-header">॥ సుముహూర్త నిర్ణయము ॥</div>
+              <div class="muh-panchangam-text" id="patPanchangamDetails">
+                స్వస్తిశ్రీ శుభకృత్ నామ సంవత్సరం, మాఘ శుద్ధ దశమి, రోహిణీ నక్షత్ర యుక్త మీన లగ్న సుముహూర్తమున
+              </div>
+              <div class="muh-main-datetime" id="patMuhurthamDateTime">
+                ఆదివారం, 14 ఫిబ్రవరి 2027 · ఉదయం 10:32 గంటలకు
+              </div>
+            </div>
+
+            <div class="pat-item location-summary te" id="patLocationSummary">
+              కళ్యాణ వేదిక: శ్రీ లక్ష్మీ వేంకటేశ్వర కళ్యాణ మండపం · బంజారా హిల్స్, హైదరాబాద్
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 3: THE 7 SACRED TELUGU RITUALS (సప్తపది & ఆచారాలు) ================= -->
+    <section class="rituals-section" id="ritualsSection" aria-label="Sacred Telugu Wedding Rituals and Meanings">
+      <div class="section-badge te">✦ పవిత్ర సంప్రదాయాలు ✦</div>
+      <h2 class="rituals-heading script" id="ritualsTitle">సప్తపది &amp; వివాహ ఆచారాలు</h2>
+      <p class="rituals-subheading te" id="ritualsSubtitle">తెలుగు సాంప్రదాయ వివాహంలోని పవిత్ర ఘట్టాల విశిష్టత</p>
+
+      <div class="rituals-grid" id="ritualsGrid">
+        <!-- Ritual 1: Nalugu & Haldi -->
+        <article class="ritual-card rv">
+          <div class="r-icon">🌼</div>
+          <h3 class="r-name te">1. పెళ్లికూతురు &amp; నలుగు (Nalugu)</h3>
+          <p class="r-desc te">సువాసన భరిత నలుగు పిండి, పసుపు పూసి మంగళస్నానం చేయించి, ముత్తైదువలు మంగళ హారతులు ఇచ్చే పవిత్ర వేడుక.</p>
+        </article>
+
+        <!-- Ritual 2: Kashi Yatra -->
+        <article class="ritual-card rv d1">
+          <div class="r-icon">☂️</div>
+          <h3 class="r-name te">2. కాశీ యాత్ర (Kashi Yatra)</h3>
+          <p class="r-desc te">వరడు బ్రహ్మచర్యంతో కాశీకి బయలుదేరగా, వధువు తండ్రి సంసార ధర్మం విశిష్టత తెలిపి తన కుమార్తెను సమర్పించే సరదా సంప్రదాయం.</p>
+        </article>
+
+        <!-- Ritual 3: Jeelakarra Bellam -->
+        <article class="ritual-card rv d2">
+          <div class="r-icon">🍯</div>
+          <h3 class="r-name te">3. జీలకర్ర బెల్లం (Jeelakarra Bellam)</h3>
+          <p class="r-desc te">తెలుగు పెళ్లికి ప్రాణము వంటి ఘట్టం. సుముహూర్త వేళ వధూవరులు ఒకరి తలపై మరొకరు జీలకర్ర-బెల్లం ఉంచి మనసులు ఒకటిగా లీనమయ్యే దివ్య సమయం.</p>
+        </article>
+
+        <!-- Ritual 4: Mangalasutra Dharana -->
+        <article class="ritual-card rv">
+          <div class="r-icon">✨</div>
+          <h3 class="r-name te">4. మాంగల్యధారణ (Mangalasutram)</h3>
+          <p class="r-desc te">"మాంగల్య తంతునానేన మమ జీవన హేతునా..." మంత్రోచ్ఛారణల మధ్య మూడు ముళ్ళతో అర్ధాంగిగా స్వీకరించే పవిత్ర బంధం.</p>
+        </article>
+
+        <!-- Ritual 5: Talambralu -->
+        <article class="ritual-card rv d1">
+          <div class="r-icon">🌾</div>
+          <h3 class="r-name te">5. తలంబ్రాలు (Talambralu)</h3>
+          <p class="r-desc te">పసుపు కలిపిన అక్షింతలు, పూలరేకులను వధూవరులు ఆనందోత్సాహాలతో ఒకరిపై ఒకరు కుమ్మరించే అత్యంత వేడుకైన ముచ్చటైన ఘట్టం.</p>
+        </article>
+
+        <!-- Ritual 6: Saptapadi -->
+        <article class="ritual-card rv d2">
+          <div class="r-icon">🔥</div>
+          <h3 class="r-name te">6. బ్రహ్మముడి &amp; సప్తపది (Saptapadi)</h3>
+          <p class="r-desc te">అగ్నిహోత్రం సాక్షిగా ధర్మం, అర్థం, కామం, మోక్షాల సాధనకై వధూవరులు కలసి వేసే ఏడడుగులు.</p>
+        </article>
+
+        <!-- Ritual 7: Arundhati Darsanam -->
+        <article class="ritual-card rv">
+          <div class="r-icon">⭐</div>
+          <h3 class="r-name te">7. అరుంధతీ దర్శనం &amp; ఉంగరాల ఆట</h3>
+          <p class="r-desc te">ఆదర్శ దాంపత్యానికి ప్రతీకగా ఆకాశంలో అరుంధతీ-వసిష్ఠ నక్షత్రాలను చూడటం మరియు పాల బిందెలో ఉంగరం వెతికే ఆనందకర క్రీడ.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 4: SACRED EVENTS TIMELINE (కళ్యాణ వేడుకలు) ================= -->
+    <section class="events-section" id="eventsSection" aria-label="Celebration Events Timeline">
+      <div class="lotus-divider">
+        <img src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-lotus-1790834807461.webp" alt="Sacred Lotus Band">
+      </div>
+
+      <div class="events-header rv">
+        <span class="sacred-kalasham-icon">🪔</span>
+        <h2 class="script events-title" id="eventsTitle">కళ్యాణ మహోత్సవాల వివరాలు</h2>
+        <p class="events-subtitle te" id="eventsSub">మా ఇంట జరిగే మంగళ వేడుకల కాల నిర్ణయం</p>
+      </div>
+
+      <!-- Events Card List -->
+      <div class="events-cards-list" id="eventsList"></div>
+
+      <!-- Wave transition -->
+      <svg class="cloud-divider-svg" viewBox="0 0 400 70" width="100%" aria-hidden="true">
+        <rect width="400" height="70" fill="#7cc4f2"/>
+        <path d="M0,0 H400 V20 C380,44 350,40 336,30 C318,50 282,48 270,32 C250,52 214,50 204,30 C186,48 150,48 140,30 C120,50 86,46 76,28 C58,46 22,44 0,26 Z" fill="#fff9ed"/>
+      </svg>
+    </section>
+
+    <!-- ================= SECTION 5: TRADITIONAL TELUGU BANANA LEAF FEAST (కళ్యాణ విందు భోజనం) ================= -->
+    <section class="feast-section" id="feastSection" aria-label="Traditional Telugu Wedding Feast Menu">
+      <div class="feast-header rv">
+        <span class="leaf-icon">🌿</span>
+        <h2 class="script feast-title" id="feastTitle">సాంప్రదాయ కళ్యాణ విందు భోజనం</h2>
+        <p class="feast-subtitle te" id="feastSubtitle">అరిటాకులో ఘుమఘుమలాడే తెలుగు పెళ్లి భోజనం మెనూ</p>
+      </div>
+
+      <div class="banana-leaf-plate rv">
+        <div class="leaf-plate-surface">
+          <div class="plate-title te">ఆంధ్రా &amp; తెలంగాణ రాజభోజనం</div>
+          
+          <div class="menu-categories">
+            <!-- Sweets -->
+            <div class="menu-group">
+              <h4 class="group-title te">🍬 తీపి పదార్థాలు (Auspicious Sweets)</h4>
+              <ul class="item-list te">
+                <li>• ఆత్రేయపురం నేతి పూతరేకులు (Pootharekulu)</li>
+                <li>• స్వచ్ఛమైన నేతి బొబ్బట్లు / భక్ష్యాలు (Bobbatlu with Ghee)</li>
+                <li>• గులాబ్ జామున్ &amp; బాదం హల్వా</li>
+              </ul>
+            </div>
+
+            <!-- Traditional Curries & Rice -->
+            <div class="menu-group">
+              <h4 class="group-title te">🍛 ప్రధాన వంటకాలు (Traditional Delicacies)</h4>
+              <ul class="item-list te">
+                <li>• గుత్తి వంకాయ కూర (Gutti Vankaya Kura)</li>
+                <li>• దమ్ బిర్యానీ &amp; మిర్చి కా సాలన్</li>
+                <li>• సాంప్రదాయ పప్పు &amp; ఆవకాయ నెయ్యి అన్నం</li>
+                <li>• పసందైన చింతపండు పులిహోర (Temple Pulihora)</li>
+              </ul>
+            </div>
+
+            <!-- Pachallu & Sambar -->
+            <div class="menu-group">
+              <h4 class="group-title te">🥣 పచ్చళ్ళు &amp; పులుసులు</h4>
+              <ul class="item-list te">
+                <li>• తాజా గోంగూర పచ్చడి &amp; కొబ్బరి పచ్చడి</li>
+                <li>• ములక్కాడ సాంబార్ &amp; కమ్మని మజ్జిగ పులుసు</li>
+                <li>• వడియాలు, అప్పడాలు &amp; పెరుగు అన్నం</li>
+                <li>• కిల్లీ (Sweet Paan)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="feast-note te">
+            వివాహ ముహూర్తానంతరం మరియు రిసెప్షన్‌లో అతిథులందరికీ ఈ రాజభోజనం వడ్డించబడుతుంది.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 6: MANDAPAM STORY & SACRED VOWS ================= -->
+    <section class="scene" id="storyScene" aria-label="Sacred Mandapam Story">
+      <div class="stage">
+        <div class="world-container" id="storyWorld">
+          <div class="story-sky"></div>
+          <div class="story-floor" style="background-image:url('https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-floor-1790834817005.webp');"></div>
+          
+          <div class="layer s-cloud" style="left:-10%; top:4%; width:48%;">
+            <img src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-cloud-1790859547900.webp" alt="">
+          </div>
+          <div class="layer s-cloud flip" style="right:-12%; top:10%; width:44%;">
+            <img src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-cloud-1790859547900.webp" alt="">
+          </div>
+
+          <!-- Mandapam Backdrop Layers -->
+          <div class="layer s-back" style="left:-8%; top:31.5%; width:42%;">
+            <img src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-sside-1790834813502.webp" alt="">
+          </div>
+          <div class="layer s-back flip" style="right:-8%; top:31.5%; width:42%;">
+            <img src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-sside-1790834813502.webp" alt="">
+          </div>
+
+          <!-- Golden Temple Gopuram in Story -->
+          <div class="layer" id="storyMainGopuram" style="left:14%; top:19.5%; width:72%;">
+            <img src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-sgopuram-1790834812591.webp" alt="">
+          </div>
+
+          <!-- Sacred Mandapam Structure -->
+          <div class="layer" id="storyMandapam" style="left:-26%; top:46.5%; width:152%;">
+            <img src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-mandapam-1790834814327.webp" alt="Wedding Mandapam">
+          </div>
+
+          <!-- Traditional Telugu Couple Art -->
+          <div class="layer" id="storyCouple" style="left:29%; top:52.5%; width:42%;">
+            <img src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-scouple-1790834815162.webp" alt="Bride &amp; Groom Art">
+          </div>
+
+          <!-- Swaying Auspicious Banana Leaves with flower bunches -->
+          <div class="layer" id="storyLeafL" style="left:-14%; top:55%; width:40%;">
+            <img src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-banana-1790834816018.webp" alt="">
+          </div>
+          <div class="layer flip" id="storyLeafR" style="right:-14%; top:55%; width:40%;">
+            <img src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-banana-1790834816018.webp" alt="">
+          </div>
+
+          <!-- Sacred Lotus Base -->
+          <div class="layer" id="storyLotus" style="left:-45%; width:190%; bottom:0;">
+            <img src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-lotus-1790834807461.webp" alt="">
+          </div>
+        </div>
+
+        <!-- Scroll Inset Captions -->
+        <div class="story-caption cap-top" id="storyCap1">
+          <div class="caption-panel">
+            <div class="script" id="storyVerseLine">రెండు మనసులు... ఒకటయ్యే వేళ</div>
+            <p id="storyVerseSub">పెద్దల దీవెనలతో పవిత్ర దాంపత్య బంధం</p>
+          </div>
+        </div>
+
+        <div class="story-caption cap-bottom" id="storyCap2">
+          <div class="caption-panel">
+            <div class="script" id="storyMuhurthamTitle">జీలకర్ర బెల్లం &amp; సుముహూర్తం</div>
+            <p id="storyMuhurthamWhen">14 ఫిబ్రవరి 2027 · ఉదయం 10:32 AM</p>
+          </div>
+        </div>
+
+        <!-- Ambient Falling Petals -->
+        <div id="ambientPetals" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 7: MEET THE COUPLE & PARENTS ================= -->
+    <section class="couple-section maroon-theme" id="coupleSection" aria-label="Meet Bride and Groom">
+      <!-- Hanging Temple Lanterns (Deepams) -->
+      <div class="hanging-lantern lantern-left">
+        <img src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-lantern-1790834817938.webp" alt="Brass Deepam">
+      </div>
+      <div class="hanging-lantern lantern-right">
+        <img src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-lantern-1790834817938.webp" alt="Brass Deepam">
+      </div>
+
+      <h2 class="couple-heading script rv" id="coupleHead">వధూవరుల పరిచయం</h2>
+
+      <div class="couple-ornate-arch">
+        <svg class="arch-top-ornament" viewBox="0 0 300 110" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,110 L0,72 C0,56 12,48 28,48 C34,30 50,24 66,26 C76,12 96,8 110,14 C122,6 136,4 150,4 C164,4 178,6 190,14 C204,8 224,12 234,26 C250,24 266,30 272,48 C288,48 300,56 300,72 L300,110 Z" fill="#fff9ed"/>
+          <path d="M0,110 L0,72 C0,56 12,48 28,48 C34,30 50,24 66,26 C76,12 96,8 110,14 C122,6 136,4 150,4 C164,4 178,6 190,14 C204,8 224,12 234,26 C250,24 266,30 272,48 C288,48 300,56 300,72 L300,110" fill="none" stroke="#f0c865" stroke-width="4" vector-effect="non-scaling-stroke"/>
+        </svg>
+
+        <div class="arch-content-body">
+          <p class="couple-tale te" id="coupleTale">
+            బెంగళూరులో జరిగిన మిత్రుల సంగీత్ వేడుకలో మా తొలి పరిచయం మొదలైంది. హైదరాబాద్ దమ్ బిర్యానీ గొప్పదా లేదా రాయలసీమ రాగి సంకటి గొప్పదా అనే సరదా వాదనలతో మొదలైన మా ప్రయాణం... నేడు ఇరు కుటుంబాల సమ్మతితో, వేద మంత్రాల సాక్షిగా శాశ్వత దాంపత్య బంధంగా మారుతోంది.
+          </p>
+
+          <!-- Golden Framed Couple Portrait -->
+          <div class="royal-portrait-frame" id="portraitFrame">
+            <div class="portrait-img" id="portraitImg" style="background-image:url('https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-couple-1790861011173.webp');"></div>
+          </div>
+
+          <div class="couple-duo-names">
+            <div class="duo-item caps" id="duoBride">లక్ష్మి ప్రియ</div>
+            <div class="duo-item caps" id="duoGroom">శ్రీ కృష్ణ</div>
+          </div>
+
+          <div class="couple-family-roots te" id="familyRoots">
+            వరంగల్ మరియు విజయవాడ మూలాలు గల గౌరవనీయ కుటుంబాల సమ్మేళనం
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 8: KALYANA VEDIKA & GPS DIRECTIONS ================= -->
+    <section class="venue-section maroon-theme" id="venueSection" aria-label="Wedding Venue &amp; Navigation">
+      <div class="script venue-title rv" id="venueHead">కళ్యాణ వేదిక &amp; మార్గం</div>
+      <div class="venue-place-name rv d1" id="venueName">శ్రీ లక్ష్మీ వేంకటేశ్వర కళ్యాణ మండపం</div>
+      <div class="venue-place-address rv d1" id="venueAddress">రోడ్ నెం. 12, బంజారా హిల్స్, హైదరాబాద్, తెలంగాణ - 500034</div>
+      
+      <div class="venue-buttons rv d2">
+        <a class="btn btn-temple-gold" id="btnGoogleMap" href="https://maps.google.com/?q=Banjara+Hills+Hyderabad" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+            <path d="M12 2a7 7 0 00-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/>
+          </svg>
+          <span id="mapBtnLabel">గూగుల్ మ్యాప్స్ లో మార్గం చూడండి</span>
+        </a>
+
+        <a class="btn btn-translucent" id="btnUberOla" href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=Sri%20Lakshmi%20Venkateswara%20Kalyana%20Mandapam%20Banjara%20Hills%20Hyderabad" target="_blank" rel="noopener">
+          <span>🚗 Book Uber / Ola to Venue</span>
+        </a>
+      </div>
+
+      <img class="venue-gold-art" id="venueGoldArt" src="https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-vgold-1790834818837.webp" alt="Temple Architecture" loading="lazy">
+    </section>
+
+    <!-- ================= SECTION 9: RSVP & BLESSINGS BEHIND ROYAL CURTAINS ================= -->
+    <section class="scene" id="rsvpScene" aria-label="RSVP and Wedding Blessings">
+      <div class="stage">
+        <!-- Hanging Temple Bells that can be clicked to chime -->
+        <div class="hanging-bells-bar" id="bellsBar" aria-hidden="true"></div>
+
+        <div class="patrika-arch-wrapper rsvp-arch">
+          <svg class="patrika-arch-top-svg" viewBox="0 0 300 110" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0,110 L0,72 C0,56 12,48 28,48 C34,30 50,24 66,26 C76,12 96,8 110,14 C122,6 136,4 150,4 C164,4 178,6 190,14 C204,8 224,12 234,26 C250,24 266,30 272,48 C288,48 300,56 300,72 L300,110 Z" fill="#fff9ed"/>
+            <path d="M0,110 L0,72 C0,56 12,48 28,48 C34,30 50,24 66,26 C76,12 96,8 110,14 C122,6 136,4 150,4 C164,4 178,6 190,14 C204,8 224,12 234,26 C250,24 266,30 272,48 C288,48 300,56 300,72 L300,110" fill="none" stroke="#f0c865" stroke-width="4" vector-effect="non-scaling-stroke"/>
+          </svg>
+          <div class="patrika-scroll-body"></div>
+        </div>
+
+        <div class="rsvp-content-container">
+          <div class="r-item script rsvp-main-title" id="rsvpMainTitle">విచ్చేసి ఆశీర్వదించండి</div>
+          <p class="r-item rsvp-lead te" id="rsvpLead">మీ రాక మరియు దివ్య ఆశీస్సులు మా వివాహ వేడుకకు నిండుదనాన్ని చేకూరుస్తాయి.</p>
+          
+          <div class="r-item rsvp-card-box" id="rsvpCardBox">
+            <form id="weddingRsvpForm" autocomplete="on">
+              <input type="text" name="name" id="guestName" maxlength="80" required placeholder="మీ శుభ నామధేయం (Your Full Name)">
+              
+              <div class="attendance-toggle" role="group" aria-label="Attendance Option">
+                <button type="button" class="attend-btn on" data-attend="true" id="btnJoyfullyAccept">
+                  <span>🌸</span> <span id="txtAccept">తప్పక విచ్చేస్తాము</span>
+                </button>
+                <button type="button" class="attend-btn" data-attend="false" id="btnRegretDecline">
+                  <span>🙏</span> <span id="txtDecline">క్షమించండి, రాలేకపోతున్నాము</span>
+                </button>
+              </div>
+
+              <div class="guests-counter-row" id="guestCountRow">
+                <label for="guestCountSelect" id="lblGuestCount">సభ్యుల సంఖ్య (Total Guests):</label>
+                <select name="guests" id="guestCountSelect">
+                  <option value="1">1 Person</option>
+                  <option value="2" selected>2 Persons</option>
+                  <option value="3">3 Persons</option>
+                  <option value="4">4 Persons</option>
+                  <option value="5">5+ Family Members</option>
+                </select>
+              </div>
+
+              <input type="tel" name="phone" id="guestPhone" maxlength="20" placeholder="ఫోన్ నంబర్ / WhatsApp Phone">
+              <textarea name="message" id="guestWishes" maxlength="300" rows="2" placeholder="నూతన వధూవరులకు మీ హృదయపూర్వక ఆశీస్సులు..."></textarea>
+              
+              <!-- Honeypot -->
+              <input type="text" name="website" class="honeypot-input" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+              <div class="rsvp-action-btns">
+                <button type="submit" class="btn btn-maroon" id="btnSubmitForm">
+                  <span id="txtSubmit">ఆశీర్వాదం పంపండి (Submit RSVP)</span>
+                </button>
+                
+                <button type="button" class="btn btn-whatsapp-direct" id="btnWhatsAppDirect" title="WhatsApp లో నేరుగా పంపండి">
+                  <span>💬 WhatsApp లో తెలపండి</span>
+                </button>
+              </div>
+
+              <div class="form-feedback-msg" id="formFeedback" role="status"></div>
+            </form>
+
+            <div class="rsvp-success-state" id="rsvpSuccess" style="display:none;">
+              <div class="success-icon">🌺</div>
+              <div class="success-title te" id="rsvpSuccessTitle">ధన్యవాదములు!</div>
+              <div class="success-desc te" id="rsvpSuccessDesc">మీ ఆశీస్సులు మాకు చేరాయి. కళ్యాణ మహోత్సవంలో మిమ్మల్ని సాదరంగా ఆహ్వానిస్తున్నాము!</div>
+              <button class="btn btn-temple-gold btn-sm" id="btnResetRsvp" type="button" style="margin-top:14px;">మరొక సందేశం పంపండి</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parallax Parting Royal Maroon Velvet Curtains -->
+        <div class="curtain-valance" style="background-image:url('https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-curtain-1790834819697.webp');"></div>
+        <div class="parting-curtain left" id="curtainLeft">
+          <div class="curtain-body" style="background-image:url('https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-curtain-1790834819697.webp');"></div>
+          <div class="curtain-fringe" style="background-image:url('https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-curtain-1790834819697.webp');"></div>
+        </div>
+        <div class="parting-curtain right" id="curtainRight">
+          <div class="curtain-body" style="background-image:url('https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-curtain-1790834819697.webp');"></div>
+          <div class="curtain-fringe" style="background-image:url('https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-curtain-1790834819697.webp');"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 10: REAL-TIME SUMUHURTHAM COUNTDOWN & CALENDAR ================= -->
+    <section class="countdown-section parchment-theme" id="countdownSection" aria-label="Muhurtham Countdown">
+      <div class="mandala-emboss emboss-top-left" aria-hidden="true"></div>
+      <div class="script countdown-title rv" id="countMainHead">సుముహూర్త సమయం మొదలవుతోంది</div>
+      
+      <!-- Live Real-Time Countdown Blocks -->
+      <div class="countdown-grid" id="countdownTimer" role="timer" aria-live="polite">
+        <div class="cd-box"><b id="cdDays">00</b><span id="cdLblDays">రోజులు</span></div>
+        <div class="cd-box"><b id="cdHours">00</b><span id="cdLblHours">గంటలు</span></div>
+        <div class="cd-box"><b id="cdMins">00</b><span id="cdLblMins">నిమిషాలు</span></div>
+        <div class="cd-box"><b id="cdSecs">00</b><span id="cdLblSecs">సెకన్లు</span></div>
+      </div>
+
+      <div class="countdown-exact-date te" id="countdownExactDate">
+        ఆదివారం, 14 ఫిబ్రవరి 2027 · ఉదయం 10:32 AM IST
+      </div>
+
+      <div class="calendar-sync-buttons">
+        <a class="btn btn-maroon" id="btnGoogleCalendar" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <rect x="3" y="5" width="18" height="16" rx="2"/>
+            <path d="M3 10h18M8 3v4M16 3v4"/>
+          </svg>
+          <span id="lblAddGoogleCal">Google Calendar లో సేవ్ చేసుకోండి</span>
+        </a>
+
+        <button class="btn btn-temple-gold btn-sm" id="btnDownloadIcs" type="button">
+          <span>📅 Download Apple / Outlook .ICS</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 11: INTERACTIVE PHOTO MOMENTS ================= -->
+    <section class="gallery-section parchment-theme" id="momentsGallery" tabindex="0" role="region" aria-label="Interactive Photo Memories">
+      <div class="mandala-emboss emboss-bottom-right" aria-hidden="true"></div>
+      
+      <div class="gallery-hint-header" id="galleryHintHeader">
+        <div class="script" id="galleryMainTitle">మధుర స్మృతులు</div>
+        <small id="gallerySubDesc">మా ప్రయాణంలోని మరపురాని ఆనంద క్షణాలు</small>
+        <div class="tap-pill" id="galleryTapPill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="18" height="18">
+            <path d="M9 11V5.5a1.5 1.5 0 013 0V11m0-1.5a1.5 1.5 0 013 0V12m0-1a1.5 1.5 0 013 0v4a6 6 0 01-6 6h-1a6 6 0 01-5-2.7L4 15.5a1.5 1.5 0 012.4-1.8L9 16"/>
+          </svg>
+          <span id="tapInstructions">ఫోటోలపై తాకండి (Tap to Scatter &amp; Arrange)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER & SACRED SHLOKAM ================= -->
+    <footer class="wedding-footer">
+      <div class="footer-vedic-shlokam te">
+        ॥ మంగళం కోసలేంద్రాయ మహనీయ గుణాత్మనే ॥<br>
+        ॥ చక్రవర్తి తనూజాయ సార్వభౌమాయ మంగళం ॥
+      </div>
+      <div class="script footer-gratitude" id="footerGratitude">హృదయపూర్వక ధన్యవాదాలు</div>
+      <div class="footer-families te" id="footerFamilies">శ్రీ రావు &amp; రెడ్డి కుటుంబాల తరఫున సాదర ఆహ్వానములు</div>
+      <div class="footer-kalyanam-note">Kalyana Mahotsavam of Lakshmi Priya &amp; Sri Krishna · Hyderabad · 2027</div>
+    </footer>
+
+    <!-- Background Audio Element -->
+    <audio id="weddingBgm" loop preload="none"></audio>
+  </main>
+
+  <!-- ================= DEDICATED ROSE & JASMINE PETALS SHOWER CANVAS ================= -->
+  <canvas id="rosePetalsCanvas" aria-hidden="true"></canvas>
+
+  <script src="Index.js"></script>
+</body>
+</html>
