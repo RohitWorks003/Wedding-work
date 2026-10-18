@@ -48,6 +48,62 @@
 
   <!-- ================= AUTHENTIC TEMPLE SANCTUM ENTRANCE (కళ్యాణ తోరణ ద్వారం) ================= -->
   <div id="templeGate" role="dialog" aria-modal="true" aria-label="Temple Sanctum Wedding Gate">
+    <!-- ================= FULL-SCREEN COCONUT STARTING ANIMATION ================= -->
+    <div class="fullscreen-intro-stage" id="fullscreenIntroStage" aria-hidden="true">
+      <div class="intro-backdrop"></div>
+      <div class="intro-divine-rays"></div>
+      <div class="intro-golden-sparkles">
+        <span class="sparkle-dot sp-1"></span>
+        <span class="sparkle-dot sp-2"></span>
+        <span class="sparkle-dot sp-3"></span>
+        <span class="sparkle-dot sp-4"></span>
+        <span class="sparkle-dot sp-5"></span>
+        <span class="sparkle-dot sp-6"></span>
+      </div>
+
+      <div class="intro-sacred-heading">
+        <span class="intro-om">ॐ</span>
+        <div class="intro-shloka-text te">॥ శ్రీరస్తు · శుభమస్తు · కళ్యాణ మహోత్సవ శుభారంభం ॥</div>
+      </div>
+
+      <!-- Sacred Traditional Coconut Kalasham (Full-Screen Center Actor) -->
+      <div class="intro-coconut-actor" id="introCoconutActor">
+        <div class="intro-coconut-halo"></div>
+        <svg class="intro-coconut-svg" viewBox="0 0 100 110" aria-hidden="true">
+          <!-- Coconut Top with natural fibers and sacred red kumkum tilak -->
+          <path class="intro-nut" d="M50,13 C41,23 44,35 50,42 C56,35 59,23 50,13 Z" fill="#8d5b2d" stroke="#f0c865" stroke-width="1.8"/>
+          <ellipse cx="50" cy="27" rx="3.5" ry="5.5" fill="#d32f2f" stroke="#ffe58f" stroke-width="0.8"/>
+          <!-- Auspicious Mango Leaves -->
+          <path class="intro-leaf leaf-1" d="M22,34 Q38,14 47,38" fill="none" stroke="#2e7d32" stroke-width="5.5" stroke-linecap="round"/>
+          <path class="intro-leaf leaf-2" d="M32,30 Q43,18 48,39" fill="none" stroke="#388e3c" stroke-width="6" stroke-linecap="round"/>
+          <path class="intro-leaf leaf-3" d="M50,16 Q50,6 50,2" fill="none" stroke="#2e7d32" stroke-width="4.5" stroke-linecap="round"/>
+          <path class="intro-leaf leaf-4" d="M68,30 Q57,18 52,39" fill="none" stroke="#388e3c" stroke-width="6" stroke-linecap="round"/>
+          <path class="intro-leaf leaf-5" d="M78,34 Q62,14 53,38" fill="none" stroke="#2e7d32" stroke-width="5.5" stroke-linecap="round"/>
+          <!-- Sacred Kumbham Pot Rim -->
+          <ellipse class="intro-rim" cx="50" cy="45" rx="16" ry="5" fill="#f5d166" stroke="#996515" stroke-width="1.5"/>
+          <!-- Kumbham Pot Body -->
+          <path class="intro-pot" d="M34,45 C25,56 22,74 31,87 C37,97 63,97 69,87 C78,74 75,56 66,45 Z" fill="url(#introGoldPotGrad)" stroke="#f0c865" stroke-width="2.2"/>
+          <!-- Kalasham Band & Sacred Swastik / Tilak -->
+          <path d="M34,56 Q50,62 66,56" fill="none" stroke="#c82a2a" stroke-width="3"/>
+          <circle cx="50" cy="70" r="6" fill="#c82a2a"/>
+          <path d="M47,70 L53,70 M50,67 L50,73" stroke="#ffe58f" stroke-width="1.5" stroke-linecap="round"/>
+          <!-- Lotus Base Pedestal -->
+          <path class="intro-base" d="M20,89 Q50,107 80,89 Q50,97 20,89 Z" fill="#f0c865" stroke="#996515" stroke-width="1"/>
+          <defs>
+            <linearGradient id="introGoldPotGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#fff5c0"/>
+              <stop offset="35%" stop-color="#ffd54f"/>
+              <stop offset="70%" stop-color="#d4af37"/>
+              <stop offset="100%" stop-color="#7a4e0a"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <!-- Golden Divine Shockwave Ripple when it docks -->
+      <div class="intro-dock-ripple" id="introDockRipple"></div>
+    </div>
+
     <div class="sanctum-wrapper">
       
       <!-- Top Carved Temple Gopuram Toranam with Hanging Mango Leaves & Marigolds -->
@@ -102,20 +158,20 @@
       <!-- Sacred Royal Invitation Seal Card (పట్టు పీతాంబర శుభ పత్రిక) -->
       <div class="royal-seal-card" id="sealCard">
         <!-- Auspicious Kalasham with Mango Leaves & Coconut -->
-        <div class="kalasham-emblem">
+        <div class="kalasham-emblem" id="kalashamEmblem">
           <svg class="kalasham-svg" viewBox="0 0 100 110" aria-hidden="true">
             <!-- Coconut Top -->
-            <path d="M50,15 C42,25 45,35 50,42 C55,35 58,25 50,15 Z" fill="#8d5b2d" stroke="#f0c865" stroke-width="1.5"/>
+            <path class="coconut-top" d="M50,15 C42,25 45,35 50,42 C55,35 58,25 50,15 Z" fill="#8d5b2d" stroke="#f0c865" stroke-width="1.5"/>
             <!-- Mango leaves behind -->
-            <path d="M30,32 Q42,20 48,38" fill="none" stroke="#2e7d32" stroke-width="5" stroke-linecap="round"/>
-            <path d="M70,32 Q58,20 52,38" fill="none" stroke="#2e7d32" stroke-width="5" stroke-linecap="round"/>
+            <path class="mango-leaf leaf-left" d="M30,32 Q42,20 48,38" fill="none" stroke="#2e7d32" stroke-width="5" stroke-linecap="round"/>
+            <path class="mango-leaf leaf-right" d="M70,32 Q58,20 52,38" fill="none" stroke="#2e7d32" stroke-width="5" stroke-linecap="round"/>
             <!-- Sacred Pot (Kumbham) -->
-            <ellipse cx="50" cy="45" rx="14" ry="4" fill="#d4af37" stroke="#996515" stroke-width="1"/>
-            <path d="M36,45 C28,55 24,72 32,85 C38,95 62,95 68,85 C76,72 72,55 64,45 Z" fill="url(#goldPotGrad)" stroke="#f0c865" stroke-width="2"/>
+            <ellipse class="pot-rim" cx="50" cy="45" rx="14" ry="4" fill="#d4af37" stroke="#996515" stroke-width="1"/>
+            <path class="pot-body" d="M36,45 C28,55 24,72 32,85 C38,95 62,95 68,85 C76,72 72,55 64,45 Z" fill="url(#goldPotGrad)" stroke="#f0c865" stroke-width="2"/>
             <!-- Swastik & Kumkum Tilak -->
-            <circle cx="50" cy="65" r="5" fill="#c82a2a"/>
+            <circle class="kumkum-tilak" cx="50" cy="65" r="5" fill="#c82a2a"/>
             <!-- Lotus Base -->
-            <path d="M22,88 Q50,105 78,88 Q50,96 22,88 Z" fill="#f0c865"/>
+            <path class="lotus-base" d="M22,88 Q50,105 78,88 Q50,96 22,88 Z" fill="#f0c865"/>
             <defs>
               <linearGradient id="goldPotGrad" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0%" stop-color="#ffe58f"/>
