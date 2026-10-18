@@ -44,24 +44,24 @@
       "https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-couple-1790861011173.webp"
     ],
     te: {
-      bride: "లక్ష్మి ప్రియ",
-      brideFull: "లక్ష్మి ప్రియ రెడ్డి",
-      groom: "శ్రీ కృష్ణ",
-      groomFull: "శ్రీ కృష్ణ రావు",
+      bride: "MEGHANA",
+      brideFull: "మేఘన రెడ్డి",
+      groom: "ARJUN",
+      groomFull: "అర్జున్ రావు",
       sealTopShloka: "॥ శ్రీ లక్ష్మీ వేంకటేశ్వర స్వామి దివ్య ప్రసన్నః ॥",
       sealGreeting: "కళ్యాణ మహోత్సవ ఆహ్వానము",
       sealDateText: "ఆదివారం, 14 ఫిబ్రవరి 2027",
       openBtnText: "శుభలేఖ తెరవండి",
       sealFooterNote: "సకుటుంబ సపరివార సమేతంగా విచ్చేయండి",
-      heroShloka: "॥ వక్రతుండ మహాకాయ సూర్యకోటి సమప్రభ నిర్విఘ్నం కురు మే దేవ సర్వకార్యేషు సర్వదా ॥",
-      heroWeds: "సహధర్మచారిణిగా",
+      heroShloka: "A sacred Beginning",
+      heroWeds: "weds",
       heroSubline: "శ్రీమద్ దైవ సన్నిధానంలో, పెద్దల ఆశీస్సులతో మా నూతన దాంపత్య ప్రయాణం",
       scrollHintText: "శుభలేఖను తిలకించండి (Scroll Down)",
       patTitle: "॥ వివాహ ఆహ్వాన శుభ పత్రిక ॥",
-      patBlessing: "మా ఇలవేలుపుల, పెద్దల మరియు గురుజనుల దివ్య ఆశీస్సులతో",
-      patAncestors: "స్వర్గీయ శ్రీమతి & శ్రీ నారాయణ రావు మరియు రామారావు గార్ల ఆశీస్సులతో",
-      patParents: "శ్రీమతి శారద & శ్రీ వెంకటేశ్వర రావు దంపతులు",
-      patInviteText: "తమ ద్వితీయ కుమార్తె చి॥సౌ॥ లక్ష్మి ప్రియ వివాహ మహోత్సవమునకు మిమ్ములను సకుటుంబ సపరివార సమేతంగా సాదరంగా ఆహ్వానిస్తున్నారు.",
+      patBlessing: "With the blessings of the Almighty and our beloved elders",
+      patAncestors: "",
+      patParents: "Smt. Sujatha & Sri Ravi Reddy",
+      patInviteText: "joyfully invite you and your family to the wedding of their beloved daughter",
       patPanchangamDetails: "స్వస్తిశ్రీ శుభకృత్ నామ సంవత్సరం, మాఘ శుద్ధ దశమి, రోహిణీ నక్షత్ర యుక్త మీన లగ్న సుముహూర్తమున",
       patMuhurthamDateTime: "ఆదివారం, 14 ఫిబ్రవరి 2027 · ఉదయం 10:32 గంటలకు",
       patLocationSummary: "కళ్యాణ వేదిక: శ్రీ లక్ష్మీ వేంకటేశ్వర కళ్యాణ మండపం · బంజారా హిల్స్, హైదరాబాద్",
@@ -137,24 +137,24 @@
       ]
     },
     en: {
-      bride: "Lakshmi Priya",
-      brideFull: "Lakshmi Priya Reddy",
-      groom: "Sri Krishna",
-      groomFull: "Sri Krishna Rao",
+      bride: "MEGHANA",
+      brideFull: "Meghana Reddy",
+      groom: "ARJUN",
+      groomFull: "Arjun Rao",
       sealTopShloka: "॥ శ్రీ లక్ష్మీ వేంకటేశ్వర స్వామి దివ్య ప్రసన్నః ॥",
       sealGreeting: "Kalyana Mahotsavam",
       sealDateText: "Sunday, 14 February 2027",
       openBtnText: "శుభలేఖ తెరవండి",
       sealFooterNote: "Cordially inviting you with family (సకుటుంబ సపరివార సమేతంగా)",
-      heroShloka: "॥ వక్రతుండ మహాకాయ సూర్యకోటి సమప్రభ నిర్విఘ్నం కురు మే దేవ సర్వకార్యేషు సర్వదా ॥",
-      heroWeds: "weds · పరిణయం",
-      heroSubline: "In the Divine Presence of the Almighty, Two Souls Unite in Sacred Matrimony (మా నూతన దాంపత్య ప్రయాణం)",
+      heroShloka: "A sacred Beginning",
+      heroWeds: "weds",
+      heroSubline: "In the Divine Presence of the Almighty, Two Souls Unite in Sacred Matrimony",
       scrollHintText: "Scroll Down to View Subhalekha (శుభలేఖను తిలకించండి)",
       patTitle: "॥ కళ్యాణ శుభ పత్రిక (Kalyana Subhalekha) ॥",
-      patBlessing: "With the divine blessings of our deities and beloved elders (మా ఇలవేలుపుల, పెద్దల దివ్య ఆశీస్సులతో)",
-      patAncestors: "Blessings of Late Smt. & Sri Narayana Rao and Rama Rao (స్వర్గీయ శ్రీమతి & శ్రీ నారాయణ రావు మరియు రామారావు గార్ల ఆశీస్సులతో)",
-      patParents: "Smt. Sarada & Sri Venkateswara Rao (శ్రీమతి శారద & శ్రీ వెంకటేశ్వర రావు దంపతులు)",
-      patInviteText: "cordially invite you with family and friends (సకుటుంబ సపరివార సమేతంగా సాదర ఆహ్వానం) to celebrate the sacred wedding of their beloved daughter.",
+      patBlessing: "With the blessings of the Almighty and our beloved elders",
+      patAncestors: "",
+      patParents: "Smt. Sujatha & Sri Ravi Reddy",
+      patInviteText: "joyfully invite you and your family to the wedding of their beloved daughter",
       patPanchangamDetails: "Swasti Sri Shubhakrit Nama Samvatsaram, Magha Shukla Dashami, Rohini Nakshatra, Meena Lagna Sumuhurtham (స్వస్తిశ్రీ శుభకృత్ నామ సంవత్సరం, మాఘ శుద్ధ దశమి, రోహిణీ నక్షత్ర యుక్త మీన లగ్న సుముహూర్తమున)",
       patMuhurthamDateTime: "Sunday, 14 February 2027 · 10:32 AM IST (ఆదివారం ఉదయం 10:32)",
       patLocationSummary: "Kalyana Vedika: Sri Lakshmi Venkateswara Kalyana Mandapam (శ్రీ లక్ష్మీ వేంకటేశ్వర కళ్యాణ మండపం) · Banjara Hills, Hyderabad",
@@ -467,12 +467,12 @@
 
   // 1. Hero Gopuram Entrance Parallax
   (function initHeroScene() {
+    const sky = $("#skyBg");
     const gop = $("#heroGopuram");
     const names = $("#heroContent");
     const treeL = $("#heroTreeL");
     const treeR = $("#heroTreeR");
     const clouds = $$("#hero .cloud");
-    const hint = $("#scrollIndicator");
     const flash = $("#heroFlash");
 
     registerScene("hero", 6.8, (t) => {
@@ -481,20 +481,23 @@
       const treeReveal = seg(t, 0.5, 3.5);
       const cloudP = seg(t, 4.4, 6.4);
 
-      tf(gop, `translate(-50%, ${lerp(60, 0, gopZoom) + lerp(0, -50, gopAscent)}%) scale(${1 + 5.2 * gopAscent})`);
+      if (sky) {
+        tf(sky, `scale(${1 + 0.14 * seg(t, 0, 6)}) translateY(${lerp(0, -3.5, seg(t, 0, 6))}%)`);
+      }
+
+      tf(gop, `translate(-50%, ${lerp(8, -8, gopZoom) + lerp(0, -50, gopAscent)}%) scale(${1 + 5.2 * gopAscent})`);
       tf(names, `translateY(${-45 * gopZoom}%)`);
       op(names, 1 - seg(t, 3.4, 4.6));
 
-      tf(treeL, `translate(${-80 * gopAscent}%, ${80 * (1 - treeReveal)}%) scale(${1 + 0.9 * gopAscent})`);
-      tf(treeR, `translate(${80 * gopAscent}%, ${80 * (1 - treeReveal)}%) scale(${1 + 0.9 * gopAscent})`);
+      tf(treeL, `translate(${-80 * gopAscent}%, ${lerp(0, 30, gopAscent)}%) scale(${1 + 0.9 * gopAscent})`);
+      tf(treeR, `translate(${80 * gopAscent}%, ${lerp(0, 30, gopAscent)}%) scale(${1 + 0.9 * gopAscent})`);
 
       clouds.forEach(cl => {
-        const speed = parseFloat(cl.dataset.speed) || 50;
-        tf(cl, `translateX(${1.6 * speed * seg(t, 0, 7)}px) scale(${1 + 0.6 * cloudP})`);
+        const speed = parseFloat(cl.dataset.speed) || 40;
+        tf(cl, `translateX(${1.5 * speed * seg(t, 0, 7)}px) scale(${1 + 0.6 * cloudP})`);
         op(cl, 1 - cloudP);
       });
 
-      op(hint, 1 - seg(t, 0, 0.45));
       op(flash, 0.35 * seg(t, 5.6, 6.8));
     });
   })();
@@ -787,13 +790,9 @@
     });
   })();
 
-  // --- PROCEDURAL WEB AUDIO SYNTHESIZER: NADASWARAM & TEMPLE CHIMES ---
+  // --- BACKGROUND MUSIC: TELUGU WEDDING TUNE & TEMPLE CHIMES ---
+  const weddingBgm = $("#weddingBgm");
   let audioCtx = null;
-  let isPlayingMusic = false;
-  let melodyTimer = null;
-  let masterGainNode = null;
-  let activeDroneOscs = [];
-  let activeNoteOscs = [];
 
   function getAudioContext() {
     if (!audioCtx) {
@@ -829,152 +828,64 @@
     } catch (e) {}
   }
 
+  function updateMusicButtonUI(isPlaying) {
+    const btn = $("#musicToggle");
+    if (!btn) return;
+    if (isPlaying) {
+      btn.classList.add("playing");
+      btn.classList.remove("muted");
+      btn.setAttribute("title", "సంగీతం ఆపండి (Pause Telugu Wedding Tune)");
+      btn.setAttribute("aria-label", "Pause Telugu Wedding Tune");
+    } else {
+      btn.classList.remove("playing");
+      btn.classList.add("muted");
+      btn.setAttribute("title", "మంగళ వాయిద్యాలు ప్రారంభించండి (Play Telugu Wedding Tune)");
+      btn.setAttribute("aria-label", "Play Telugu Wedding Tune");
+    }
+  }
+
   function startMangalaMusic() {
+    if (!weddingBgm) return;
     try {
-      const ctx = getAudioContext();
-      if (ctx.state === 'suspended') {
-        ctx.resume();
-      }
-
-      if (isPlayingMusic) return;
-      isPlayingMusic = true;
-
-      // Master Gain
-      masterGainNode = ctx.createGain();
-      masterGainNode.gain.setValueAtTime(0.001, ctx.currentTime);
-      masterGainNode.gain.exponentialRampToValueAtTime(0.26, ctx.currentTime + 0.6);
-      masterGainNode.connect(ctx.destination);
-
-      // Tanpura Drone (C#3, G#3, C#4)
-      activeDroneOscs = [];
-      const droneFreqs = [138.59, 207.65, 277.18];
-      droneFreqs.forEach(df => {
-        const osc = ctx.createOscillator();
-        osc.type = "triangle";
-        osc.frequency.setValueAtTime(df, ctx.currentTime);
-
-        const g = ctx.createGain();
-        g.gain.setValueAtTime(0.08, ctx.currentTime);
-
-        const lfo = ctx.createOscillator();
-        lfo.frequency.setValueAtTime(0.25 + Math.random() * 0.2, ctx.currentTime);
-        const lfoGain = ctx.createGain();
-        lfoGain.gain.setValueAtTime(0.03, ctx.currentTime);
-        lfo.connect(lfoGain);
-        lfoGain.connect(g.gain);
-        lfo.start();
-
-        osc.connect(g);
-        g.connect(masterGainNode);
-        osc.start();
-        activeDroneOscs.push(osc, lfo);
-      });
-
-      // Auspicious Nadaswaram Melody Loop (Raga Kalyani)
-      const scale = [277.18, 311.13, 349.23, 392.00, 415.30, 466.16, 523.25, 554.37];
-      const melodySequence = [0, 2, 4, 3, 2, 4, 6, 7, 6, 4, 2, 0, 4, 7];
-      let stepIndex = 0;
-      activeNoteOscs = [];
-
-      function playNextNote() {
-        if (!isPlayingMusic || !masterGainNode) return;
-        const now = ctx.currentTime;
-        const notePitch = scale[melodySequence[stepIndex % melodySequence.length]];
-        stepIndex++;
-
-        const noteOsc = ctx.createOscillator();
-        const noteGain = ctx.createGain();
-
-        noteOsc.type = "sawtooth";
-        noteOsc.frequency.setValueAtTime(notePitch, now);
-
-        if (Math.random() > 0.4) {
-          noteOsc.frequency.exponentialRampToValueAtTime(notePitch * (Math.random() > 0.5 ? 1.06 : 0.94), now + 0.35);
-        }
-
-        const filter = ctx.createBiquadFilter();
-        filter.type = "lowpass";
-        filter.frequency.setValueAtTime(1400, now);
-
-        noteGain.gain.setValueAtTime(0.001, now);
-        noteGain.gain.linearRampToValueAtTime(0.12, now + 0.08);
-        noteGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.85);
-
-        noteOsc.connect(filter);
-        filter.connect(noteGain);
-        noteGain.connect(masterGainNode);
-
-        noteOsc.start(now);
-        noteOsc.stop(now + 0.9);
-        activeNoteOscs.push(noteOsc);
-
-        if (activeNoteOscs.length > 8) {
-          activeNoteOscs.shift();
-        }
-
-        const nextDelay = (0.45 + Math.random() * 0.35) * 1000;
-        melodyTimer = setTimeout(playNextNote, nextDelay);
-      }
-
-      playNextNote();
-
-      const btn = $("#musicToggle");
-      if (btn) {
-        btn.classList.add("playing");
-        btn.classList.remove("muted");
+      weddingBgm.volume = 0.85;
+      const p = weddingBgm.play();
+      if (p !== undefined) {
+        p.then(() => {
+          updateMusicButtonUI(true);
+        }).catch(err => {
+          console.warn("Autoplay deferred until user gesture:", err);
+        });
       }
     } catch (e) {
-      console.warn("Audio Context init warning:", e);
+      console.warn("Music play error:", e);
     }
   }
 
   function stopMangalaMusic() {
-    isPlayingMusic = false;
-
-    if (melodyTimer) {
-      clearTimeout(melodyTimer);
-      melodyTimer = null;
+    if (!weddingBgm) return;
+    try {
+      weddingBgm.pause();
+      updateMusicButtonUI(false);
+    } catch (e) {
+      console.warn("Music pause error:", e);
     }
+  }
 
-    if (masterGainNode && audioCtx) {
-      try {
-        masterGainNode.gain.cancelScheduledValues(audioCtx.currentTime);
-        masterGainNode.gain.setValueAtTime(0, audioCtx.currentTime);
-        masterGainNode.disconnect();
-      } catch (e) {}
-      masterGainNode = null;
-    }
-
-    [...activeDroneOscs, ...activeNoteOscs].forEach(node => {
-      try {
-        if (node.stop) node.stop();
-        if (node.disconnect) node.disconnect();
-      } catch (e) {}
-    });
-    activeDroneOscs = [];
-    activeNoteOscs = [];
-
-    if (audioCtx && audioCtx.state === 'running') {
-      try {
-        audioCtx.suspend();
-      } catch (e) {}
-    }
-
-    const btn = $("#musicToggle");
-    if (btn) {
-      btn.classList.remove("playing");
-      btn.classList.add("muted");
-    }
+  if (weddingBgm) {
+    weddingBgm.addEventListener("play", () => updateMusicButtonUI(true));
+    weddingBgm.addEventListener("pause", () => updateMusicButtonUI(false));
+    weddingBgm.addEventListener("ended", () => updateMusicButtonUI(false));
   }
 
   const musicBtn = $("#musicToggle");
   if (musicBtn) {
     musicBtn.addEventListener("click", (e) => {
       e.stopPropagation();
-      if (isPlayingMusic) {
-        stopMangalaMusic();
-      } else {
+      if (!weddingBgm) return;
+      if (weddingBgm.paused) {
         startMangalaMusic();
+      } else {
+        stopMangalaMusic();
       }
     });
   }
@@ -993,6 +904,7 @@
 
   if (openInviteBtn && templeGate) {
     openInviteBtn.addEventListener("click", () => {
+      startMangalaMusic();
       templeGate.classList.add("open");
       setTimeout(unlockSanctum, 850);
       setTimeout(() => templeGate.classList.add("gone"), 1900);

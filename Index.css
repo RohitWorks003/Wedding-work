@@ -42,6 +42,7 @@
 html {
   background: var(--maroon-3);
   scroll-behavior: auto;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -57,7 +58,6 @@ body {
 
 body.locked {
   overflow: hidden;
-  height: 100vh;
 }
 
 input, textarea, select {
@@ -370,6 +370,10 @@ a {
   transition: opacity 0.85s ease 1s;
 }
 
+#templeGate.gone {
+  display: none !important;
+}
+
 .sanctum-wrapper {
   position: relative;
   width: 100%;
@@ -601,11 +605,19 @@ a {
   border-radius: 190px 190px 18px 18px;
   box-shadow: 0 25px 65px rgba(0, 0, 0, 0.8), inset 0 0 0 5px rgba(90, 11, 24, 0.95), inset 0 0 0 7px rgba(212, 175, 55, 0.45);
   opacity: 0;
-  transition: opacity 0.65s cubic-bezier(0.2, 0.9, 0.3, 1);
+  transition: opacity 0.65s cubic-bezier(0.2, 0.9, 0.3, 1), transform 0.65s cubic-bezier(0.2, 0.9, 0.3, 1), filter 0.65s ease;
 }
 
 .royal-seal-card.card-revealed {
   opacity: 1;
+}
+
+.royal-seal-card.card-opening {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.08);
+  filter: drop-shadow(0 0 35px rgba(255, 215, 0, 0.95)) blur(3px);
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), filter 0.5s ease;
 }
 
 /* ================= WHOLE-SCREEN COCONUT STARTING ANIMATION ================= */
@@ -918,6 +930,13 @@ a {
   width: 100%;
   padding: 13px 20px;
   font-size: 13px;
+  transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-temple-gold.btn-pressed {
+  transform: scale(0.96);
+  filter: brightness(1.25);
+  box-shadow: 0 0 28px rgba(255, 215, 0, 0.95);
 }
 
 .seal-footer {
@@ -949,6 +968,8 @@ a {
 #templeGate.gone {
   display: none !important;
 }
+
+
 
 /* ================= SCENE CORE SETUP ================= */
 .scene {
@@ -985,116 +1006,153 @@ a {
 #hero .sky-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, #185ec2 0%, #4697e6 50%, #a2d6f8 100%);
+  background-image: url('img-sky-1790834800816.webp');
   background-size: cover;
   background-position: center bottom;
+  background-repeat: no-repeat;
+  will-change: transform;
 }
 
 #hero .sky-bg::after {
   content: "";
   position: absolute;
-  inset: 0 0 52% 0;
-  background: linear-gradient(180deg, rgba(14, 55, 130, 0.4), transparent);
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 30, 80, 0.12) 0%, transparent 45%, rgba(0, 0, 0, 0.2) 100%);
+  pointer-events: none;
+}
+
+.cloud {
+  z-index: 3;
+  pointer-events: none;
+  opacity: 0.95;
+  filter: drop-shadow(0 6px 18px rgba(0, 30, 80, 0.22));
 }
 
 .hero-content {
   position: absolute;
   left: 0;
   right: 0;
-  top: 8.5%;
+  top: 10.5%;
   text-align: center;
   color: #fff;
-  text-shadow: 0 2px 16px rgba(8, 30, 80, 0.55);
   padding-inline: 16px;
-  z-index: 5;
+  z-index: 10;
+  pointer-events: none;
 }
 
 .sacred-shloka {
-  font-size: 13.5px;
-  color: #fff3c9;
-  letter-spacing: 0.04em;
+  font-family: var(--f-serif), 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(14px, 3.8vw, 17px);
+  color: #ffffff;
+  letter-spacing: 0.08em;
   margin-bottom: 6px;
+  text-shadow: 0 2px 12px rgba(0, 30, 90, 0.7);
 }
 
 .hero-names {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: clamp(28px, 9vw, 42px);
-  line-height: 1.15;
+  margin: 4px 0;
+}
+
+.hero-person {
+  font-family: var(--f-names), 'Cinzel', serif;
+  font-size: clamp(34px, 10vw, 50px);
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+  text-shadow: 0 2px 16px rgba(0, 30, 90, 0.75), 0 0 28px rgba(0, 20, 60, 0.45);
 }
 
 .hero-weds-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  margin: 6px 0;
-  font-size: 28px;
-  color: #ffe694;
+  gap: 12px;
+  margin: 2px 0;
+  font-family: var(--f-script), 'Pinyon Script', cursive;
+  font-size: clamp(26px, 7vw, 34px);
+  color: #ffffff;
   text-transform: none;
+  text-shadow: 0 2px 10px rgba(0, 30, 90, 0.7);
 }
 
 .hero-weds-badge::before,
 .hero-weds-badge::after {
   content: "";
-  width: 44px;
+  width: 48px;
   height: 1px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.85);
 }
 
 .hero-sub {
-  font-size: 14px;
-  color: #fcecd2;
-  margin-top: 6px;
-  opacity: 0.95;
+  font-size: 13.5px;
+  color: #fff2cf;
+  margin-top: 4px;
+  line-height: 1.45;
+  max-width: 580px;
+  margin-inline: auto;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.95), 0 0 16px rgba(0, 0, 0, 0.7);
 }
 
 .hero-gopuram {
   left: 50%;
   bottom: 0;
-  width: 92%;
+  width: min(84%, 430px);
+  max-width: 430px;
   transform-origin: 50% 90%;
-  transform: translate(-50%, 60%);
-  filter: drop-shadow(0 -8px 30px rgba(255, 240, 180, 0.45));
+  transform: translate(-50%, 8%);
+  filter: drop-shadow(0 -10px 35px rgba(255, 230, 140, 0.55)) drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+  z-index: 4;
 }
 
 .hero-tree {
-  bottom: -3%;
+  bottom: -2%;
   width: 66%;
-  z-index: 4;
+  z-index: 7;
+  pointer-events: none;
 }
-.hero-tree.left { left: -12%; }
-.hero-tree.right { right: -12%; }
+.hero-tree.left { left: -10%; }
+.hero-tree.right { right: -10%; }
 
 .scroll-indicator {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 18px;
   text-align: center;
   color: #fff;
   font-family: var(--f-names);
-  font-size: 12px;
-  letter-spacing: 0.22em;
+  font-size: 11px;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-  z-index: 8;
+  z-index: 12;
+  background: rgba(18, 8, 4, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 7px 18px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 215, 0, 0.45);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+  pointer-events: none;
 }
 
 .arrow-down {
   display: block;
-  width: 12px;
-  height: 12px;
-  margin: 8px auto 0;
-  border-right: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  width: 9px;
+  height: 9px;
+  margin: 4px auto 0;
+  border-right: 2px solid var(--gold);
+  border-bottom: 2px solid var(--gold);
   transform: rotate(45deg);
   animation: nudgeDown 1.6s ease-in-out infinite;
 }
 
 @keyframes nudgeDown {
-  50% { transform: translateY(7px) rotate(45deg); }
+  50% { transform: translateY(6px) rotate(45deg); }
 }
 
 .hero-flash {
@@ -1137,151 +1195,122 @@ a {
 
 .patrika-arch-wrapper {
   position: absolute;
-  left: 8%;
-  right: 8%;
-  top: 10%;
+  left: 5%;
+  right: 5%;
+  top: 9%;
   bottom: 0;
   display: flex;
   flex-direction: column;
-  filter: drop-shadow(0 12px 28px rgba(120, 70, 20, 0.24));
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 16px 36px rgba(80, 40, 10, 0.35));
   z-index: 3;
 }
 
-.patrika-arch-top-svg {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-bottom: -1px;
-}
-
-.patrika-scroll-body {
-  flex: 1;
-  background: var(--cream);
-  box-shadow: inset 2.5px 0 0 var(--gold), inset -2.5px 0 0 var(--gold);
-  padding: 10px 14px 24px;
+.formal-patrika-card {
+  width: min(92%, 430px);
+  max-width: 430px;
+  background: radial-gradient(circle at 50% 25%, #fffdf8, #fdf5e7 100%);
+  border: 1.5px solid #d4af37;
+  border-radius: 14px;
+  padding: 26px 18px 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 7px;
   text-align: center;
+  box-shadow: 
+    0 18px 45px rgba(60, 20, 10, 0.3),
+    inset 0 0 0 5px #fffbf2,
+    inset 0 0 0 6.5px rgba(212, 175, 55, 0.75);
+  margin: 0 auto;
 }
 
-.gold-seal-crest {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 35% 35%, #fff3ba, #d4af37 60%, #8c6418);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--maroon-3);
-  font-size: 22px;
-  border: 1.5px solid #fff;
-  box-shadow: 0 4px 12px rgba(90, 40, 10, 0.25);
+.patrika-ganesha-item {
+  margin-bottom: 10px;
 }
 
-.patrika-title {
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--maroon);
-}
-
-.patrika-blessing-line {
-  font-size: 13.5px;
-  color: var(--ink-soft);
-  line-height: 1.35;
-}
-
-.ancestors-block {
-  font-size: 12.5px;
-  font-style: italic;
-  color: #6b3d22;
-}
-
-.parents-block {
-  font-size: 14.5px;
-  font-weight: 700;
-  color: var(--maroon);
-}
-
-.invite-text {
-  font-size: 13.5px;
-  color: var(--ink-soft);
-  line-height: 1.4;
-  max-width: 94%;
-}
-
-.bride-groom-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3px;
-  margin: 4px 0;
-}
-
-.person-name {
-  font-family: var(--f-names);
-  font-size: clamp(20px, 5.8vw, 26px);
-  color: #b8822c;
-  font-weight: 700;
-}
-
-.telugu-prefix {
-  font-size: 13px;
-  color: var(--maroon);
-  font-weight: 600;
-  margin-right: 4px;
-}
-
-.person-qualification {
+.patrika-ganesha-img {
+  width: 95px;
+  height: auto;
   display: block;
-  font-size: 11.5px;
-  color: var(--ink-soft);
+  margin: 0 auto;
+  filter: drop-shadow(0 4px 10px rgba(180, 120, 30, 0.3));
 }
 
-.mangalyam-symbol {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 18px;
-  color: var(--kumkum);
+.patrika-blessing-text {
+  font-family: var(--f-serif), 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(14.5px, 3.8vw, 16.5px);
+  color: #6a4c2f;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.patrika-parents-text {
+  font-family: var(--f-serif), 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(17px, 4.4vw, 20px);
+  font-weight: 700;
+  color: #661826;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.patrika-invite-text {
+  font-family: var(--f-serif), 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(14px, 3.6vw, 15.5px);
+  color: #6a4c2f;
+  line-height: 1.45;
+  margin-bottom: 10px;
+}
+
+.patrika-bride-name,
+.patrika-groom-name {
+  font-family: var(--f-names), 'Marcellus', 'Cinzel', serif;
+  font-size: clamp(26px, 7vw, 34px);
+  color: #b88628;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+}
+
+.patrika-ampersand {
+  font-family: var(--f-script), 'Pinyon Script', cursive;
+  font-size: clamp(24px, 6vw, 30px);
+  color: #b52a3b;
+  line-height: 1;
   margin: 2px 0;
 }
 
-.zari-divider {
-  width: 76%;
-  height: 12px;
-  background: radial-gradient(circle, var(--gold) 0 3px, transparent 3.5px) center/14px 10px no-repeat, linear-gradient(var(--gold), var(--gold)) center/100% 1px no-repeat;
+.patrika-bead-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: min(72%, 240px);
+  margin: 14px auto 10px;
 }
 
-.muhurtham-ornate-box {
-  background: rgba(212, 175, 55, 0.16);
-  border: 1px dashed var(--gold);
-  border-radius: 8px;
-  padding: 8px 12px;
-  font-size: 13px;
-  color: var(--maroon);
-  line-height: 1.4;
-  width: 95%;
+.p-divider-line {
+  flex: 1;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, #c59b27, transparent);
 }
 
-.muh-header {
+.p-divider-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #c59b27;
+  box-shadow: 0 0 6px rgba(197, 155, 39, 0.6);
+}
+
+.patrika-date-line {
+  font-family: var(--f-names), 'Cinzel', serif;
+  font-size: clamp(13px, 3.4vw, 15px);
   font-weight: 700;
-  color: var(--maroon);
-  margin-bottom: 2px;
-}
-
-.muh-main-datetime {
-  font-weight: 700;
-  color: var(--maroon);
-  margin-top: 4px;
-}
-
-.location-summary {
-  font-size: 12px;
-  color: var(--ink-soft);
-  font-style: italic;
+  letter-spacing: 0.16em;
+  color: #661826;
+  text-transform: uppercase;
 }
 
 /* ================= SECTION 3: THE 7 SACRED TELUGU RITUALS ================= */
