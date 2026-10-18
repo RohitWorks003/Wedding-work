@@ -1343,89 +1343,8 @@
     }
   })();
 
-  // ====================================================================
-  // WHOLE SCREEN TRADITIONAL COCONUT STARTING ANIMATION
-  // ====================================================================
-  function initWholeScreenCoconutIntro() {
-    const stage = $("#fullscreenIntroStage");
-    const actor = $("#introCoconutActor");
-    const target = $("#kalashamEmblem");
-    const card = $("#sealCard");
-    const ripple = $("#introDockRipple");
-    const heading = stage ? stage.querySelector(".intro-sacred-heading") : null;
-
-    if (!stage || !actor || !target || !card) return;
-
-    let hasDocked = false;
-
-    function performDock() {
-      if (hasDocked) return;
-      hasDocked = true;
-
-      // Compute exact destination coordinates of the target emblem on the card
-      const targetRect = target.getBoundingClientRect();
-      const targetCenterX = targetRect.left + targetRect.width / 2;
-      const targetCenterY = targetRect.top + targetRect.height / 2;
-
-      // Starting center of viewport
-      const startCenterX = window.innerWidth / 2;
-      const startCenterY = window.innerHeight / 2;
-
-      const deltaX = targetCenterX - startCenterX;
-      const deltaY = targetCenterY - startCenterY;
-
-      // Compute scale factor to match the emblem's final size
-      const actorWidth = actor.offsetWidth || 170;
-      const targetScale = (targetRect.width || 76) / actorWidth;
-
-      // Position ripple wave exactly at the landing target
-      if (ripple) {
-        ripple.style.left = `${targetCenterX}px`;
-        ripple.style.top = `${targetCenterY}px`;
-      }
-
-      // Smooth cinematic travel across the whole screen into "that place"
-      actor.style.transition = "transform 1.1s cubic-bezier(0.22, 1, 0.36, 1), filter 1.1s ease, opacity 0.3s ease 0.95s";
-      actor.style.transform = `translate(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px)) scale(${targetScale})`;
-      actor.style.filter = "drop-shadow(0 2px 10px rgba(212, 175, 55, 0.7))";
-
-      if (heading) {
-        heading.style.transition = "opacity 0.5s ease, transform 0.5s ease";
-        heading.style.opacity = "0";
-        heading.style.transform = "translateX(-50%) translateY(-25px)";
-      }
-
-      // At moment of landing:
-      setTimeout(() => {
-        // Dock into that place
-        target.classList.add("docked");
-        card.classList.add("card-revealed");
-
-        // Fire golden ripple wave
-        if (ripple) ripple.classList.add("fire-ripple");
-
-        // Hide actor
-        actor.style.opacity = "0";
-
-        // Fade away full-screen intro stage smoothly
-        setTimeout(() => {
-          stage.classList.add("intro-finished");
-        }, 500);
-      }, 1050);
-    }
-
-    // Tap/Click anywhere on the full-screen intro to fast-forward
-    stage.addEventListener("click", () => {
-      performDock();
-    });
-
-    // Run automatically on reload: display grand full-screen darshanam for 850ms, then swoop into place
-    setTimeout(performDock, 850);
-  }
-
   // --- INITIALIZE DEFAULT CONTENT & RENDER ---
   renderContent('en');
   kick();
-  initWholeScreenCoconutIntro();
 
 })();
