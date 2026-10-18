@@ -1168,14 +1168,14 @@ a {
 #patrikaSection .patrika-backdrop {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 50% 30%, #fbefd6, var(--wall) 75%);
+  background: radial-gradient(ellipse at 50% 30%, #fff8eb 0%, #fbf2df 50%, #420a12 96%);
 }
 
 .temple-pillar {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 18%;
+  width: 17%;
   background-image: url('https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-pillar-1790834804398.webp');
   background-position: center top;
   background-size: 100% auto;
@@ -1195,43 +1195,56 @@ a {
 
 .patrika-arch-wrapper {
   position: absolute;
-  left: 5%;
-  right: 5%;
-  top: 9%;
-  bottom: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(calc(100% - 36px), 430px);
+  height: min(86vh, 760px);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  filter: drop-shadow(0 16px 36px rgba(80, 40, 10, 0.35));
+  align-items: stretch;
+  justify-content: flex-start;
   z-index: 3;
+  filter: drop-shadow(0 14px 30px rgba(70, 20, 10, 0.28));
 }
 
-.formal-patrika-card {
-  width: min(92%, 430px);
-  max-width: 430px;
-  background: radial-gradient(circle at 50% 25%, #fffdf8, #fdf5e7 100%);
-  border: 1.5px solid #d4af37;
-  border-radius: 14px;
-  padding: 26px 18px 28px;
+.patrika-arch-top-svg {
+  display: block;
+  width: 100%;
+  height: 96px;
+  flex-shrink: 0;
+  margin-bottom: -1px;
+}
+
+.patrika-arch-bottom-svg {
+  display: block;
+  width: 100%;
+  height: 96px;
+  flex-shrink: 0;
+  margin-top: -1px;
+}
+
+.patrika-scroll-body {
+  flex: 1;
+  background: #fff8eb;
+  border-left: 3px solid #d4af37;
+  border-right: 3px solid #d4af37;
+  padding: 4px 18px 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
-  box-shadow: 
-    0 18px 45px rgba(60, 20, 10, 0.3),
-    inset 0 0 0 5px #fffbf2,
-    inset 0 0 0 6.5px rgba(212, 175, 55, 0.75);
-  margin: 0 auto;
+  gap: 6px;
 }
 
 .patrika-ganesha-item {
-  margin-bottom: 10px;
+  margin-top: -4px;
+  margin-bottom: 4px;
 }
 
 .patrika-ganesha-img {
-  width: 95px;
+  width: 100px;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -1285,23 +1298,22 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
   width: min(72%, 240px);
-  margin: 14px auto 10px;
+  margin: 10px auto 8px;
 }
 
 .p-divider-line {
   flex: 1;
   height: 1.5px;
-  background: linear-gradient(90deg, transparent, #c59b27, transparent);
+  background: #c59b27;
 }
 
 .p-divider-dot {
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: #c59b27;
-  box-shadow: 0 0 6px rgba(197, 155, 39, 0.6);
+  margin: 0 5px;
 }
 
 .patrika-date-line {
@@ -1387,15 +1399,28 @@ a {
   background: var(--cream);
 }
 
+.lotus-divider {
+  position: relative;
+  z-index: 10;
+  transform: translateY(-50%);
+  margin-bottom: -35px;
+  pointer-events: none;
+  filter: drop-shadow(0 8px 18px rgba(40, 10, 5, 0.42));
+}
+
 .lotus-divider img {
   width: 100%;
+  max-width: none;
   height: auto;
-  padding: 16px 0 4px;
+  display: block;
+  transform: scale(1.22);
+  transform-origin: center center;
+  padding: 0;
 }
 
 .events-header {
   text-align: center;
-  padding: 10px 20px 14px;
+  padding: 26px 20px 14px;
 }
 
 .sacred-kalasham-icon {
@@ -1447,7 +1472,15 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 35%, rgba(40, 8, 4, 0.8));
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.12) 0%,
+    transparent 20%,
+    rgba(15, 3, 2, 0.45) 50%,
+    rgba(15, 3, 2, 0.85) 72%,
+    rgba(8, 2, 1, 0.97) 100%
+  );
+  pointer-events: none;
 }
 
 .ev-art .ev-badge {
@@ -1455,27 +1488,32 @@ a {
   top: 12px;
   left: 14px;
   z-index: 2;
-  background: rgba(90, 11, 24, 0.85);
-  color: var(--gold-light);
+  background: rgba(45, 8, 14, 0.88);
+  color: #ffd875;
   font-family: var(--f-names);
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  padding: 4px 10px;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 4px 12px;
   border-radius: 999px;
-  border: 1px solid rgba(240, 200, 101, 0.4);
+  border: 1px solid rgba(240, 200, 101, 0.6);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
 }
 
 .ev-art .n {
   position: absolute;
   left: 16px;
   right: 16px;
-  bottom: 10px;
+  bottom: 12px;
   z-index: 2;
   font-family: var(--f-names);
-  font-size: 21px;
+  font-size: clamp(21px, 5vw, 25px);
+  font-weight: 700;
   letter-spacing: 0.04em;
-  color: #fff;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95), 0 0 16px rgba(0, 0, 0, 0.8);
+  line-height: 1.2;
 }
 
 .ev-body {
@@ -1704,7 +1742,33 @@ a {
 
 .story-caption.cap-bottom {
   top: auto;
-  bottom: 8%;
+  bottom: 6%;
+  z-index: 15;
+}
+
+.story-muhurtham-panel {
+  padding: 12px 34px 14px;
+  background: rgba(255, 250, 240, 0.96);
+  border: 1.5px solid rgba(212, 175, 55, 0.85);
+  box-shadow: 0 10px 30px rgba(90, 40, 10, 0.35), 0 0 20px rgba(212, 175, 55, 0.25);
+  border-radius: 999px;
+  pointer-events: auto;
+}
+
+.story-muhurtham-panel .script {
+  font-size: 32px;
+  line-height: 1.1;
+  color: #631320;
+}
+
+.muhurtham-date-tag {
+  font-family: var(--f-names), 'Outfit', sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #8b1828;
+  margin-top: 2px;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
 }
 
 /* ================= SECTION 7: MEET THE COUPLE ================= */
@@ -1812,9 +1876,14 @@ a {
 }
 
 .duo-item {
-  font-size: 18px;
+  font-family: var(--f-serif), 'Cormorant Garamond', Georgia, serif;
+  font-size: 21px;
   color: var(--maroon);
   font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  line-height: 1.25;
 }
 
 .couple-family-roots {
@@ -1826,87 +1895,191 @@ a {
 
 /* ================= SECTION 8: VENUE ================= */
 .venue-section {
-  padding: 40px 0 0;
+  padding: 50px 20px 60px;
   text-align: center;
-  overflow: hidden;
+  position: relative;
+  background: radial-gradient(circle at 50% 30%, #5a111e 0%, #3d0a13 70%, #2a050c 100%);
+}
+
+.venue-container {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.venue-header-badge {
+  font-family: var(--f-names);
+  font-size: 11.5px;
+  letter-spacing: 0.16em;
+  color: var(--gold-light);
+  margin-bottom: 6px;
+  opacity: 0.9;
 }
 
 .venue-title {
-  font-size: 46px;
-  color: var(--gold-light);
+  font-size: clamp(38px, 7.5vw, 48px);
+  color: #ffd875;
+  margin-bottom: 24px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+.venue-card-frame {
+  background: rgba(255, 253, 248, 0.05);
+  border: 1.5px solid rgba(212, 175, 55, 0.65);
+  border-radius: 20px;
+  padding: 30px 22px 28px;
+  box-shadow: 
+    0 16px 40px rgba(0, 0, 0, 0.45),
+    inset 0 0 20px rgba(212, 175, 55, 0.08);
+  backdrop-filter: blur(8px);
+  position: relative;
+}
+
+.venue-icon-circle {
+  width: 58px;
+  height: 58px;
+  margin: -54px auto 14px;
+  background: radial-gradient(circle at 35% 35%, #5a121e, #2d080e);
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5), inset 0 0 8px rgba(212, 175, 55, 0.3);
 }
 
 .venue-place-name {
   font-family: var(--f-names);
-  font-size: 20px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #fff;
-  padding-inline: 24px;
-  margin-top: 8px;
+  font-size: clamp(18px, 4.2vw, 21px);
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin: 0;
   font-weight: 700;
+  line-height: 1.3;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.venue-place-sub {
+  font-family: var(--f-serif);
+  font-size: 15px;
+  color: #ffd875;
+  margin-top: 4px;
+  letter-spacing: 0.02em;
+}
+
+.venue-divider-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(65%, 180px);
+  margin: 14px auto 14px;
+}
+
+.venue-divider-ornament .v-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.8), transparent);
+}
+
+.venue-divider-ornament .v-dot {
+  font-size: 9px;
+  color: var(--gold);
+  margin: 0 8px;
 }
 
 .venue-place-address {
-  color: #f2dec7;
-  font-size: 15.5px;
-  margin-top: 6px;
-  padding-inline: 24px;
-  line-height: 1.4;
+  color: #f7e6d2;
+  font-size: 15px;
+  margin: 0 0 16px;
+  line-height: 1.5;
+  font-family: var(--f-serif);
+}
+
+.venue-place-address .pin-symbol {
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.venue-features-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.v-feature {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: #ffdca3;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
 }
 
 .venue-buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  margin-top: 20px;
-  padding-inline: 24px;
+  gap: 12px;
+  margin-top: 6px;
 }
 
 .venue-buttons .btn {
-  width: min(100%, 320px);
+  width: min(100%, 340px);
+  font-size: 13.5px;
+  padding: 12px 20px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
 }
 
-.venue-gold-art {
-  width: 100%;
-  height: auto;
-  margin-top: 28px;
-  mix-blend-mode: screen;
+.venue-btn-primary {
+  background: linear-gradient(135deg, #d4af37, #b88628);
+  color: #2b080e !important;
+  border: 1px solid #ffea9f;
 }
 
-/* ================= SECTION 9: RSVP BEHIND CURTAINS ================= */
-#rsvpScene {
-  height: 250vh;
+.venue-btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(6px);
 }
 
-#rsvpScene .stage {
-  background: linear-gradient(180deg, var(--maroon), var(--maroon-3));
+/* ================= SECTION 9: RSVP & BLESSINGS ================= */
+.rsvp-section {
+  position: relative;
+  padding: 50px 20px 65px;
+  background: radial-gradient(circle at 50% 25%, #58101d 0%, #3a0812 70%, #24040a 100%);
+  overflow: hidden;
 }
 
-.rsvp-arch {
-  top: 12%;
-  left: 7%;
-  right: 7%;
-  bottom: 5%;
+.rsvp-container {
+  max-width: 460px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .hanging-bells-bar {
-  position: absolute;
-  top: 24px;
-  left: 0;
-  right: 0;
   display: flex;
   justify-content: space-around;
-  z-index: 4;
-  padding-inline: 8%;
+  margin-bottom: 24px;
+  padding-inline: 12%;
 }
 
 .hanging-bells-bar svg {
-  width: 22px;
+  width: 24px;
   transform-origin: 50% 0;
   animation: swingTempleBell 3.2s ease-in-out infinite;
   cursor: pointer;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
 }
 
 .hanging-bells-bar svg:nth-child(even) {
@@ -1918,66 +2091,100 @@ a {
   50% { transform: rotate(-5deg); }
 }
 
-.rsvp-content-container {
-  position: absolute;
-  left: 7%;
-  right: 7%;
-  top: 12%;
-  bottom: 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+.rsvp-card {
+  background: radial-gradient(circle at 50% 15%, #fffefb, #fdf6ea);
+  border: 2px solid #d4af37;
+  border-radius: 20px;
+  padding: 30px 24px 28px;
+  box-shadow: 
+    0 18px 45px rgba(0, 0, 0, 0.5),
+    inset 0 0 0 4px #fffdf8,
+    inset 0 0 0 5.5px rgba(212, 175, 55, 0.45);
   text-align: center;
-  padding: 50px 20px 20px;
-  color: var(--ink);
-  overflow: auto;
-  z-index: 3;
+}
+
+.rsvp-badge {
+  font-family: var(--f-names);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: #a47638;
+  font-weight: 700;
+  margin-bottom: 6px;
 }
 
 .rsvp-main-title {
-  font-size: clamp(38px, 11vw, 50px);
-  color: var(--maroon);
+  font-size: clamp(34px, 8vw, 44px);
+  color: #631320;
+  margin: 0;
+  line-height: 1.15;
 }
 
 .rsvp-lead {
-  max-width: 32ch;
-  font-size: 15px;
-  color: var(--ink-soft);
+  max-width: 34ch;
+  margin: 8px auto 0;
+  font-size: 14px;
+  color: #6a4c2f;
+  line-height: 1.45;
 }
 
-.rsvp-card-box {
-  width: 100%;
+.rsvp-gold-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(65%, 160px);
+  margin: 14px auto 18px;
+}
+
+.rsvp-gold-divider .rg-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c59b27, transparent);
+}
+
+.rsvp-gold-divider .rg-gem {
+  font-size: 8px;
+  color: #c59b27;
+  margin: 0 8px;
 }
 
 #weddingRsvpForm {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-top: 8px;
+  gap: 12px;
   text-align: left;
+}
+
+.form-field {
+  width: 100%;
 }
 
 #weddingRsvpForm input,
 #weddingRsvpForm textarea,
 #weddingRsvpForm select {
   width: 100%;
-  font: 15px var(--f-body);
-  color: var(--ink);
-  padding: 10px 14px;
-  border: 1px solid rgba(212, 175, 55, 0.65);
-  border-radius: 8px;
-  background: #fffdf8;
+  font: 14.5px var(--f-body);
+  color: #3b1b0b;
+  padding: 11px 14px;
+  border: 1.5px solid rgba(212, 175, 55, 0.55);
+  border-radius: 10px;
+  background: #fffdfa;
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+#weddingRsvpForm input::placeholder,
+#weddingRsvpForm textarea::placeholder {
+  color: #9c7b66;
+  font-size: 13.5px;
 }
 
 #weddingRsvpForm input:focus,
 #weddingRsvpForm textarea:focus,
 #weddingRsvpForm select:focus {
-  border-color: var(--gold);
-  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3);
+  border-color: #b88628;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.25);
+  background: #ffffff;
 }
 
 #weddingRsvpForm textarea {
@@ -1987,29 +2194,29 @@ a {
 .attendance-toggle {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  gap: 10px;
 }
 
 .attend-btn {
   font: 600 13px var(--f-body);
   padding: 10px 8px;
-  border-radius: 8px;
-  border: 1px solid rgba(212, 175, 55, 0.6);
+  border-radius: 10px;
+  border: 1.5px solid rgba(212, 175, 55, 0.55);
   background: #fffdf8;
-  color: var(--ink);
+  color: #5a2810;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+  gap: 6px;
   transition: all 0.2s ease;
 }
 
 .attend-btn.on {
-  background: var(--maroon);
-  color: #f7e2b6;
-  border-color: var(--maroon);
-  box-shadow: 0 4px 10px rgba(90, 11, 24, 0.35);
+  background: linear-gradient(135deg, #661826, #480d17);
+  color: #ffd875;
+  border-color: #b88628;
+  box-shadow: 0 4px 12px rgba(80, 14, 27, 0.35);
 }
 
 .guests-counter-row {
@@ -2017,12 +2224,17 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  font-size: 14.5px;
-  color: var(--ink-soft);
+  font-size: 14px;
+  font-weight: 600;
+  color: #5a2810;
+  padding: 2px 2px;
 }
 
 .guests-counter-row select {
-  width: 120px !important;
+  width: 140px !important;
+  font-size: 13.5px;
+  padding: 9px 10px;
+  cursor: pointer;
 }
 
 .honeypot-input {
@@ -2036,17 +2248,43 @@ a {
 .rsvp-action-btns {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-top: 4px;
+  gap: 10px;
+  margin-top: 6px;
 }
 
-.rsvp-action-btns .btn {
+.btn-submit-rsvp {
+  background: linear-gradient(135deg, #7a1b2a, #520f1a) !important;
+  color: #ffd875 !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  padding: 13px 20px !important;
+  border: 1px solid rgba(255, 216, 117, 0.4) !important;
+  border-radius: 999px !important;
+  box-shadow: 0 6px 18px rgba(80, 14, 27, 0.4) !important;
+  cursor: pointer;
   width: 100%;
+}
+
+.btn-whatsapp-direct {
+  background: linear-gradient(135deg, #25d366, #128c7e) !important;
+  color: #ffffff !important;
+  font-size: 13.5px !important;
+  font-weight: 700 !important;
+  padding: 12px 20px !important;
+  border: none !important;
+  border-radius: 999px !important;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35) !important;
+  cursor: pointer;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
 
 .form-feedback-msg {
   min-height: 18px;
-  font-size: 13.5px;
+  font-size: 13px;
   text-align: center;
   color: #a0281e;
   font-weight: 600;
@@ -2058,67 +2296,21 @@ a {
 }
 
 .success-icon {
-  font-size: 38px;
+  font-size: 42px;
   margin-bottom: 8px;
 }
 
 .success-title {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
-  color: var(--maroon);
+  color: #661826;
   margin-bottom: 6px;
 }
 
 .success-desc {
   font-size: 15px;
-  color: var(--ink-soft);
-  line-height: 1.45;
-}
-
-/* Parting Royal Velvet Curtains */
-.parting-curtain {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 51%;
-  z-index: 5;
-  display: flex;
-  flex-direction: column;
-  filter: drop-shadow(0 0 18px rgba(0, 0, 0, 0.65));
-  will-change: transform;
-}
-
-.parting-curtain .curtain-body {
-  flex: 1;
-  background-repeat: no-repeat;
-  background-size: 245.45% 149.33%;
-  background-color: #6a0f1d;
-}
-
-.parting-curtain .curtain-fringe {
-  aspect-ratio: 440/114;
-  background-repeat: no-repeat;
-  background-size: 245.45% 586.8%;
-}
-
-.parting-curtain.left { left: 0; }
-.parting-curtain.right { right: 0; }
-
-.parting-curtain.left .curtain-body { background-position: 15.6% 50.7%; }
-.parting-curtain.right .curtain-body { background-position: 84.4% 50.7%; }
-.parting-curtain.left .curtain-fringe { background-position: 15.6% 100%; }
-.parting-curtain.right .curtain-fringe { background-position: 84.4% 100%; }
-
-.curtain-valance {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 6;
-  aspect-ratio: 1080/112;
-  background-repeat: no-repeat;
-  background-size: 100% 597.3%;
-  background-position: 0 0;
+  color: #6a4c2f;
+  line-height: 1.5;
 }
 
 /* ================= SECTION 10: COUNTDOWN ================= */
@@ -2154,7 +2346,7 @@ a {
 
 .countdown-title {
   position: relative;
-  font-size: 42px;
+  font-size: clamp(34px, 7vw, 44px);
   color: var(--maroon);
 }
 
@@ -2162,35 +2354,38 @@ a {
   position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
-  max-width: 480px;
-  margin: 22px auto 0;
+  gap: clamp(8px, 2.5vw, 14px);
+  max-width: 440px;
+  margin: 20px auto 0;
 }
 
 .cd-box {
-  background: rgba(255, 255, 255, 0.88);
-  border: 1px solid rgba(212, 175, 55, 0.55);
-  border-radius: 12px;
-  padding: 12px 4px 8px;
-  box-shadow: 0 6px 16px rgba(120, 70, 20, 0.12);
+  background: rgba(255, 255, 255, 0.94);
+  border: 1.5px solid rgba(212, 175, 55, 0.55);
+  border-radius: 14px;
+  padding: 12px 6px 10px;
+  box-shadow: 0 8px 20px rgba(120, 70, 20, 0.12);
 }
 
 .cd-box b {
   display: block;
   font-family: var(--f-names);
   font-weight: 700;
-  font-size: 28px;
+  font-size: clamp(24px, 5.5vw, 32px);
   color: var(--maroon);
   font-variant-numeric: tabular-nums;
+  line-height: 1.1;
 }
 
 .cd-box span {
   font-size: 11px;
   font-family: var(--f-names);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--gold-dark);
-  font-weight: 600;
+  color: #a47638;
+  font-weight: 700;
+  margin-top: 4px;
+  display: block;
 }
 
 .countdown-exact-date {
@@ -2198,14 +2393,51 @@ a {
   margin-top: 18px;
   color: var(--ink-soft);
   font-size: 15.5px;
+  font-family: var(--f-serif);
 }
 
 .calendar-sync-buttons {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 380px;
+  margin: 22px auto 0;
+  padding-inline: 12px;
+}
+
+.calendar-sync-buttons .btn-calendar {
+  width: 100%;
+  font-family: var(--f-names);
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 13px 22px;
+  border-radius: 999px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 9px;
+  white-space: nowrap;
+  box-shadow: 0 6px 18px rgba(90, 40, 10, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.calendar-sync-buttons .btn-calendar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(90, 40, 10, 0.28);
+}
+
+.calendar-sync-buttons .btn-maroon {
+  background: linear-gradient(135deg, #661826, #480d17);
+  color: #ffd875 !important;
+  border: 1px solid rgba(255, 216, 117, 0.45);
+}
+
+.calendar-sync-buttons .btn-temple-gold {
+  background: linear-gradient(135deg, #e5be59, #b88628);
+  color: #380d15 !important;
+  border: 1px solid #fff2ba;
 }
 
 /* ================= SECTION 11: PHOTO MOMENTS ================= */
@@ -2319,13 +2551,13 @@ a {
   text-transform: uppercase;
 }
 
-/* ================= DEDICATED REALISTIC ROSE & JASMINE PETALS CANVAS ================= */
+/* ================= DEDICATED REALISTIC ROSE & JASMINE PETALS CANVAS (STORY SCENE ONLY) ================= */
 #rosePetalsCanvas {
-  position: fixed;
+  position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  z-index: 95;
+  z-index: 10;
   pointer-events: none;
 }
 

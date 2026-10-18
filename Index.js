@@ -28,13 +28,13 @@
 
   // --- TRADITIONAL TELUGU WEDDING DATA ---
   const WEDDING_DATA = {
-    weddingAt: "2027-02-14T10:32:00+05:30",
+    weddingAt: "2026-10-29T19:30:00+05:30",
     venue: {
-      name: "Sri Lakshmi Venkateswara Kalyana Mandapam",
-      nameTe: "శ్రీ లక్ష్మీ వేంకటేశ్వర కళ్యాణ మండపం",
-      address: "Road No. 12, Banjara Hills, Hyderabad, Telangana - 500034",
-      addressTe: "రోడ్ నెం. 12, బంజారా హిల్స్, హైదరాబాద్, తెలంగాణ - 500034",
-      mapUrl: "https://maps.google.com/?q=Banjara+Hills+Hyderabad",
+      name: "Athidhi Function Hall",
+      nameTe: "అతిథి ఫంక్షన్ హాల్",
+      address: "Gollapudi, Vijayawada, Andhra Pradesh",
+      addressTe: "గొల్లపూడి, విజయవాడ, ఆంధ్రప్రదేశ్",
+      mapUrl: "https://maps.google.com/?q=Athidhi+Function+Hall+Gollapudi+Vijayawada",
       phone: "+91 98765 43210"
     },
     gallery: [
@@ -44,40 +44,40 @@
       "https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-couple-1790861011173.webp"
     ],
     te: {
-      bride: "MEGHANA",
-      brideFull: "మేఘన రెడ్డి",
-      groom: "ARJUN",
-      groomFull: "అర్జున్ రావు",
-      sealTopShloka: "॥ శ్రీ లక్ష్మీ వేంకటేశ్వర స్వామి దివ్య ప్రసన్నః ॥",
+      bride: "POORNA LATHA",
+      brideFull: "చి.ల.సౌ. పూర్ణ లత",
+      groom: "KRISHNA CHAITANYA",
+      groomFull: "చి. కృష్ణ చైతన్య",
+      sealTopShloka: "",
       sealGreeting: "కళ్యాణ మహోత్సవ ఆహ్వానము",
-      sealDateText: "ఆదివారం, 14 ఫిబ్రవరి 2027",
+      sealDateText: "గురువారం, 29 అక్టోబర్ 2026",
       openBtnText: "శుభలేఖ తెరవండి",
-      sealFooterNote: "సకుటుంబ సపరివార సమేతంగా విచ్చేయండి",
-      heroShloka: "A sacred Beginning",
+      sealFooterNote: "",
+      heroShloka: "॥ శ్రీరస్తు శుభమస్తు అవిఘ్నమస్తు ॥",
       heroWeds: "weds",
-      heroSubline: "శ్రీమద్ దైవ సన్నిధానంలో, పెద్దల ఆశీస్సులతో మా నూతన దాంపత్య ప్రయాణం",
+      heroSubline: "శ్రీ చెరుకు ఏడుకొండలు & శ్రీమతి సుభాషిణి గార్ల జ్యేష్ఠ కుమారుని వివాహ మహోత్సవము",
       scrollHintText: "శుభలేఖను తిలకించండి (Scroll Down)",
       patTitle: "॥ వివాహ ఆహ్వాన శుభ పత్రిక ॥",
-      patBlessing: "With the blessings of the Almighty and our beloved elders",
+      patBlessing: "॥ శ్రీరస్తు · శుభమస్తు · అవిఘ్నమస్తు ॥",
       patAncestors: "",
-      patParents: "Smt. Sujatha & Sri Ravi Reddy",
-      patInviteText: "joyfully invite you and your family to the wedding of their beloved daughter",
-      patPanchangamDetails: "స్వస్తిశ్రీ శుభకృత్ నామ సంవత్సరం, మాఘ శుద్ధ దశమి, రోహిణీ నక్షత్ర యుక్త మీన లగ్న సుముహూర్తమున",
-      patMuhurthamDateTime: "ఆదివారం, 14 ఫిబ్రవరి 2027 · ఉదయం 10:32 గంటలకు",
-      patLocationSummary: "కళ్యాణ వేదిక: శ్రీ లక్ష్మీ వేంకటేశ్వర కళ్యాణ మండపం · బంజారా హిల్స్, హైదరాబాద్",
+      patParents: "శ్రీ చెరుకు ఏడుకొండలు & శ్రీమతి సుభాషిణి",
+      patInviteText: "మా జ్యేష్ఠ కుమారుడు చి. కృష్ణ చైతన్య వివాహ మహోత్సవమునకు మిమ్ములను సకుటుంబంగా సాదరంగా ఆహ్వానిస్తున్నాము",
+      patPanchangamDetails: "మృగశిర నక్షత్రం, వృషభ లగ్న సుముహూర్తమున",
+      patMuhurthamDateTime: "గురువారం, 29 అక్టోబర్ 2026 · రాత్రి 07:30 గంటలకు",
+      patLocationSummary: "కళ్యాణ వేదిక: అతిథి ఫంక్షన్ హాల్ · గొల్లపూడి, విజయవాడ",
       ritualsTitle: "సప్తపది & వివాహ ఆచారాలు",
       ritualsSubtitle: "తెలుగు సాంప్రదాయ వివాహంలోని పవిత్ర ఘట్టాల విశిష్టత",
       eventsTitle: "కళ్యాణ మహోత్సవాల వివరాలు",
-      eventsSub: "మా ఇంట జరిగే మంగళ వేడుకల కాల నిర్ణయం",
+      eventsSub: "మంగళ వేడుకల కాల నిర్ణయం",
       feastTitle: "సాంప్రదాయ కళ్యాణ విందు భోజనం",
       feastSubtitle: "అరిటాకులో ఘుమఘుమలాడే తెలుగు పెళ్లి భోజనం మెనూ",
-      storyVerseLine: "రెండు మనసులు... ఒకటయ్యే వేళ",
-      storyVerseSub: "పెద్దల దీవెనలతో పవిత్ర దాంపత్య బంధం",
-      storyMuhurthamTitle: "జీలకర్ర బెల్లం & సుముహూర్తం",
-      storyMuhurthamWhen: "14 ఫిబ్రవరి 2027 · ఉదయం 10:32 AM",
+      storyVerseLine: "Two Hearts... Becoming One",
+      storyVerseSub: "A Sacred Matrimonial Journey with Elders' Blessings",
+      storyMuhurthamTitle: "Muhurtham",
+      storyMuhurthamWhen: "29.10.2026",
       coupleHead: "వధూవరుల పరిచయం",
-      coupleTale: "బెంగళూరులో జరిగిన మిత్రుల సంగీత్ వేడుకలో మా తొలి పరిచయం మొదలైంది. హైదరాబాద్ దమ్ బిర్యానీ గొప్పదా లేదా రాయలసీమ రాగి సంకటి గొప్పదా అనే సరదా వాదనలతో మొదలైన మా ప్రయాణం... నేడు ఇరు కుటుంబాల సమ్మతితో, వేద మంత్రాల సాక్షిగా శాశ్వత దాంపత్య బంధంగా మారుతోంది.",
-      familyRoots: "వరంగల్ మరియు విజయవాడ మూలాలు గల గౌరవనీయ కుటుంబాల సమ్మేళనం",
+      coupleTale: "శ్రీ చెరుకు ఏడుకొండలు & శ్రీమతి సుభాషిణి గార్ల జ్యేష్ఠ కుమారుడు చి. కృష్ణ చైతన్య మరియు శ్రీ రావిరాల రాధా బాలకృష్ణ రావు & శ్రీమతి ఇందిరాదేవి (కొండపల్లి, ఇబ్రహీంపట్నం మండలం, ఎన్.టి.ఆర్ జిల్లా) గార్ల ఏకైక కుమార్తె చి.ల.సౌ. పూర్ణ లత ల పవిత్ర వివాహ బంధం.",
+      familyRoots: "చెరుకు & రావిరాల కుటుంబాల కలయిక (గొల్లపూడి & కొండపల్లి, విజయవాడ, ఎన్.టి.ఆర్ జిల్లా)",
       venueHead: "కళ్యాణ వేదిక & మార్గం",
       mapBtnLabel: "గూగుల్ మ్యాప్స్ లో మార్గం చూడండి",
       rsvpMainTitle: "విచ్చేసి ఆశీర్వదించండి",
@@ -95,137 +95,101 @@
       gallerySubDesc: "మా ప్రయాణంలోని మరపురాని ఆనంద క్షణాలు",
       tapInstructions: "ఫోటోలపై తాకండి (Tap to Scatter & Arrange)",
       footerGratitude: "హృదయపూర్వక ధన్యవాదాలు",
-      footerFamilies: "శ్రీ రావు & రెడ్డి కుటుంబాల తరఫున సాదర ఆహ్వానములు",
+      footerFamilies: "With Best Compliments From Near & Dear · Cheruku & Ravirala Families",
       roseShowerTxt: "పూల వర్షం",
       events: [
         {
-          name: "స్నాతకం & పెళ్లికూతురు / పెళ్లికొడుకు",
-          date: "శుక్రవారం, 12 ఫిబ్రవరి 2027",
-          time: "ఉదయం 9:00 AM",
-          place: "వధూవరుల గృహములు (Jubilee Hills & Madhapur)",
-          desc: "పవిత్ర మంగళ స్నానం, నలుగు & హల్దీ వేడుక, మంగళ హారతుల సమర్పణ.",
-          art: "https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-ev1-1790834809023.webp",
-          map: "https://maps.google.com/?q=Jubilee+Hills+Hyderabad"
-        },
-        {
-          name: "మెహెందీ & సంగీత్ వేడుక",
-          date: "శనివారం, 13 ఫిబ్రవరి 2027",
-          time: "సాయంత్రం 6:00 PM onwards",
-          place: "ది రాయల్ ప్యాలెస్ లాన్స్, గచ్చిబౌలి, హైదరాబాద్",
-          desc: "గోరింటాకు డిజైన్లు, సంగీత నృత్యాలు, బంధుమిత్రుల వినోద వేడుకలు.",
-          art: "https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-ev2-1790834809887.webp",
-          map: "https://maps.google.com/?q=Gachibowli+Hyderabad"
-        },
-        {
-          name: "ప్రధాన సుముహూర్తం & జీలకర్ర బెల్లం",
-          date: "ఆదివారం, 14 ఫిబ్రవరి 2027",
-          time: "ఉదయం 10:32 AM",
-          place: "శ్రీ లక్ష్మీ వేంకటేశ్వర కళ్యాణ మండపం, బంజారా హిల్స్",
-          desc: "జీలకర్ర-బెల్లం ధారణ, మాంగల్యధారణ, తలంబ్రాలు, సప్తపది మరియు అరుంధతీ నక్షత్ర దర్శనం.",
+          name: "సుముహూర్తం (Sumuhurtham)",
+          date: "గురువారం, 29 అక్టోబర్ 2026",
+          time: "రాత్రి 07:30 PM",
+          place: "అతిథి ఫంక్షన్ హాల్, గొల్లపూడి, విజయవాడ",
+          desc: "మృగశిర నక్షత్రం, వృషభ లగ్నం, జీలకర్ర-బెల్లం, మాంగల్యధారణ, తలంబ్రాలు & సప్తపది.",
           art: "https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-ev3-1790834810738.webp",
-          map: "https://maps.google.com/?q=Banjara+Hills+Hyderabad"
+          map: "https://maps.google.com/?q=Athidhi+Function+Hall+Gollapudi+Vijayawada"
         },
         {
-          name: "ఆశీర్వచనం & వివాహ విందు (Grand Reception)",
-          date: "ఆదివారం, 14 ఫిబ్రవరి 2027",
-          time: "సాయంత్రం 7:00 PM onwards",
-          place: "గ్రాండ్ బాల్‌రూమ్, బంజారా హిల్స్, హైదరాబాద్",
-          desc: "నూతన వధూవరులకు ఆశీర్వచనాలు, సాంప్రదాయ ఆంధ్రా & తెలంగాణ వివాహ విందు భోజనం.",
+          name: "వివాహ విందు (Kalyana Vindhu Dinner)",
+          date: "గురువారం, 29 అక్టోబర్ 2026",
+          time: "సాయంత్రం 07:00 PM onwards",
+          place: "అతిథి ఫంక్షన్ హాల్, గొల్లపూడి, విజయవాడ",
+          desc: "సాంప్రదాయ ఆంధ్రా వివాహ విందు భోజనము మరియు బంధుమిత్రుల సత్కారం.",
           art: "https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-ev4-1790834811597.webp",
-          map: "https://maps.google.com/?q=Banjara+Hills+Hyderabad"
+          map: "https://maps.google.com/?q=Athidhi+Function+Hall+Gollapudi+Vijayawada"
         }
       ]
     },
     en: {
-      bride: "MEGHANA",
-      brideFull: "Meghana Reddy",
-      groom: "ARJUN",
-      groomFull: "Arjun Rao",
-      sealTopShloka: "॥ శ్రీ లక్ష్మీ వేంకటేశ్వర స్వామి దివ్య ప్రసన్నః ॥",
-      sealGreeting: "Kalyana Mahotsavam",
-      sealDateText: "Sunday, 14 February 2027",
+      bride: "POORNA LATHA",
+      brideFull: "Chi. La. Sou. Poorna Latha",
+      groom: "KRISHNA CHAITANYA",
+      groomFull: "Chi. Krishna Chaitanya",
+      sealTopShloka: "",
+      sealGreeting: "Wedding Invitation",
+      sealDateText: "Thursday, 29 October 2026",
       openBtnText: "శుభలేఖ తెరవండి",
-      sealFooterNote: "Cordially inviting you with family (సకుటుంబ సపరివార సమేతంగా)",
-      heroShloka: "A sacred Beginning",
+      sealFooterNote: "",
+      heroShloka: "Srirasthu · Subhamasthu · Avighnamasthu",
       heroWeds: "weds",
-      heroSubline: "In the Divine Presence of the Almighty, Two Souls Unite in Sacred Matrimony",
+      heroSubline: "Celebrating the Auspicious Wedding of Krishna Chaitanya & Poorna Latha",
       scrollHintText: "Scroll Down to View Subhalekha (శుభలేఖను తిలకించండి)",
-      patTitle: "॥ కళ్యాణ శుభ పత్రిక (Kalyana Subhalekha) ॥",
-      patBlessing: "With the blessings of the Almighty and our beloved elders",
+      patTitle: "॥ Wedding Invitation (వివాహ ఆహ్వాన శుభ పత్రిక) ॥",
+      patBlessing: "Srirasthu · Subhamasthu · Avighnamasthu",
       patAncestors: "",
-      patParents: "Smt. Sujatha & Sri Ravi Reddy",
-      patInviteText: "joyfully invite you and your family to the wedding of their beloved daughter",
-      patPanchangamDetails: "Swasti Sri Shubhakrit Nama Samvatsaram, Magha Shukla Dashami, Rohini Nakshatra, Meena Lagna Sumuhurtham (స్వస్తిశ్రీ శుభకృత్ నామ సంవత్సరం, మాఘ శుద్ధ దశమి, రోహిణీ నక్షత్ర యుక్త మీన లగ్న సుముహూర్తమున)",
-      patMuhurthamDateTime: "Sunday, 14 February 2027 · 10:32 AM IST (ఆదివారం ఉదయం 10:32)",
-      patLocationSummary: "Kalyana Vedika: Sri Lakshmi Venkateswara Kalyana Mandapam (శ్రీ లక్ష్మీ వేంకటేశ్వర కళ్యాణ మండపం) · Banjara Hills, Hyderabad",
-      ritualsTitle: "Saptapadi & Sacred Rituals (సప్తపది & ఆచారాలు)",
+      patParents: "Sri Cheruku Yedukondalu & Smt. Subhashini",
+      patInviteText: "Solicit your gracious presence and blessings on the auspicious occasion of the wedding of their elder son",
+      patPanchangamDetails: "Mrugasira Nakshatram, Vrushabha Lagnam Sumuhurtham",
+      patMuhurthamDateTime: "Thursday, 29th October 2026 at 07:30 PM",
+      patLocationSummary: "Venue: Athidhi Function Hall · Gollapudi, Vijayawada",
+      ritualsTitle: "Saptapadi & Sacred Rituals",
       ritualsSubtitle: "The sacred spiritual significance behind traditional Telugu wedding rituals",
-      eventsTitle: "Kalyana Mahotsavam Timeline (కళ్యాణ వేడుకలు)",
-      eventsSub: "Auspicious dates and timings for our wedding celebrations (మంగళ వేడుకల కాల నిర్ణయం)",
-      feastTitle: "Traditional Kalyana Vindhu Feast (సాంప్రదాయ కళ్యాణ విందు భోజనం)",
-      feastSubtitle: "Authentic Andhra & Telangana wedding delicacies served on a fresh banana leaf (అరటి ఆకు భోజనం)",
-      storyVerseLine: "Two Hearts... Becoming One (రెండు మనసులు... ఒకటయ్యే వేళ)",
-      storyVerseSub: "A Sacred Matrimonial Journey with Elders' Blessings (పెద్దల దీవెనలతో)",
-      storyMuhurthamTitle: "Jeelakarra Bellam & Sumuhurtham (జీలకర్ర బెల్లం & సుముహూర్తం)",
-      storyMuhurthamWhen: "Sunday, 14 February 2027 · 10:32 AM IST",
-      coupleHead: "Meet the Bride & Groom (వధూవరుల పరిచయం)",
-      coupleTale: "We first met at a mutual friend's sangeet in Bengaluru. Friendly banter over Hyderabad Biryani vs Rayalaseema Ragi Sankati soon turned into an inseparable lifelong bond. Today, with the blessings of our families, we take our sacred vows.",
-      familyRoots: "Celebrating the harmonious union of respected families from Warangal & Vijayawada (వరంగల్ మరియు విజయవాడ)",
-      venueHead: "Kalyana Vedika & Location (కళ్యాణ వేదిక & మార్గం)",
-      mapBtnLabel: "Get Directions on Google Maps (గూగుల్ మ్యాప్స్ లో మార్గం)",
-      rsvpMainTitle: "Bless the Couple · RSVP (విచ్చేసి ఆశీర్వదించండి)",
+      eventsTitle: "Kalyana Mahotsavam",
+      eventsSub: "Auspicious dates and timings for our wedding celebrations",
+      feastTitle: "Traditional Kalyana Vindhu Feast",
+      feastSubtitle: "Authentic Andhra wedding delicacies served on a fresh banana leaf",
+      storyVerseLine: "Two Hearts... Becoming One",
+      storyVerseSub: "A Sacred Matrimonial Journey with Elders' Blessings",
+      storyMuhurthamTitle: "Muhurtham",
+      storyMuhurthamWhen: "29.10.2026",
+      coupleHead: "Meet the Bride & Groom",
+      coupleTale: "With immense joy and the blessings of the Almighty and our elders, Chi. Krishna Chaitanya (elder son of Sri Cheruku Yedukondalu & Smt. Subhashini) unites in sacred matrimony with Chi.La.Sou. Poorna Latha (only daughter of Sri Ravirala Radha Balakrishna Rao & Smt. Indiradevi, Kondapalli, Ibrahimpatnam Mandal, N.T.R. Dist.).",
+      familyRoots: "Celebrating the union of Cheruku & Ravirala families (Gollapudi & Kondapalli, Vijayawada, N.T.R. Dist.)",
+      venueHead: "Kalyana Vedika & Location",
+      mapBtnLabel: "Get Directions on Google Maps",
+      rsvpMainTitle: "Bless the Couple · RSVP",
       rsvpLead: "Your gracious presence and heartfelt blessings will make our celebrations truly unforgettable.",
-      txtAccept: "Joyfully Accept (తప్పక విచ్చేస్తాము)",
-      txtDecline: "Regretfully Decline (క్షమించండి, రాలేకపోతున్నాము)",
-      txtSubmit: "Send Blessings · Submit RSVP (ఆశీర్వాదం పంపండి)",
-      countMainHead: "The Sacred Countdown Begins (సుముహూర్త సమయం)",
-      cdLblDays: "Days (రోజులు)",
-      cdLblHours: "Hours (గంటలు)",
-      cdLblMins: "Mins (నిమిషాలు)",
-      cdLblSecs: "Secs (సెకన్లు)",
+      txtAccept: "Joyfully Accept",
+      txtDecline: "Regretfully Decline",
+      txtSubmit: "Send Blessings · Submit RSVP",
+      countMainHead: "The Sacred Countdown Begins",
+      cdLblDays: "DAYS",
+      cdLblHours: "HOURS",
+      cdLblMins: "MINS",
+      cdLblSecs: "SECS",
       lblAddGoogleCal: "Save to Google Calendar",
-      galleryMainTitle: "Cherished Memories (మధుర స్మృతులు)",
+      galleryMainTitle: "Cherished Memories",
       gallerySubDesc: "Unforgettable glimpses from our beautiful journey together",
-      tapInstructions: "Tap Photos to Scatter & Arrange (ఫోటోలపై తాకండి)",
-      footerGratitude: "Heartfelt Gratitude (హృదయపూర్వక ధన్యవాదాలు)",
-      footerFamilies: "Warmly invited by the Rao & Reddy Families (శ్రీ రావు & రెడ్డి కుటుంబాలు)",
+      tapInstructions: "Tap Photos to Scatter & Arrange",
+      footerGratitude: "Heartfelt Gratitude",
+      footerFamilies: "With Best Compliments From Near & Dear · Cheruku & Ravirala Families",
       roseShowerTxt: "Rose Petals (పూల వర్షం)",
       events: [
         {
-          name: "Snathakam & Pellikuthuru / Pellimaganu (స్నాతకం & నలుగు)",
-          date: "Friday, 12 February 2027 (శుక్రవారం)",
-          time: "9:00 AM onwards (ఉదయం 9:00)",
-          place: "Respective Residences (Jubilee Hills & Madhapur)",
-          desc: "Traditional Nalugu, Haldi ceremony, sacred Mangala Snanam and mangala harathi.",
-          art: "https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-ev1-1790834809023.webp",
-          map: "https://maps.google.com/?q=Jubilee+Hills+Hyderabad"
-        },
-        {
-          name: "Mehendi & Sangeeth Night (మెహెందీ & సంగీత్ వేడుక)",
-          date: "Saturday, 13 February 2027 (శనివారం)",
-          time: "6:00 PM onwards (సాయంత్రం 6:00)",
-          place: "The Royal Palace Lawns, Gachibowli, Hyderabad",
-          desc: "Intricate Henna Gorintaku artistry, spirited music, Telugu folk dances and celebratory dinner.",
-          art: "https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-ev2-1790834809887.webp",
-          map: "https://maps.google.com/?q=Gachibowli+Hyderabad"
-        },
-        {
-          name: "Sumuhurtham & Jeelakarra Bellam (సుముహూర్తం & జీలకర్ర బెల్లం)",
-          date: "Sunday, 14 February 2027 (ఆదివారం)",
-          time: "10:32 AM (ఉదయం 10:32)",
-          place: "Sri Lakshmi Venkateswara Kalyana Mandapam, Banjara Hills",
-          desc: "Sacred Jeelakarra-Bellam ritual, Mangalasutra Dharana (మాంగల్యధారణ), Talambralu shower, Saptapadi and Arundhati Darsanam.",
+          name: "Sumuhurtham (సుముహూర్తం)",
+          date: "Thursday, 29 October 2026",
+          time: "07:30 PM",
+          place: "Athidhi Function Hall, Gollapudi, Vijayawada",
+          desc: "Mrugasira Nakshatram, Vrushabha Lagna Sumuhurtham, Jeelakarra-Bellam, Mangalasutra Dharana, Talambralu & Saptapadi.",
           art: "https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-ev3-1790834810738.webp",
-          map: "https://maps.google.com/?q=Banjara+Hills+Hyderabad"
+          map: "https://maps.google.com/?q=Athidhi+Function+Hall+Gollapudi+Vijayawada"
         },
         {
-          name: "Grand Reception & Kalyana Vindhu (ఆశీర్వచనం & వివాహ విందు)",
-          date: "Sunday, 14 February 2027 (ఆదివారం)",
-          time: "7:00 PM onwards (సాయంత్రం 7:00)",
-          place: "Grand Ballroom, Banjara Hills, Hyderabad",
-          desc: "An evening of royal hospitality, traditional Telugu delicacies, live music and elder blessings.",
+          name: "Dinner & Kalyana Vindhu (వివాహ విందు)",
+          date: "Thursday, 29 October 2026",
+          time: "07:00 PM onwards",
+          place: "Athidhi Function Hall, Gollapudi, Vijayawada",
+          desc: "Traditional Andhra wedding feast served with love, hospitality and elder blessings.",
           art: "https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-ev4-1790834811597.webp",
-          map: "https://maps.google.com/?q=Banjara+Hills+Hyderabad"
+          map: "https://maps.google.com/?q=Athidhi+Function+Hall+Gollapudi+Vijayawada"
         }
       ]
     }
@@ -268,6 +232,7 @@
     setTxt("patInviteText", d.patInviteText);
     setTxt("patBrideName", d.brideFull);
     setTxt("patGroomName", d.groomFull);
+    setTxt("patDateText", d.patMuhurthamDateTime ? d.patMuhurthamDateTime.toUpperCase() : d.sealDateText.toUpperCase());
     setTxt("patPanchangamDetails", d.patPanchangamDetails);
     setTxt("patMuhurthamDateTime", d.patMuhurthamDateTime);
     setTxt("patLocationSummary", d.patLocationSummary);
@@ -294,8 +259,8 @@
     // Section 7: Couple
     setTxt("coupleHead", d.coupleHead);
     setTxt("coupleTale", d.coupleTale);
-    setTxt("duoBride", d.brideFull);
-    setTxt("duoGroom", d.groomFull);
+    setTxt("duoBride", lang === 'te' ? "పూర్ణ లత" : "Poorna Latha");
+    setTxt("duoGroom", lang === 'te' ? "కృష్ణ చైతన్య" : "Krishna Chaitanya");
     setTxt("familyRoots", d.familyRoots);
 
     // Section 8: Venue
@@ -328,6 +293,7 @@
     // Footer & Header
     setTxt("footerGratitude", d.footerGratitude);
     setTxt("footerFamilies", d.footerFamilies);
+    setTxt("footerKalyanamNote", `Wedding Celebration of ${WEDDING_DATA.en.groom} & ${WEDDING_DATA.en.bride} · Vijayawada · 2026`);
     setTxt("roseShowerTxt", d.roseShowerTxt);
   }
 
@@ -548,13 +514,20 @@
 
       const c1P = seg(t, 0.3, 1.0);
       const c1Fade = seg(t, 2.1, 2.7);
-      const c2P = seg(t, 3.9, 4.6);
+      const c2P = seg(t, 1.2, 2.0);
+      const c2Fade = seg(t, 5.4, 6.2);
 
       op(cap1, c1P * (1 - c1Fade));
       tf(cap1, `translateY(${24 * (1 - c1P) - 20 * c1Fade}px)`);
 
-      op(cap2, c2P);
-      tf(cap2, `translateY(${24 * (1 - c2P)}px)`);
+      op(cap2, c2P * (1 - c2Fade));
+      tf(cap2, `translateY(${20 * (1 - c2P) - 16 * c2Fade}px)`);
+
+      if (t > 0.05 && t < 6.4) {
+        startStoryRoseRain();
+      } else {
+        stopStoryRoseRain();
+      }
     });
   })();
 
@@ -628,11 +601,11 @@
 
   // --- GOOGLE CALENDAR & .ICS GENERATOR ---
   (function initCalendarLinks() {
-    const eventTitle = "Wedding of Lakshmi Priya & Sri Krishna (కళ్యాణ మహోత్సవం)";
-    const eventDesc = "With the blessings of our elders, Lakshmi Priya weds Sri Krishna at Banjara Hills, Hyderabad.";
+    const eventTitle = "Wedding of Krishna Chaitanya & Poorna Latha (కళ్యాణ మహోత్సవం)";
+    const eventDesc = "With the blessings of our elders, Chi. Krishna Chaitanya weds Chi.La.Sou. Poorna Latha at Athidhi Function Hall, Gollapudi, Vijayawada.";
     const eventLoc = `${WEDDING_DATA.venue.name}, ${WEDDING_DATA.venue.address}`;
-    const startIso = "20270214T050200Z"; // 10:32 AM IST
-    const endIso = "20270214T153000Z";
+    const startIso = "20261029T140000Z"; // 07:30 PM IST (14:00 UTC)
+    const endIso = "20261029T183000Z";
 
     const calBtn = $("#btnGoogleCalendar");
     if (calBtn) {
@@ -785,7 +758,6 @@
         b.offsetHeight;
         b.style.animation = "swingTempleBell 0.8s ease-in-out 3";
         playBellChime();
-        triggerRealisticRoseShower(window.innerWidth / 2, 80, 25);
       });
     });
   })();
@@ -803,29 +775,7 @@
   }
 
   function playBellChime() {
-    try {
-      const ctx = getAudioContext();
-      if (ctx.state === 'suspended') ctx.resume();
-      const now = ctx.currentTime;
-      const freqs = [587.33, 880, 1174.66, 1760, 2637];
-      const gains = [0.25, 0.18, 0.12, 0.08, 0.04];
-
-      freqs.forEach((f, idx) => {
-        const osc = ctx.createOscillator();
-        const g = ctx.createGain();
-        osc.type = "sine";
-        osc.frequency.setValueAtTime(f, now);
-
-        g.gain.setValueAtTime(gains[idx], now);
-        g.gain.exponentialRampToValueAtTime(0.0001, now + 2.4 - idx * 0.3);
-
-        osc.connect(g);
-        g.connect(ctx.destination);
-
-        osc.start(now);
-        osc.stop(now + 2.5);
-      });
-    } catch (e) {}
+    // Disabled - ting notification sound removed
   }
 
   function updateMusicButtonUI(isPlaying) {
@@ -899,7 +849,6 @@
     forceSnap = true;
     kick();
     startMangalaMusic();
-    playBellChime();
   }
 
   if (openInviteBtn && templeGate) {
@@ -922,8 +871,8 @@
   if (canvas) {
     ctx = canvas.getContext("2d");
     const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      canvas.width = canvas.parentElement ? canvas.parentElement.clientWidth : window.innerWidth;
+      canvas.height = canvas.parentElement ? canvas.parentElement.clientHeight : window.innerHeight;
     };
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
@@ -934,33 +883,61 @@
    * with true curved geometry, 3D tumbling (pitch/roll/yaw), and air drift.
    */
   class OrganicRosePetal {
-    constructor(x, y, isJasmine = false) {
+    constructor(x, y, isJasmine = false, isGentleRain = false) {
       this.x = x;
       this.y = y;
       this.isJasmine = isJasmine;
+      this.isGentleRain = isGentleRain;
 
-      // Realistic initial dispersion velocity
-      const angle = Math.random() * Math.PI * 2;
-      const speed = 2 + Math.random() * 7;
-      this.vx = Math.cos(angle) * speed;
-      this.vy = Math.sin(angle) * speed - 2.5;
+      if (isGentleRain) {
+        // Slow graceful downward float with air cushion
+        this.vx = (Math.random() - 0.5) * 0.7;
+        this.vy = 0.65 + Math.random() * 0.75;
+        this.gravity = 0.003 + Math.random() * 0.004;
+        this.airFriction = 0.997;
 
-      // Petal physical properties
-      this.gravity = 0.08 + Math.random() * 0.08;
-      this.airFriction = 0.985;
-      this.alpha = 1;
-      this.decay = 0.0035 + Math.random() * 0.005;
+        // Smooth fade-in and fade-out
+        this.alpha = 0;
+        this.maxAlpha = 0.75 + Math.random() * 0.25;
+        this.fadeInSpeed = 0.02 + Math.random() * 0.015;
+        this.isFadingIn = true;
+        this.isFadingOut = false;
+        this.fadeOutSpeed = 0.012 + Math.random() * 0.01;
 
-      // Natural fluttering wave parameters
-      this.swaySpeed = 0.02 + Math.random() * 0.03;
-      this.swayDistance = 1.2 + Math.random() * 2.2;
-      this.phase = Math.random() * Math.PI * 2;
+        // Fluttering wave
+        this.swaySpeed = 0.016 + Math.random() * 0.018;
+        this.swayDistance = 1.1 + Math.random() * 1.5;
+        this.phase = Math.random() * Math.PI * 2;
 
-      // 3D rotation angles (yaw, pitch, roll)
-      this.yaw = Math.random() * Math.PI * 2;
-      this.yawSpeed = (Math.random() - 0.5) * 0.06;
-      this.pitch = Math.random() * Math.PI * 2;
-      this.pitchSpeed = (Math.random() - 0.5) * 0.08;
+        // 3D rotation
+        this.yaw = Math.random() * Math.PI * 2;
+        this.yawSpeed = (Math.random() - 0.5) * 0.025;
+        this.pitch = Math.random() * Math.PI * 2;
+        this.pitchSpeed = (Math.random() - 0.5) * 0.035;
+      } else {
+        // Realistic initial dispersion velocity
+        const angle = Math.random() * Math.PI * 2;
+        const speed = 2 + Math.random() * 7;
+        this.vx = Math.cos(angle) * speed;
+        this.vy = Math.sin(angle) * speed - 2.5;
+
+        // Petal physical properties
+        this.gravity = 0.08 + Math.random() * 0.08;
+        this.airFriction = 0.985;
+        this.alpha = 1;
+        this.decay = 0.0035 + Math.random() * 0.005;
+
+        // Natural fluttering wave parameters
+        this.swaySpeed = 0.02 + Math.random() * 0.03;
+        this.swayDistance = 1.2 + Math.random() * 2.2;
+        this.phase = Math.random() * Math.PI * 2;
+
+        // 3D rotation angles (yaw, pitch, roll)
+        this.yaw = Math.random() * Math.PI * 2;
+        this.yawSpeed = (Math.random() - 0.5) * 0.06;
+        this.pitch = Math.random() * Math.PI * 2;
+        this.pitchSpeed = (Math.random() - 0.5) * 0.08;
+      }
 
       if (this.isJasmine) {
         // Fragrant Jasmine Petal (ivory white with golden base)
@@ -1014,7 +991,24 @@
       this.yaw += this.yawSpeed;
       this.pitch += this.pitchSpeed;
 
-      this.alpha -= this.decay;
+      if (this.isGentleRain) {
+        if (this.isFadingIn) {
+          this.alpha += this.fadeInSpeed;
+          if (this.alpha >= this.maxAlpha) {
+            this.alpha = this.maxAlpha;
+            this.isFadingIn = false;
+          }
+        }
+        const screenH = canvas ? canvas.height : window.innerHeight;
+        if (this.y > screenH * 0.65) {
+          this.isFadingOut = true;
+        }
+        if (this.isFadingOut) {
+          this.alpha -= this.fadeOutSpeed;
+        }
+      } else {
+        this.alpha -= this.decay;
+      }
     }
 
     draw(c) {
@@ -1067,10 +1061,78 @@
     if (!ctx) return;
     for (let i = 0; i < count; i++) {
       const isJasmine = Math.random() > 0.65;
-      rosePetals.push(new OrganicRosePetal(x, y, isJasmine));
+      rosePetals.push(new OrganicRosePetal(x, y, isJasmine, false));
     }
     if (!animPetalId) {
       animateRosePetals();
+    }
+  }
+
+  // Story Scene Gentle Rose Rain Controller
+  let storyRainInterval = null;
+  let isStoryRainActive = false;
+
+  function spawnGentlePetal(initialRandomY = false) {
+    if (!ctx) return;
+    const canW = canvas ? canvas.width : window.innerWidth;
+    const canH = canvas ? canvas.height : window.innerHeight;
+    const x = Math.random() * canW;
+    const y = initialRandomY 
+      ? Math.random() * (canH * 0.62)
+      : -25 - Math.random() * 30;
+    const isJasmine = Math.random() > 0.78;
+    const petal = new OrganicRosePetal(x, y, isJasmine, true);
+    if (initialRandomY) {
+      petal.alpha = 0.25 + Math.random() * 0.6;
+      petal.isFadingIn = false;
+    }
+    rosePetals.push(petal);
+  }
+
+  function startStoryRoseRain() {
+    if (isStoryRainActive) return;
+    isStoryRainActive = true;
+
+    // Immediately seed petals across view
+    const currentGentle = rosePetals.filter(p => p.isGentleRain).length;
+    if (currentGentle < 12) {
+      for (let i = 0; i < 12; i++) {
+        spawnGentlePetal(true);
+      }
+    }
+
+    if (!animPetalId) animateRosePetals();
+
+    if (!storyRainInterval) {
+      storyRainInterval = setInterval(() => {
+        if (!isStoryRainActive) {
+          clearInterval(storyRainInterval);
+          storyRainInterval = null;
+          return;
+        }
+        const activeGentle = rosePetals.filter(p => p.isGentleRain).length;
+        if (activeGentle < 28) {
+          spawnGentlePetal(false);
+          if (Math.random() > 0.45) spawnGentlePetal(false);
+        }
+        if (!animPetalId) animateRosePetals();
+      }, 340);
+    }
+  }
+
+  function stopStoryRoseRain() {
+    isStoryRainActive = false;
+    if (storyRainInterval) {
+      clearInterval(storyRainInterval);
+      storyRainInterval = null;
+    }
+    rosePetals = [];
+    if (ctx && canvas) {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+    if (animPetalId) {
+      cancelAnimationFrame(animPetalId);
+      animPetalId = 0;
     }
   }
 
@@ -1109,6 +1171,7 @@
   // --- RSVP FORM WITH DIRECT WHATSAPP INTEGRATION ---
   (function initRsvpForm() {
     const form = $("#weddingRsvpForm");
+    if (!form) return;
     const rsvpCardBox = $("#rsvpCardBox");
     const rsvpSuccess = $("#rsvpSuccess");
     const formFeedback = $("#formFeedback");
