@@ -50,8 +50,8 @@
       groomFull: "శ్రీ కృష్ణ రావు",
       sealTopShloka: "॥ శ్రీ లక్ష్మీ వేంకటేశ్వర స్వామి దివ్య ప్రసన్నః ॥",
       sealGreeting: "కళ్యాణ మహోత్సవ ఆహ్వానము",
-      sealDateText: "ఆదివారం, 14 ఫిబ్రవరి 2027 · సుముహూర్తం: ఉ॥ 10:32",
-      openBtnText: "శుభలేఖ తెరవండి (Open Invitation)",
+      sealDateText: "ఆదివారం, 14 ఫిబ్రవరి 2027",
+      openBtnText: "శుభలేఖ తెరవండి",
       sealFooterNote: "సకుటుంబ సపరివార సమేతంగా విచ్చేయండి",
       heroShloka: "॥ వక్రతుండ మహాకాయ సూర్యకోటి సమప్రభ నిర్విఘ్నం కురు మే దేవ సర్వకార్యేషు సర్వదా ॥",
       heroWeds: "సహధర్మచారిణిగా",
@@ -141,89 +141,89 @@
       brideFull: "Lakshmi Priya Reddy",
       groom: "Sri Krishna",
       groomFull: "Sri Krishna Rao",
-      sealTopShloka: "|| Sri Lakshmi Venkateswara Swami Prasanna ||",
-      sealGreeting: "Kalyana Mahotsavam Invitation",
-      sealDateText: "Sunday, 14 February 2027 · Muhurtham: 10:32 AM",
-      openBtnText: "Open Royal Subhalekha",
-      sealFooterNote: "Cordially inviting you with family and friends",
-      heroShloka: "|| Vakratunda Mahakaya Suryakoti Samaprabha Nirvighnam Kuru Me Deva ||",
-      heroWeds: "takes the sacred vows with",
-      heroSubline: "In the Divine Presence of the Almighty, Two Souls Unite in Sacred Matrimony",
-      scrollHintText: "Scroll Down to View Subhalekha",
-      patTitle: "|| Kalyana Subhalekha ||",
-      patBlessing: "With the divine blessings of our deities and beloved elders",
-      patAncestors: "Blessings of Late Smt. & Sri Narayana Rao and Rama Rao",
-      patParents: "Smt. Sarada & Sri Venkateswara Rao",
-      patInviteText: "joyfully request the pleasure of your company with family and friends to celebrate the wedding of their daughter.",
-      patPanchangamDetails: "Swasti Sri Shubhakrit Nama Samvatsaram, Magha Shukla Dashami, Meena Lagna Sumuhurtham",
-      patMuhurthamDateTime: "Sunday, 14 February 2027 · 10:32 AM IST",
-      patLocationSummary: "Venue: Sri Lakshmi Venkateswara Kalyana Mandapam · Banjara Hills, Hyderabad",
-      ritualsTitle: "Sacred Telugu Wedding Rituals",
-      ritualsSubtitle: "The profound spiritual meaning behind authentic rituals",
-      eventsTitle: "Sacred Wedding Celebrations",
-      eventsSub: "Auspicious dates and timings for our celebrations",
-      feastTitle: "Traditional Kalyana Vindhu Feast",
-      feastSubtitle: "Authentic Andhra & Telangana wedding delicacies on a fresh banana leaf",
-      storyVerseLine: "Two Hearts... Becoming One",
-      storyVerseSub: "A Sacred Beginning with the Blessings of Our Elders",
-      storyMuhurthamTitle: "Jeelakarra Bellam & Sumuhurtham",
-      storyMuhurthamWhen: "14 February 2027 · 10:32 AM",
-      coupleHead: "Meet the Bride & Groom",
+      sealTopShloka: "॥ శ్రీ లక్ష్మీ వేంకటేశ్వర స్వామి దివ్య ప్రసన్నః ॥",
+      sealGreeting: "Kalyana Mahotsavam",
+      sealDateText: "Sunday, 14 February 2027",
+      openBtnText: "శుభలేఖ తెరవండి",
+      sealFooterNote: "Cordially inviting you with family (సకుటుంబ సపరివార సమేతంగా)",
+      heroShloka: "॥ వక్రతుండ మహాకాయ సూర్యకోటి సమప్రభ నిర్విఘ్నం కురు మే దేవ సర్వకార్యేషు సర్వదా ॥",
+      heroWeds: "weds · పరిణయం",
+      heroSubline: "In the Divine Presence of the Almighty, Two Souls Unite in Sacred Matrimony (మా నూతన దాంపత్య ప్రయాణం)",
+      scrollHintText: "Scroll Down to View Subhalekha (శుభలేఖను తిలకించండి)",
+      patTitle: "॥ కళ్యాణ శుభ పత్రిక (Kalyana Subhalekha) ॥",
+      patBlessing: "With the divine blessings of our deities and beloved elders (మా ఇలవేలుపుల, పెద్దల దివ్య ఆశీస్సులతో)",
+      patAncestors: "Blessings of Late Smt. & Sri Narayana Rao and Rama Rao (స్వర్గీయ శ్రీమతి & శ్రీ నారాయణ రావు మరియు రామారావు గార్ల ఆశీస్సులతో)",
+      patParents: "Smt. Sarada & Sri Venkateswara Rao (శ్రీమతి శారద & శ్రీ వెంకటేశ్వర రావు దంపతులు)",
+      patInviteText: "cordially invite you with family and friends (సకుటుంబ సపరివార సమేతంగా సాదర ఆహ్వానం) to celebrate the sacred wedding of their beloved daughter.",
+      patPanchangamDetails: "Swasti Sri Shubhakrit Nama Samvatsaram, Magha Shukla Dashami, Rohini Nakshatra, Meena Lagna Sumuhurtham (స్వస్తిశ్రీ శుభకృత్ నామ సంవత్సరం, మాఘ శుద్ధ దశమి, రోహిణీ నక్షత్ర యుక్త మీన లగ్న సుముహూర్తమున)",
+      patMuhurthamDateTime: "Sunday, 14 February 2027 · 10:32 AM IST (ఆదివారం ఉదయం 10:32)",
+      patLocationSummary: "Kalyana Vedika: Sri Lakshmi Venkateswara Kalyana Mandapam (శ్రీ లక్ష్మీ వేంకటేశ్వర కళ్యాణ మండపం) · Banjara Hills, Hyderabad",
+      ritualsTitle: "Saptapadi & Sacred Rituals (సప్తపది & ఆచారాలు)",
+      ritualsSubtitle: "The sacred spiritual significance behind traditional Telugu wedding rituals",
+      eventsTitle: "Kalyana Mahotsavam Timeline (కళ్యాణ వేడుకలు)",
+      eventsSub: "Auspicious dates and timings for our wedding celebrations (మంగళ వేడుకల కాల నిర్ణయం)",
+      feastTitle: "Traditional Kalyana Vindhu Feast (సాంప్రదాయ కళ్యాణ విందు భోజనం)",
+      feastSubtitle: "Authentic Andhra & Telangana wedding delicacies served on a fresh banana leaf (అరటి ఆకు భోజనం)",
+      storyVerseLine: "Two Hearts... Becoming One (రెండు మనసులు... ఒకటయ్యే వేళ)",
+      storyVerseSub: "A Sacred Matrimonial Journey with Elders' Blessings (పెద్దల దీవెనలతో)",
+      storyMuhurthamTitle: "Jeelakarra Bellam & Sumuhurtham (జీలకర్ర బెల్లం & సుముహూర్తం)",
+      storyMuhurthamWhen: "Sunday, 14 February 2027 · 10:32 AM IST",
+      coupleHead: "Meet the Bride & Groom (వధూవరుల పరిచయం)",
       coupleTale: "We first met at a mutual friend's sangeet in Bengaluru. Friendly banter over Hyderabad Biryani vs Rayalaseema Ragi Sankati soon turned into an inseparable lifelong bond. Today, with the blessings of our families, we take our sacred vows.",
-      familyRoots: "Celebrating the harmonious union of respected families from Warangal & Vijayawada",
-      venueHead: "Wedding Venue & Navigation",
-      mapBtnLabel: "Get Directions on Google Maps",
-      rsvpMainTitle: "Will You Join Us?",
+      familyRoots: "Celebrating the harmonious union of respected families from Warangal & Vijayawada (వరంగల్ మరియు విజయవాడ)",
+      venueHead: "Kalyana Vedika & Location (కళ్యాణ వేదిక & మార్గం)",
+      mapBtnLabel: "Get Directions on Google Maps (గూగుల్ మ్యాప్స్ లో మార్గం)",
+      rsvpMainTitle: "Bless the Couple · RSVP (విచ్చేసి ఆశీర్వదించండి)",
       rsvpLead: "Your gracious presence and heartfelt blessings will make our celebrations truly unforgettable.",
-      txtAccept: "Joyfully Accept",
-      txtDecline: "Regretfully Decline",
-      txtSubmit: "Send Blessings (Submit RSVP)",
-      countMainHead: "The Sacred Countdown Begins",
-      cdLblDays: "Days",
-      cdLblHours: "Hours",
-      cdLblMins: "Minutes",
-      cdLblSecs: "Seconds",
+      txtAccept: "Joyfully Accept (తప్పక విచ్చేస్తాము)",
+      txtDecline: "Regretfully Decline (క్షమించండి, రాలేకపోతున్నాము)",
+      txtSubmit: "Send Blessings · Submit RSVP (ఆశీర్వాదం పంపండి)",
+      countMainHead: "The Sacred Countdown Begins (సుముహూర్త సమయం)",
+      cdLblDays: "Days (రోజులు)",
+      cdLblHours: "Hours (గంటలు)",
+      cdLblMins: "Mins (నిమిషాలు)",
+      cdLblSecs: "Secs (సెకన్లు)",
       lblAddGoogleCal: "Save to Google Calendar",
-      galleryMainTitle: "Cherished Memories",
-      gallerySubDesc: "Unforgettable moments from our beautiful journey together",
-      tapInstructions: "Tap Photos to Scatter & Arrange",
-      footerGratitude: "Heartfelt Gratitude",
-      footerFamilies: "Warmly invited by the Rao & Reddy Families",
-      roseShowerTxt: "Rose Petals",
+      galleryMainTitle: "Cherished Memories (మధుర స్మృతులు)",
+      gallerySubDesc: "Unforgettable glimpses from our beautiful journey together",
+      tapInstructions: "Tap Photos to Scatter & Arrange (ఫోటోలపై తాకండి)",
+      footerGratitude: "Heartfelt Gratitude (హృదయపూర్వక ధన్యవాదాలు)",
+      footerFamilies: "Warmly invited by the Rao & Reddy Families (శ్రీ రావు & రెడ్డి కుటుంబాలు)",
+      roseShowerTxt: "Rose Petals (పూల వర్షం)",
       events: [
         {
-          name: "Snathakam & Pellikuthuru / Pellimaganu",
-          date: "Friday, 12 February 2027",
-          time: "9:00 AM onwards",
+          name: "Snathakam & Pellikuthuru / Pellimaganu (స్నాతకం & నలుగు)",
+          date: "Friday, 12 February 2027 (శుక్రవారం)",
+          time: "9:00 AM onwards (ఉదయం 9:00)",
           place: "Respective Residences (Jubilee Hills & Madhapur)",
-          desc: "Traditional Nalugu, Haldi ceremony, sacred ritual bath and mangala harathi.",
+          desc: "Traditional Nalugu, Haldi ceremony, sacred Mangala Snanam and mangala harathi.",
           art: "https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-ev1-1790834809023.webp",
           map: "https://maps.google.com/?q=Jubilee+Hills+Hyderabad"
         },
         {
-          name: "Mehendi & Sangeeth Night",
-          date: "Saturday, 13 February 2027",
-          time: "6:00 PM onwards",
+          name: "Mehendi & Sangeeth Night (మెహెందీ & సంగీత్ వేడుక)",
+          date: "Saturday, 13 February 2027 (శనివారం)",
+          time: "6:00 PM onwards (సాయంత్రం 6:00)",
           place: "The Royal Palace Lawns, Gachibowli, Hyderabad",
-          desc: "Intricate Henna artistry, spirited music, Telugu folk dances and celebratory dinner.",
+          desc: "Intricate Henna Gorintaku artistry, spirited music, Telugu folk dances and celebratory dinner.",
           art: "https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-ev2-1790834809887.webp",
           map: "https://maps.google.com/?q=Gachibowli+Hyderabad"
         },
         {
-          name: "Sumuhurtham & Jeelakarra Bellam",
-          date: "Sunday, 14 February 2027",
-          time: "10:32 AM",
+          name: "Sumuhurtham & Jeelakarra Bellam (సుముహూర్తం & జీలకర్ర బెల్లం)",
+          date: "Sunday, 14 February 2027 (ఆదివారం)",
+          time: "10:32 AM (ఉదయం 10:32)",
           place: "Sri Lakshmi Venkateswara Kalyana Mandapam, Banjara Hills",
-          desc: "Jeelakarra-Bellam ritual, Mangalasutra Dharana, Talambralu shower, Saptapadi and Arundhati Darsanam.",
+          desc: "Sacred Jeelakarra-Bellam ritual, Mangalasutra Dharana (మాంగల్యధారణ), Talambralu shower, Saptapadi and Arundhati Darsanam.",
           art: "https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-ev3-1790834810738.webp",
           map: "https://maps.google.com/?q=Banjara+Hills+Hyderabad"
         },
         {
-          name: "Grand Reception & Wedding Feast",
-          date: "Sunday, 14 February 2027",
-          time: "7:00 PM onwards",
+          name: "Grand Reception & Kalyana Vindhu (ఆశీర్వచనం & వివాహ విందు)",
+          date: "Sunday, 14 February 2027 (ఆదివారం)",
+          time: "7:00 PM onwards (సాయంత్రం 7:00)",
           place: "Grand Ballroom, Banjara Hills, Hyderabad",
-          desc: "An evening of royal hospitality, traditional Telugu delicacies, live music and celebrations.",
+          desc: "An evening of royal hospitality, traditional Telugu delicacies, live music and elder blessings.",
           art: "https://pub-1d2f18ed0a8d407dad41cfb99c7b3963.r2.dev/test2/img-ev4-1790834811597.webp",
           map: "https://maps.google.com/?q=Banjara+Hills+Hyderabad"
         }
@@ -231,7 +231,7 @@
     }
   };
 
-  let currentLang = 'te'; // Telugu default
+  let currentLang = 'en'; // English default with cultural Telugu phrases
 
   // --- RENDER DYNAMIC CONTENT BASED ON LANGUAGE ---
   function renderContent(lang) {
@@ -790,15 +790,15 @@
   // --- PROCEDURAL WEB AUDIO SYNTHESIZER: NADASWARAM & TEMPLE CHIMES ---
   let audioCtx = null;
   let isPlayingMusic = false;
-  let musicNodes = [];
+  let melodyTimer = null;
+  let masterGainNode = null;
+  let activeDroneOscs = [];
+  let activeNoteOscs = [];
 
   function getAudioContext() {
     if (!audioCtx) {
       const AudioContext = window.AudioContext || window.webkitAudioContext;
       audioCtx = new AudioContext();
-    }
-    if (audioCtx.state === 'suspended') {
-      audioCtx.resume();
     }
     return audioCtx;
   }
@@ -806,6 +806,7 @@
   function playBellChime() {
     try {
       const ctx = getAudioContext();
+      if (ctx.state === 'suspended') ctx.resume();
       const now = ctx.currentTime;
       const freqs = [587.33, 880, 1174.66, 1760, 2637];
       const gains = [0.25, 0.18, 0.12, 0.08, 0.04];
@@ -829,19 +830,23 @@
   }
 
   function startMangalaMusic() {
-    if (isPlayingMusic) return;
     try {
       const ctx = getAudioContext();
-      isPlayingMusic = true;
-      musicNodes = [];
+      if (ctx.state === 'suspended') {
+        ctx.resume();
+      }
 
-      const masterGain = ctx.createGain();
-      masterGain.gain.setValueAtTime(0.001, ctx.currentTime);
-      masterGain.gain.exponentialRampToValueAtTime(0.28, ctx.currentTime + 1.2);
-      masterGain.connect(ctx.destination);
-      musicNodes.push(masterGain);
+      if (isPlayingMusic) return;
+      isPlayingMusic = true;
+
+      // Master Gain
+      masterGainNode = ctx.createGain();
+      masterGainNode.gain.setValueAtTime(0.001, ctx.currentTime);
+      masterGainNode.gain.exponentialRampToValueAtTime(0.26, ctx.currentTime + 0.6);
+      masterGainNode.connect(ctx.destination);
 
       // Tanpura Drone (C#3, G#3, C#4)
+      activeDroneOscs = [];
       const droneFreqs = [138.59, 207.65, 277.18];
       droneFreqs.forEach(df => {
         const osc = ctx.createOscillator();
@@ -860,18 +865,19 @@
         lfo.start();
 
         osc.connect(g);
-        g.connect(masterGain);
+        g.connect(masterGainNode);
         osc.start();
-        musicNodes.push(osc, lfo);
+        activeDroneOscs.push(osc, lfo);
       });
 
       // Auspicious Nadaswaram Melody Loop (Raga Kalyani)
       const scale = [277.18, 311.13, 349.23, 392.00, 415.30, 466.16, 523.25, 554.37];
       const melodySequence = [0, 2, 4, 3, 2, 4, 6, 7, 6, 4, 2, 0, 4, 7];
       let stepIndex = 0;
+      activeNoteOscs = [];
 
       function playNextNote() {
-        if (!isPlayingMusic) return;
+        if (!isPlayingMusic || !masterGainNode) return;
         const now = ctx.currentTime;
         const notePitch = scale[melodySequence[stepIndex % melodySequence.length]];
         stepIndex++;
@@ -896,19 +902,27 @@
 
         noteOsc.connect(filter);
         filter.connect(noteGain);
-        noteGain.connect(masterGain);
+        noteGain.connect(masterGainNode);
 
         noteOsc.start(now);
         noteOsc.stop(now + 0.9);
+        activeNoteOscs.push(noteOsc);
+
+        if (activeNoteOscs.length > 8) {
+          activeNoteOscs.shift();
+        }
 
         const nextDelay = (0.45 + Math.random() * 0.35) * 1000;
-        musicNodes.timer = setTimeout(playNextNote, nextDelay);
+        melodyTimer = setTimeout(playNextNote, nextDelay);
       }
 
       playNextNote();
 
       const btn = $("#musicToggle");
-      if (btn) btn.classList.add("playing");
+      if (btn) {
+        btn.classList.add("playing");
+        btn.classList.remove("muted");
+      }
     } catch (e) {
       console.warn("Audio Context init warning:", e);
     }
@@ -916,21 +930,47 @@
 
   function stopMangalaMusic() {
     isPlayingMusic = false;
-    if (musicNodes.timer) clearTimeout(musicNodes.timer);
-    musicNodes.forEach(node => {
+
+    if (melodyTimer) {
+      clearTimeout(melodyTimer);
+      melodyTimer = null;
+    }
+
+    if (masterGainNode && audioCtx) {
+      try {
+        masterGainNode.gain.cancelScheduledValues(audioCtx.currentTime);
+        masterGainNode.gain.setValueAtTime(0, audioCtx.currentTime);
+        masterGainNode.disconnect();
+      } catch (e) {}
+      masterGainNode = null;
+    }
+
+    [...activeDroneOscs, ...activeNoteOscs].forEach(node => {
       try {
         if (node.stop) node.stop();
         if (node.disconnect) node.disconnect();
       } catch (e) {}
     });
-    musicNodes = [];
+    activeDroneOscs = [];
+    activeNoteOscs = [];
+
+    if (audioCtx && audioCtx.state === 'running') {
+      try {
+        audioCtx.suspend();
+      } catch (e) {}
+    }
+
     const btn = $("#musicToggle");
-    if (btn) btn.classList.remove("playing");
+    if (btn) {
+      btn.classList.remove("playing");
+      btn.classList.add("muted");
+    }
   }
 
   const musicBtn = $("#musicToggle");
   if (musicBtn) {
-    musicBtn.addEventListener("click", () => {
+    musicBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
       if (isPlayingMusic) {
         stopMangalaMusic();
       } else {
@@ -1259,7 +1299,7 @@
   })();
 
   // --- INITIALIZE DEFAULT CONTENT & RENDER ---
-  renderContent('te');
+  renderContent('en');
   kick();
 
 })();

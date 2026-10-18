@@ -29,7 +29,7 @@
   --f-script: 'Pinyon Script', 'Rozha One', cursive;
   --f-body: 'Cormorant Garamond', Georgia, serif;
   --f-te: 'Noto Serif Telugu', 'Gautami', 'Nirmala UI', serif;
-  --col: 480px;
+  --col: 680px;
 }
 
 * {
@@ -190,27 +190,18 @@ a {
   left: 50%;
   transform: translateX(-50%);
   width: min(calc(100% - 24px), var(--col));
-  z-index: 85;
+  z-index: 120;
   pointer-events: none;
 }
 
 .nav-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .lang-capsule {
-  pointer-events: auto;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  background: rgba(45, 6, 12, 0.88);
-  border: 1px solid rgba(212, 175, 55, 0.55);
-  border-radius: 999px;
-  padding: 4px 10px;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(8px);
+  display: none !important;
 }
 
 .lang-pill {
@@ -296,18 +287,30 @@ a {
   justify-content: center;
   cursor: pointer;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: visible;
+}
+
+.nadaswaram-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
 }
 
 .flute-svg {
   width: 18px;
   height: 18px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.25s ease;
+  pointer-events: none;
 }
 
 .nadaswaram-btn.playing .flute-svg {
   animation: spinVinyl 6s linear infinite;
   color: #fff;
+  opacity: 1;
+}
+
+.nadaswaram-btn:not(.playing) .flute-svg {
+  opacity: 0.65;
 }
 
 @keyframes spinVinyl {
@@ -330,6 +333,30 @@ a {
 @keyframes musicPulse {
   0% { transform: scale(0.95); opacity: 0.8; }
   100% { transform: scale(1.4); opacity: 0; }
+}
+
+/* Diagonal Strike Line when stopped / muted */
+.music-strike-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 28px;
+  height: 2.8px;
+  background: linear-gradient(90deg, #ff5252, #e53935);
+  border-radius: 999px;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px rgba(229, 57, 53, 0.9), 0 2px 4px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(-45deg) scaleX(1);
+  transform-origin: center;
+  transition: opacity 0.22s ease, transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 5;
+}
+
+.nadaswaram-btn.playing .music-strike-line {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(-45deg) scaleX(0);
 }
 
 /* ================= AUTHENTIC TEMPLE SANCTUM ENTRANCE ================= */
@@ -565,7 +592,7 @@ a {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: min(88%, 350px);
+  width: min(92%, 460px);
   text-align: center;
   color: var(--cream);
   padding: 30px 20px 24px;
@@ -622,22 +649,30 @@ a {
   margin: 2px 0;
 }
 
+.seal-amp {
+  display: block;
+  font-family: var(--f-script), var(--f-body);
+  font-size: 32px;
+  color: var(--gold-light);
+  line-height: 1;
+  margin: 3px auto 4px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
 .knot-text {
   font-size: 26px;
   color: var(--gold-light);
 }
 
-.seal-panchangam {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 8px;
-  padding: 5px 14px;
-  background: rgba(212, 175, 55, 0.14);
-  border: 1px solid rgba(212, 175, 55, 0.4);
-  border-radius: 999px;
-  font-size: 13.5px;
-  color: #f7e6ca;
+.seal-date {
+  font-family: var(--f-names);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #f3dcc0;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .btn-temple-gold {
@@ -864,8 +899,8 @@ a {
 
 .patrika-arch-wrapper {
   position: absolute;
-  left: 17%;
-  right: 17%;
+  left: 8%;
+  right: 8%;
   top: 10%;
   bottom: 0;
   display: flex;
@@ -1288,6 +1323,7 @@ a {
 
 .menu-categories {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 16px;
 }
 
@@ -1859,8 +1895,8 @@ a {
   position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  max-width: 350px;
+  gap: 14px;
+  max-width: 480px;
   margin: 22px auto 0;
 }
 
