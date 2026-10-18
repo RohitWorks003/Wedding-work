@@ -99,6 +99,42 @@
       roseShowerTxt: "పూల వర్షం",
       events: [
         {
+          name: "హల్ది (Haldi)",
+          date: "ఆదివారం, 25 అక్టోబర్ 2026",
+          time: "ఉదయం 07:00 AM నుండి",
+          place: "వరుడి నివాసం, కొండపల్లి",
+          desc: "పెద్దల ఆశీస్సులతో సాంప్రదాయ పసుపు వేడుక.",
+          art: "haldi_event.png",
+          map: "https://maps.google.com/?q=Kondapalli+Vijayawada"
+        },
+        {
+          name: "సంగీత్ (Sangeet)",
+          date: "ఆదివారం, 25 అక్టోబర్ 2026",
+          time: "సాయంత్రం 07:00 PM నుండి",
+          place: "వరుడి నివాసం, కొండపల్లి",
+          desc: "కుటుంబ సభ్యులు, స్నేహితులతో సంగీతం, నృత్యం మరియు సంబరాలు.",
+          art: "sangeet_event.png",
+          map: "https://maps.google.com/?q=Kondapalli+Vijayawada"
+        },
+        {
+          name: "మెహందీ (Mehandi)",
+          date: "మంగళవారం, 27 అక్టోబర్ 2026",
+          time: "సాయంత్రం 05:00 PM",
+          place: "వరుడి నివాసం, కొండపల్లి",
+          desc: "ప్రేమతో, ఆనందంతో జరుపుకునే మెహందీ వేడుక.",
+          art: "mehandi_event.png",
+          map: "https://maps.google.com/?q=Kondapalli+Vijayawada"
+        },
+        {
+          name: "పెళ్లికొడుకు & పెళ్లికూతురు (Pellikoduku & Pellikuthuru)",
+          date: "బుధవారం, 28 అక్టోబర్ 2026",
+          time: "ఉదయం 07:54 AM",
+          place: "వరుడి ఇల్లు, కొండపల్లి",
+          desc: "వివాహానికి ముందు వరుడి ఇంట్లో జరిగే సాంప్రదాయ వేడుక.",
+          art: "pellikoduku_event.png",
+          map: "https://maps.google.com/?q=Kondapalli+Vijayawada"
+        },
+        {
           name: "సుముహూర్తం (Sumuhurtham)",
           date: "గురువారం, 29 అక్టోబర్ 2026",
           time: "రాత్రి 07:30 PM",
@@ -173,6 +209,42 @@
       footerFamilies: "With Best Compliments From Near & Dear · Cheruku & Ravirala Families",
       roseShowerTxt: "Rose Petals (పూల వర్షం)",
       events: [
+        {
+          name: "Haldi",
+          date: "Sunday, 25 October 2026",
+          time: "07:00 AM onwards",
+          place: "Groom's residence, Kondapalli",
+          desc: "Traditional turmeric ceremony with the blessings of elders and festive joy.",
+          art: "haldi_event.png",
+          map: "https://maps.google.com/?q=Kondapalli+Vijayawada"
+        },
+        {
+          name: "Sangeet",
+          date: "Sunday, 25 October 2026",
+          time: "07:00 PM onwards",
+          place: "Groom's residence, Kondapalli",
+          desc: "An evening of music, dance and celebration with family and friends.",
+          art: "sangeet_event.png",
+          map: "https://maps.google.com/?q=Kondapalli+Vijayawada"
+        },
+        {
+          name: "Mehandi",
+          date: "Tuesday, 27 October 2026",
+          time: "05:00 PM",
+          place: "Groom's residence, Kondapalli",
+          desc: "A joyful pre-wedding ritual filled with love and laughter.",
+          art: "mehandi_event.png",
+          map: "https://maps.google.com/?q=Kondapalli+Vijayawada"
+        },
+        {
+          name: "Pellikoduku & Pellikuthuru",
+          date: "Wednesday, 28 October 2026",
+          time: "07:54 AM",
+          place: "Groom's House, Kondapalli",
+          desc: "Traditional sacred ceremony at the groom's home before the wedding.",
+          art: "pellikoduku_event.png",
+          map: "https://maps.google.com/?q=Kondapalli+Vijayawada"
+        },
         {
           name: "Sumuhurtham (సుముహూర్తం)",
           date: "Thursday, 29 October 2026",
